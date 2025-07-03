@@ -9,6 +9,13 @@
                     <div class="col-lg-6 offset-lg-4">
                         <div class="padding40 rounded-3 shadow-soft" data-bgcolor="#ffffff">
                             <h4>Login</h4>
+                            @* ✅ Show email error from TempData if exists *@
+                            @if (TempData["EmailError"] != null)
+                            {
+                                <div class="alert alert-warning" role="alert">
+                                    @TempData["EmailError"]
+                                </div>
+                            }
                             <div class="spacer-10"></div>
                             <form id="form_register" class="form-border" method="post">
                                 <div class="field-set">

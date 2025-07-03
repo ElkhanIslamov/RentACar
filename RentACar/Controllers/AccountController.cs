@@ -55,8 +55,21 @@ public class AccountController : Controller
         var emailConfirmToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
         var emailConfirmLink = Url.Action("ConfirmEmail", "Account", new { emailConfirmToken, user.UserName }, Request.Scheme, Request.Host.ToString());
 
-        _mailService.SendMail(new Mail { ToEmail = user.Email, Subject = "Email confirmation", TextBody = emailConfirmLink });
-
+        try
+        {
+            _mailService.SendMail(new Mail
+            {
+                ToEmail = user.Email,
+                Subject = "Email confirmation",
+                TextBody = emailConfirmLink
+            });
+        }
+        catch (Exception ex)
+        {
+            // Log error (optional): _logger.LogError(ex, "Email send failed");
+            TempData["EmailError"] = "Email could not be sent. Please try again later.";
+            // Optionally show message or continue without breaking
+        }
 
         return RedirectToAction(nameof(Login));
     }
@@ -73,7 +86,6 @@ public class AccountController : Controller
         {
             ModelState.AddModelError("", "Username or password is incorrect");
             return View();
-
         }
 
         var existUser = await _userManager.FindByNameAsync(loginViewModel.UserName);
@@ -81,41 +93,43 @@ public class AccountController : Controller
         if (existUser == null)
         {
             ModelState.AddModelError("", "Username or password is incorrect");
-
             return View();
         }
-
-        var result = await _signInManager.PasswordSignInAsync(existUser, loginViewModel.Password, loginViewModel.RememberMe, true);
-
-        if (result.IsLockedOut)
-        {
-            ModelState.AddModelError("", $"You are banned {existUser.LockoutEnd.Value - DateTimeOffset.UtcNow}");
-
-            return View();
-        }
-
+               
         var isEmailConfirmed = await _userManager.IsEmailConfirmedAsync(existUser);
         if (!isEmailConfirmed)
         {
             ModelState.AddModelError("", "Email not confirmed");
+            return View();
+        }
 
+        var result = await _signInManager.PasswordSignInAsync(
+            existUser,
+            loginViewModel.Password,
+            loginViewModel.RememberMe,
+            lockoutOnFailure: true
+        );
+
+        if (result.IsLockedOut)
+        {
+            ModelState.AddModelError("", $"You are banned {(existUser.LockoutEnd.Value - DateTimeOffset.UtcNow).Minutes} minutes left.");
             return View();
         }
 
         if (!result.Succeeded)
         {
             ModelState.AddModelError("", "Username or password is incorrect");
-
             return View();
         }
 
-        if (loginViewModel.ReturnUrl != null)
+        if (!string.IsNullOrEmpty(loginViewModel.ReturnUrl) && Url.IsLocalUrl(loginViewModel.ReturnUrl))
         {
             return Redirect(loginViewModel.ReturnUrl);
         }
 
         return RedirectToAction("Index", "Profile");
     }
+
 
     public async Task<IActionResult> Logout()
     {
