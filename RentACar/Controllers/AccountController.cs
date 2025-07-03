@@ -71,7 +71,9 @@ public class AccountController : Controller
     {
         if (!ModelState.IsValid)
         {
+            ModelState.AddModelError("", "Username or password is incorrect");
             return View();
+
         }
 
         var existUser = await _userManager.FindByNameAsync(loginViewModel.UserName);
@@ -112,7 +114,7 @@ public class AccountController : Controller
             return Redirect(loginViewModel.ReturnUrl);
         }
 
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("Index", "Profile");
     }
 
     public async Task<IActionResult> Logout()

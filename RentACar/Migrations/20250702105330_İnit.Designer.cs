@@ -12,8 +12,8 @@ using RentACar.DataContext;
 namespace RentACar.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250701122449_Init")]
-    partial class Init
+    [Migration("20250702105330_İnit")]
+    partial class İnit
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
