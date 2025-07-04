@@ -286,6 +286,18 @@ header.smaller {
     backdrop-filter: blur(10px);
     */
 }
+.custom-checkbox-bold {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bbb !important; /* light gray border */
+    background-color: #fff;
+    border-radius: 4px; /* optional: round edges */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+}
+
+    .custom-checkbox-bold:checked {
+        background-color: #000; /* black check area when selected */
+    }
 
 
 .scroll-down {

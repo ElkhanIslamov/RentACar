@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QbBgbJRHOHLlsTV2BC830affDaC+UEUSKF/boyGKjNY=",
+  "Hash": "qDQyLmHR71VhViCabE2peQ9AzT36Q5l/IKm5iFejt3I=",
   "Source": "RentACar",
   "BasePath": "_content/RentACar",
   "Mode": "Default",
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0bkc7onxqp",
-      "Integrity": "NJd1GHaoxuOkmyvsZwPfMvh29xDWy+Rdd931wzV7RzY=",
+      "Fingerprint": "q061oz7z0z",
+      "Integrity": "RncL3DRVQ97yaHnBjiuDnqER8uo6rOn9/7NhgSSEARg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -5150,51 +5150,6 @@
       ]
     },
     {
-      "Route": "css/style.0bkc7onxqp.css",
-      "AssetFile": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "321372"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NJd1GHaoxuOkmyvsZwPfMvh29xDWy+Rdd931wzV7RzY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 05:32:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0bkc7onxqp"
-        },
-        {
-          "Name": "label",
-          "Value": "css/style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NJd1GHaoxuOkmyvsZwPfMvh29xDWy+Rdd931wzV7RzY="
-        }
-      ]
-    },
-    {
       "Route": "css/style.css",
       "AssetFile": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\style.css",
       "Selectors": [],
@@ -5205,7 +5160,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "321372"
+          "Value": "321762"
         },
         {
           "Name": "Content-Type",
@@ -5213,11 +5168,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NJd1GHaoxuOkmyvsZwPfMvh29xDWy+Rdd931wzV7RzY=\""
+          "Value": "\"RncL3DRVQ97yaHnBjiuDnqER8uo6rOn9/7NhgSSEARg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 05:32:41 GMT"
+          "Value": "Fri, 04 Jul 2025 10:24:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5227,7 +5182,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NJd1GHaoxuOkmyvsZwPfMvh29xDWy+Rdd931wzV7RzY="
+          "Value": "sha256-RncL3DRVQ97yaHnBjiuDnqER8uo6rOn9/7NhgSSEARg="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.q061oz7z0z.css",
+      "AssetFile": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321762"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RncL3DRVQ97yaHnBjiuDnqER8uo6rOn9/7NhgSSEARg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Jul 2025 10:24:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q061oz7z0z"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RncL3DRVQ97yaHnBjiuDnqER8uo6rOn9/7NhgSSEARg="
         }
       ]
     },

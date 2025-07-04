@@ -4,6 +4,7 @@ namespace RentACar.Models
 {
     public class ResetPasswordViewModel
     {
+        [DataType(DataType.Password)]
         public required string NewPassword { get; set; }
         [DataType(DataType.Password)]
         [Compare("NewPassword", ErrorMessage = "Passwords do not match.")]

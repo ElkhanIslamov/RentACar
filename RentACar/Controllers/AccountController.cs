@@ -1,5 +1,6 @@
 ﻿using Mailing;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RentACar.DataContext.Entities;
@@ -12,6 +13,7 @@ public class AccountController : Controller
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly IMailService _mailService;
+    private readonly IWebHostEnvironment _webHostEnvironment;
 
     public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IMailService mailService)
     {
@@ -198,6 +200,7 @@ public class AccountController : Controller
 
         var resetLink = Url.Action("ResetPassword", "Account", new { resetToken, email }, Request.Scheme, Request.Host.ToString());
 
+      
         _mailService.SendMail(new Mail { ToEmail = email, Subject = "Reset pas", TextBody = resetLink });
 
         return View(nameof(EmailSimulyasiya), resetLink);
