@@ -14,12 +14,13 @@ namespace Mailing
         public required string SenderEmail { get; set; }
         public required string UserName { get; set; }
         public required string Password { get; set; }
+        public string? HtmlBody { get; set; }
 
         public MailSettings()
         {
         }
 
-        public MailSettings(string server, int port, string senderFullName, string senderEmail, string userName, string password)
+        public MailSettings(string server, int port, string senderFullName, string senderEmail, string userName, string password, string? htmlBody)
         {
             Server = server;
             Port = port;
@@ -27,6 +28,7 @@ namespace Mailing
             SenderEmail = senderEmail;
             UserName = userName;
             Password = password;
+            HtmlBody = htmlBody;
         }
 
     }
