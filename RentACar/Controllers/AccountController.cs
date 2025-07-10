@@ -57,13 +57,70 @@ public class AccountController : Controller
         var emailConfirmToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
         var emailConfirmLink = Url.Action("ConfirmEmail", "Account", new { emailConfirmToken, user.UserName }, Request.Scheme, Request.Host.ToString());
 
+        var htmlBody = $@"
+          <html>
+            <body style=""font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f0f2f5; padding: 40px 0; margin: 0;"">
+              <div style=""max-width: 580px; margin: auto; background: #fff; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 35px;"">
+      
+                   <h1 style=""color: #222; font-weight: 700; font-size: 28px; text-align: center; margin-bottom: 20px;"">
+                      Email ünvanınızı təsdiqləyin
+                   </h1>
+      
+               <p style=""font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 25px;"">
+                  Salam,<br />
+                  Email ünvanınızı təsdiqləmək üçün aşağıdakı düyməyə klikləyin.
+               </p>
+      
+             <div style=""text-align: center; margin-bottom: 40px;"">
+                  <a href=""{emailConfirmLink}"" 
+                    style=""background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                  color: #fff;
+                  font-weight: 600;
+                  padding: 14px 50px;
+                  border-radius: 50px;
+                  text-decoration: none;
+                  font-size: 18px;
+                  box-shadow: 0 6px 15px rgba(101, 41, 255, 0.4);
+                  display: inline-block;
+                  transition: background 0.3s ease;"">
+          Email ünvanınızı təsdiqləyin
+         </a>
+         </div>
+      
+          <p style=""font-size: 14px; color: #888; margin-bottom: 30px; text-align: center;"">
+          Əgər bu sorğunu siz göndərməmisinizsə, bu emaili nəzərə almayın.
+          </p>
+      
+          <hr style=""border: none; border-top: 1px solid #eee; margin-bottom: 30px;"" />
+      
+         <div style=""text-align: center;"">
+        <a href=""https://facebook.com/yourpage"" style=""margin: 0 8px; text-decoration: none;"">
+          <img src=""https://cdn-icons-png.flaticon.com/24/733/733547.png"" alt=""Facebook"" />
+        </a>
+        <a href=""https://twitter.com/yourpage"" style=""margin: 0 8px; text-decoration: none;"">
+          <img src=""https://cdn-icons-png.flaticon.com/24/733/733579.png"" alt=""Twitter"" />
+        </a>
+        <a href=""https://instagram.com/yourpage"" style=""margin: 0 8px; text-decoration: none;"">
+          <img src=""https://cdn-icons-png.flaticon.com/24/733/733558.png"" alt=""Instagram"" />
+        </a>
+      </div>
+      
+      <p style=""font-size: 13px; color: #bbb; text-align: center; margin-top: 30px;"">
+        © 2025 Rentaly. Bütün hüquqlar qorunur.
+      </p>
+      
+    </div>
+  </body>
+</html>";
+
+
         try
         {
             _mailService.SendMail(new Mail
             {
                 ToEmail = user.Email,
                 Subject = "Email confirmation",
-                TextBody = emailConfirmLink
+                HtmlBody = htmlBody
             });
         }
         catch (Exception ex)
@@ -321,4 +378,5 @@ public class AccountController : Controller
 
         return RedirectToAction(nameof(Login));
     }
+    
 }

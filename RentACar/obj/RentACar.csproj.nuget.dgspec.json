@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\RentACar.csproj": {}
+    "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\RentACar\\Mailing\\Mailing.csproj": {
+    "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\RentACar\\Mailing\\Mailing.csproj",
+        "projectUniqueName": "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj",
         "projectName": "Mailing",
-        "projectPath": "C:\\Users\\User\\Desktop\\RentACar\\Mailing\\Mailing.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\RentACar\\Mailing\\obj\\",
+        "projectPath": "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj",
+        "packagesPath": "C:\\Users\\elkhan.islamov\\.nuget\\packages\\",
+        "outputPath": "E:\\Рабочий стол\\RentACar\\Mailing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elkhan.islamov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -83,24 +83,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\RentACar.csproj": {
+    "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\RentACar.csproj",
+        "projectUniqueName": "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj",
         "projectName": "RentACar",
-        "projectPath": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\RentACar.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\obj\\",
+        "projectPath": "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj",
+        "packagesPath": "C:\\Users\\elkhan.islamov\\.nuget\\packages\\",
+        "outputPath": "E:\\Рабочий стол\\RentACar\\RentACar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elkhan.islamov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -115,8 +115,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\RentACar\\Mailing\\Mailing.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\RentACar\\Mailing\\Mailing.csproj"
+              "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj": {
+                "projectPath": "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj"
               }
             }
           }
@@ -131,7 +131,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -179,7 +179,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

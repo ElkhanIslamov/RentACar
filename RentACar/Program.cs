@@ -5,12 +5,13 @@ using RentACar.DataContext;
 using Mailing;
 using Mailing.MailKitImplementations;
 using RentACar.Data;
+using RentACar.Seed;
 
 namespace RentACar
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,12 @@ namespace RentACar
 
             var app = builder.Build();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                await DataInitializer.SeedRolesAsync(services);
+            }
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -59,8 +66,8 @@ namespace RentACar
 
             app.UseRouting();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.MapControllerRoute(
               name: "areas",
