@@ -189,13 +189,22 @@ public class AccountController : Controller
         return RedirectToAction("Index", "Profile");
     }
 
-
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();
 
         return RedirectToAction(nameof(Login));
     }
+
+    // [HttpPost]
+    //[ValidateAntiForgeryToken]
+    //public async Task<IActionResult> Logout()
+    //{
+    //    await _signInManager.SignOutAsync();
+    //    return RedirectToAction("Login", "Account");
+    //}
 
     public IActionResult AccessDenied()
     {

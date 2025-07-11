@@ -1,0 +1,49 @@
+﻿@model IEnumerable<RentACar.DataContext.Entities.Car>
+@{
+    ViewData["Title"] = "Avtomobillər";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Avtomobil Siyahısı</h4>
+        <a asp-action="Create" class="btn btn-success mb-3">Yeni Avtomobil</a>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Ad</th>
+                        <th>Şəkil</th>
+                        <th>Oturacaq</th>
+                        <th>Qapı</th>
+                        <th>Bağaj</th>
+                        <th>Qiymət</th>
+                        <th>Kateqoriya</th>
+                        <th>Əməliyyatlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var car in Model)
+                    {
+                        <tr>
+                            <td>@car.Id</td>
+                            <td>@car.Name</td>
+                            <td><img src="@car.ImageUrl" width="60" /></td>
+                            <td>@car.Seats</td>
+                            <td>@car.Doors</td>
+                            <td>@car.Luggage</td>
+                            <td>@car.PricePerDay ₼</td>
+                            <td>@car.Category?.Name</td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm mr-1">Redaktə</a>
+                                <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm mr-1">Detallar</a>
+                                <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm">Sil</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
