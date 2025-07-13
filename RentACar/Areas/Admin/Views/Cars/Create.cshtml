@@ -1,4 +1,4 @@
-﻿@model RentACar.Areas.Admin.Models.CarFormViewModel
+﻿@model RentACar.Areas.Admin.Models.CarViewModel
 @{
     ViewData["Title"] = "Yeni Avtomobil";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -34,7 +34,10 @@
             </div>
             <div class="form-group">
                 <label>Kateqoriya</label>
-                <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control"></select>
+                <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control">
+                    <option disabled selected>Seçin...</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary">Yarat</button>
             <a asp-action="Index" class="btn btn-secondary">Geri</a>

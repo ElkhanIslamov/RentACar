@@ -1,4 +1,5 @@
-﻿using RentACar.DataContext.Entities;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using RentACar.DataContext.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace RentACar.Areas.Admin.Models
@@ -23,7 +24,7 @@ namespace RentACar.Areas.Admin.Models
         [Required]
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
-
-        public IEnumerable<Category>? Categories { get; set; }
+        public List<SelectListItem> Categories { get; set; } = new();
+       
     }
 }

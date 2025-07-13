@@ -8,6 +8,7 @@ namespace RentACar.Areas.Admin.Controllers
     using global::RentACar.DataContext.Entities;
     using global::RentACar.DataContext;
     using global::RentACar.Areas.Admin.Models;
+    using Microsoft.AspNetCore.Mvc.Rendering;
 
     namespace RentACar.Areas.Admin.Controllers
     {
@@ -33,18 +34,25 @@ namespace RentACar.Areas.Admin.Controllers
             {
                 var model = new CarViewModel
                 {
-                    Categories = _context.Categories.ToList()
+                    Categories = _context.Categories
+                        .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
+                        .ToList()
                 };
                 return View(model);
             }
+
 
             [HttpPost]
             public async Task<IActionResult> Create(CarViewModel model)
             {
                 if (!ModelState.IsValid)
                 {
-                    model.Categories = _context.Categories.ToList();
-                    return View(model);
+                    model.Categories = _context.Categories
+                    .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
+                    .ToList();
+
+                     return View(model);
+
                 }
 
                 string imagePath = "";
