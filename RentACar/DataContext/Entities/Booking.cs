@@ -14,7 +14,8 @@
         public TimeSpan ReturnTime { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public int CarId { get; set; }
-        public Car? Car { get; set; } 
+        public Car? Car { get; set; }
+        public string Status { get; set; } = "Pending";
     }
 
 }

@@ -1,1343 +1,1343 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RentACar.bundle.scp.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RentACar.bundle.scp.css",
       "PackagePath": "staticwebassets\\RentACar.ad7aimlmm7.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\css\\maps\\style.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\css\\maps\\style.css.map",
       "PackagePath": "staticwebassets\\admin\\css\\maps\\style.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\css\\style.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\css\\style.css",
       "PackagePath": "staticwebassets\\admin\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.eot",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.ttf",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.woff",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.woff2",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.eot",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.ttf",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.woff",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.woff2",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.eot",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.ttf",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.woff",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.woff2",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.eot",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.ttf",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.woff",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.woff2",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.eot",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.ttf",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.woff",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.woff2",
       "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\auth\\lockscreen-bg.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\auth\\lockscreen-bg.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\auth\\lockscreen-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\auth\\login-bg.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\auth\\login-bg.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\auth\\login-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\auth\\register-bg.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\auth\\register-bg.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\auth\\register-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face1.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face10.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face10.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face10.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face11.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face11.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face11.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face12.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face12.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face12.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face13.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face13.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face13.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face14.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face14.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face14.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face15.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face15.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face15.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face16.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face16.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face16.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face17.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face17.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face17.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face18.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face18.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face18.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face19.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face19.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face19.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face2.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face20.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face20.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face20.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face21.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face21.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face21.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face22.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face22.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face22.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face23.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face23.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face23.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face24.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face24.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face24.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face25.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face25.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face25.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face26.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face26.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face26.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face27.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face27.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face27.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face3.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face4.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face5.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face5.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face6.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face6.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face6.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face7.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face7.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face7.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face8.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face8.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face8.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face9.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\faces\\face9.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face9.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\favicon.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\favicon.png",
       "PackagePath": "staticwebassets\\admin\\images\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\logo-mini.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\logo-mini.svg",
       "PackagePath": "staticwebassets\\admin\\images\\logo-mini.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\images\\logo.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\images\\logo.svg",
       "PackagePath": "staticwebassets\\admin\\images\\logo.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\Chart.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\Chart.min.js",
       "PackagePath": "staticwebassets\\admin\\js\\Chart.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\chart.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\chart.js",
       "PackagePath": "staticwebassets\\admin\\js\\chart.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\dashboard.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\dashboard.js",
       "PackagePath": "staticwebassets\\admin\\js\\dashboard.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\data-table.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\data-table.js",
       "PackagePath": "staticwebassets\\admin\\js\\data-table.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\dataTables.bootstrap4.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\dataTables.bootstrap4.js",
       "PackagePath": "staticwebassets\\admin\\js\\dataTables.bootstrap4.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\documentation.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\documentation.js",
       "PackagePath": "staticwebassets\\admin\\js\\documentation.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\file-upload.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\file-upload.js",
       "PackagePath": "staticwebassets\\admin\\js\\file-upload.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\hoverable-collapse.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\hoverable-collapse.js",
       "PackagePath": "staticwebassets\\admin\\js\\hoverable-collapse.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\jquery.cookie.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\jquery.cookie.js",
       "PackagePath": "staticwebassets\\admin\\js\\jquery.cookie.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\jquery.dataTables.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\jquery.dataTables.js",
       "PackagePath": "staticwebassets\\admin\\js\\jquery.dataTables.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\off-canvas.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\off-canvas.js",
       "PackagePath": "staticwebassets\\admin\\js\\off-canvas.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\tabs.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\tabs.js",
       "PackagePath": "staticwebassets\\admin\\js\\tabs.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\js\\template.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\js\\template.js",
       "PackagePath": "staticwebassets\\admin\\js\\template.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_footer.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_footer.html",
       "PackagePath": "staticwebassets\\admin\\partials\\_footer.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_navbar.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_navbar.html",
       "PackagePath": "staticwebassets\\admin\\partials\\_navbar.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_settings-panel.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_settings-panel.html",
       "PackagePath": "staticwebassets\\admin\\partials\\_settings-panel.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_sidebar.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\partials\\_sidebar.html",
       "PackagePath": "staticwebassets\\admin\\partials\\_sidebar.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_background.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_background.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_background.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_demo.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_demo.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_demo.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_fonts.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_fonts.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_fonts.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_footer.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_footer.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_footer.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_functions.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_functions.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_functions.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_layouts.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_layouts.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_layouts.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_misc.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_misc.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_misc.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_navbar.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_navbar.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_navbar.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_reset.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_reset.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_reset.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_sidebar.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_sidebar.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_sidebar.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_typography.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_typography.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_typography.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_utilities.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_utilities.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_utilities.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_variables.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_variables.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_variables.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_vertical-wrapper.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\_vertical-wrapper.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\_vertical-wrapper.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_badges.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_badges.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_badges.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_bootstrap-progress.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_bootstrap-progress.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_bootstrap-progress.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_buttons.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_buttons.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_buttons.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_cards.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_cards.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_cards.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_checkbox-radio.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_checkbox-radio.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_checkbox-radio.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_dropdown.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_dropdown.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_dropdown.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_forms.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_forms.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_forms.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_icons.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_icons.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_icons.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_lists.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_lists.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_lists.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_tables.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\_tables.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\_tables.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\plugin-overrides\\_data-tables.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\components\\plugin-overrides\\_data-tables.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\components\\plugin-overrides\\_data-tables.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\landing-screens\\_auth.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\landing-screens\\_auth.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\landing-screens\\_auth.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_animation.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_animation.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\mixins\\_animation.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_badges.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_badges.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\mixins\\_badges.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_blockqoute.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_blockqoute.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\mixins\\_blockqoute.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_buttons.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_buttons.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_cards.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_cards.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\mixins\\_cards.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_misc.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\mixins\\_misc.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\mixins\\_misc.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\scss\\style.scss",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\scss\\style.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\style.scss"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\base\\bootstrap.min.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\base\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\admin\\vendors\\base\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\base\\vendor.bundle.base.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\base\\vendor.bundle.base.css",
       "PackagePath": "staticwebassets\\admin\\vendors\\base\\vendor.bundle.base.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\base\\vendor.bundle.base.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\base\\vendor.bundle.base.js",
       "PackagePath": "staticwebassets\\admin\\vendors\\base\\vendor.bundle.base.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\chart.js\\Chart.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\chart.js\\Chart.min.js",
       "PackagePath": "staticwebassets\\admin\\vendors\\chart.js\\Chart.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css",
       "PackagePath": "staticwebassets\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js",
       "PackagePath": "staticwebassets\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\datatables.net\\jquery.dataTables.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\datatables.net\\jquery.dataTables.js",
       "PackagePath": "staticwebassets\\admin\\vendors\\datatables.net\\jquery.dataTables.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.svg",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
       "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\coloring.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\coloring.css",
       "PackagePath": "staticwebassets\\css\\coloring.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\colors\\scheme-01.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\colors\\scheme-01.css",
       "PackagePath": "staticwebassets\\css\\colors\\scheme-01.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\jquery.countdown.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\jquery.countdown.css",
       "PackagePath": "staticwebassets\\css\\jquery.countdown.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\mdb.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\mdb.min.css",
       "PackagePath": "staticwebassets\\css\\mdb.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\owl.video.play.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\owl.video.play.html",
       "PackagePath": "staticwebassets\\css\\owl.video.play.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\plugins.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\plugins.css",
       "PackagePath": "staticwebassets\\css\\plugins.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\css\\style.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.eot",
       "PackagePath": "staticwebassets\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.svg",
       "PackagePath": "staticwebassets\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.ttf",
       "PackagePath": "staticwebassets\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.woff",
       "PackagePath": "staticwebassets\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIcons.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIconsd41d.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIconsd41d.eot",
       "PackagePath": "staticwebassets\\fonts\\elegant_font\\HTML_CSS\\fonts\\ElegantIconsd41d.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\style.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\elegant_font\\HTML_CSS\\style.css",
       "PackagePath": "staticwebassets\\fonts\\elegant_font\\HTML_CSS\\style.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.eot",
       "PackagePath": "staticwebassets\\fonts\\et-line-font\\fonts\\et-line.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.svg",
       "PackagePath": "staticwebassets\\fonts\\et-line-font\\fonts\\et-line.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.ttf",
       "PackagePath": "staticwebassets\\fonts\\et-line-font\\fonts\\et-line.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-line.woff",
       "PackagePath": "staticwebassets\\fonts\\et-line-font\\fonts\\et-line.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-lined41d.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\fonts\\et-lined41d.eot",
       "PackagePath": "staticwebassets\\fonts\\et-line-font\\fonts\\et-lined41d.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\style.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\et-line-font\\style.css",
       "PackagePath": "staticwebassets\\fonts\\et-line-font\\style.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.css",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\css\\font-awesome.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.eot",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.svg",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.ttf",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.ttf",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.ttf"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff2",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont3e6e.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfontd41d.eot",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfontd41d.eot",
       "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfontd41d.eot"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\icofont\\fonts\\icofont.woff",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\icofont\\fonts\\icofont.woff",
       "PackagePath": "staticwebassets\\fonts\\icofont\\fonts\\icofont.woff"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\icofont\\fonts\\icofont.woff2",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\icofont\\fonts\\icofont.woff2",
       "PackagePath": "staticwebassets\\fonts\\icofont\\fonts\\icofont.woff2"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\fonts\\icofont\\icofont.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\fonts\\icofont\\icofont.min.css",
       "PackagePath": "staticwebassets\\fonts\\icofont\\icofont.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\1.jpg",
       "PackagePath": "staticwebassets\\images\\background\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\11.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\11.jpg",
       "PackagePath": "staticwebassets\\images\\background\\11.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\14.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\14.jpg",
       "PackagePath": "staticwebassets\\images\\background\\14.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\15.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\15.jpg",
       "PackagePath": "staticwebassets\\images\\background\\15.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\2.jpg",
       "PackagePath": "staticwebassets\\images\\background\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\3.jpg",
       "PackagePath": "staticwebassets\\images\\background\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\4.jpg",
       "PackagePath": "staticwebassets\\images\\background\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\6.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\6.jpg",
       "PackagePath": "staticwebassets\\images\\background\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\8.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\8.jpg",
       "PackagePath": "staticwebassets\\images\\background\\8.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\9.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\9.jpg",
       "PackagePath": "staticwebassets\\images\\background\\9.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\bg-header.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\bg-header.html",
       "PackagePath": "staticwebassets\\images\\background\\bg-header.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\background\\subheader.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\background\\subheader.jpg",
       "PackagePath": "staticwebassets\\images\\background\\subheader.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\car-single\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\car-single\\1.jpg",
       "PackagePath": "staticwebassets\\images\\car-single\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\car-single\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\car-single\\2.jpg",
       "PackagePath": "staticwebassets\\images\\car-single\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\car-single\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\car-single\\3.jpg",
       "PackagePath": "staticwebassets\\images\\car-single\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\car-single\\4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\car-single\\4.jpg",
       "PackagePath": "staticwebassets\\images\\car-single\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\bentley.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\bentley.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\bentley.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\bmw-m5.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\bmw-m5.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\bmw-m5.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\chevrolet-camaro.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\chevrolet-camaro.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\chevrolet-camaro.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\ferrari-enzo.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\ferrari-enzo.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\ferrari-enzo.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\ford-raptor.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\ford-raptor.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\ford-raptor.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\hyundai-staria.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\hyundai-staria.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\hyundai-staria.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\jeep-renegade.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\jeep-renegade.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\jeep-renegade.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\lexus.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\lexus.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\lexus.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\mini-cooper.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\mini-cooper.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\mini-cooper.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\range-rover.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\range-rover.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\range-rover.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\toyota-rav.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\toyota-rav.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\toyota-rav.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\vw-polo.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars-alt\\vw-polo.png",
       "PackagePath": "staticwebassets\\images\\cars-alt\\vw-polo.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\bentley.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\bentley.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\bentley.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\bmw-m5.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\bmw-m5.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\bmw-m5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\chevrolet-camaro.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\chevrolet-camaro.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\chevrolet-camaro.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\ferrari-enzo.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\ferrari-enzo.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\ferrari-enzo.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\ford-raptor.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\ford-raptor.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\ford-raptor.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\hyundai-staria.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\hyundai-staria.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\hyundai-staria.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\jeep-renegade.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\jeep-renegade.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\jeep-renegade.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\lexus.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\lexus.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\lexus.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\mini-cooper.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\mini-cooper.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\mini-cooper.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\range-rover.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\range-rover.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\range-rover.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\toyota-rav.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\toyota-rav.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\toyota-rav.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\cars\\vw-polo.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\cars\\vw-polo.jpg",
       "PackagePath": "staticwebassets\\images\\cars\\vw-polo.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\gallery\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\gallery\\1.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\gallery\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\gallery\\2.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\gallery\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\gallery\\3.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\gallery\\4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\gallery\\4.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\gallery\\5.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\gallery\\5.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\gallery\\6.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\gallery\\6.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\icon.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\icon.png",
       "PackagePath": "staticwebassets\\images\\icon.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\icons\\1-green.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\icons\\1-green.svg",
       "PackagePath": "staticwebassets\\images\\icons\\1-green.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\icons\\2-green.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\icons\\2-green.svg",
       "PackagePath": "staticwebassets\\images\\icons\\2-green.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\icons\\3-green.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\icons\\3-green.svg",
       "PackagePath": "staticwebassets\\images\\icons\\3-green.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\icons\\4-green.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\icons\\4-green.svg",
       "PackagePath": "staticwebassets\\images\\icons\\4-green.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\icons\\briefcase.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\icons\\briefcase.html",
       "PackagePath": "staticwebassets\\images\\icons\\briefcase.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\logo-light.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\logo-light.png",
       "PackagePath": "staticwebassets\\images\\logo-light.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\logo.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\misc\\avatar-2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\misc\\avatar-2.jpg",
       "PackagePath": "staticwebassets\\images\\misc\\avatar-2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\misc\\car-2.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\misc\\car-2.png",
       "PackagePath": "staticwebassets\\images\\misc\\car-2.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\misc\\car.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\misc\\car.png",
       "PackagePath": "staticwebassets\\images\\misc\\car.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\misc\\e1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\misc\\e1.jpg",
       "PackagePath": "staticwebassets\\images\\misc\\e1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\misc\\e2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\misc\\e2.jpg",
       "PackagePath": "staticwebassets\\images\\misc\\e2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\misc\\map.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\misc\\map.png",
       "PackagePath": "staticwebassets\\images\\misc\\map.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-1.jpg",
       "PackagePath": "staticwebassets\\images\\news-2\\pic-blog-1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-2.jpg",
       "PackagePath": "staticwebassets\\images\\news-2\\pic-blog-2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-3.jpg",
       "PackagePath": "staticwebassets\\images\\news-2\\pic-blog-3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-4.jpg",
       "PackagePath": "staticwebassets\\images\\news-2\\pic-blog-4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-5.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-5.jpg",
       "PackagePath": "staticwebassets\\images\\news-2\\pic-blog-5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-6.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-2\\pic-blog-6.jpg",
       "PackagePath": "staticwebassets\\images\\news-2\\pic-blog-6.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-1.jpg",
       "PackagePath": "staticwebassets\\images\\news-thumbnail\\pic-blog-1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-2.jpg",
       "PackagePath": "staticwebassets\\images\\news-thumbnail\\pic-blog-2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-3.jpg",
       "PackagePath": "staticwebassets\\images\\news-thumbnail\\pic-blog-3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news-thumbnail\\pic-blog-4.jpg",
       "PackagePath": "staticwebassets\\images\\news-thumbnail\\pic-blog-4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\big.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\big.jpg",
       "PackagePath": "staticwebassets\\images\\news\\big.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-1.jpg",
       "PackagePath": "staticwebassets\\images\\news\\pic-blog-1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-2.jpg",
       "PackagePath": "staticwebassets\\images\\news\\pic-blog-2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-3.jpg",
       "PackagePath": "staticwebassets\\images\\news\\pic-blog-3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-4.jpg",
       "PackagePath": "staticwebassets\\images\\news\\pic-blog-4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-5.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-5.jpg",
       "PackagePath": "staticwebassets\\images\\news\\pic-blog-5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-6.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\news\\pic-blog-6.jpg",
       "PackagePath": "staticwebassets\\images\\news\\pic-blog-6.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\people\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\people\\1.jpg",
       "PackagePath": "staticwebassets\\images\\people\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\people\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\people\\2.jpg",
       "PackagePath": "staticwebassets\\images\\people\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\people\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\people\\3.jpg",
       "PackagePath": "staticwebassets\\images\\people\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\people\\4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\people\\4.jpg",
       "PackagePath": "staticwebassets\\images\\people\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\arrows.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\arrows.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\arrows.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\balls.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\balls.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\balls.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\gear.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\gear.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\gear.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\hatchway.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\hatchway.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\hatchway.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\pacman.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\pacman.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\pacman.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\petals.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\petals.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\petals.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\segments.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\segments.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\segments.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\stars.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\stars.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\stars.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\stopwatch.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\stopwatch.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\stopwatch.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\timer.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\timer.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\timer.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\triplex.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\triplex.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\triplex.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\preloader\\twirl.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\preloader\\twirl.svg",
       "PackagePath": "staticwebassets\\images\\preloader\\twirl.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\profile\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\profile\\1.jpg",
       "PackagePath": "staticwebassets\\images\\profile\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\select-form\\car.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\select-form\\car.png",
       "PackagePath": "staticwebassets\\images\\select-form\\car.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\select-form\\minibus.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\select-form\\minibus.png",
       "PackagePath": "staticwebassets\\images\\select-form\\minibus.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\select-form\\sportscar.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\select-form\\sportscar.png",
       "PackagePath": "staticwebassets\\images\\select-form\\sportscar.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\select-form\\van.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\select-form\\van.png",
       "PackagePath": "staticwebassets\\images\\select-form\\van.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\slider\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\slider\\1.jpg",
       "PackagePath": "staticwebassets\\images\\slider\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\slider\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\slider\\2.jpg",
       "PackagePath": "staticwebassets\\images\\slider\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\slider\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\slider\\3.jpg",
       "PackagePath": "staticwebassets\\images\\slider\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\svg\\facebook_icon.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\svg\\facebook_icon.svg",
       "PackagePath": "staticwebassets\\images\\svg\\facebook_icon.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\svg\\google_icon.svg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\svg\\google_icon.svg",
       "PackagePath": "staticwebassets\\images\\svg\\google_icon.svg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\team\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\team\\1.jpg",
       "PackagePath": "staticwebassets\\images\\team\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\team\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\team\\2.jpg",
       "PackagePath": "staticwebassets\\images\\team\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\team\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\team\\3.jpg",
       "PackagePath": "staticwebassets\\images\\team\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\team\\4.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\team\\4.jpg",
       "PackagePath": "staticwebassets\\images\\team\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\testimonial\\1.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\testimonial\\1.jpg",
       "PackagePath": "staticwebassets\\images\\testimonial\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\testimonial\\2.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\testimonial\\2.jpg",
       "PackagePath": "staticwebassets\\images\\testimonial\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\testimonial\\3.jpg",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\testimonial\\3.jpg",
       "PackagePath": "staticwebassets\\images\\testimonial\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down-form-hover.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down-form-hover.html",
       "PackagePath": "staticwebassets\\images\\ui\\arrow-down-form-hover.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down-form.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down-form.html",
       "PackagePath": "staticwebassets\\images\\ui\\arrow-down-form.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down-light.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down-light.png",
       "PackagePath": "staticwebassets\\images\\ui\\arrow-down-light.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-down.png",
       "PackagePath": "staticwebassets\\images\\ui\\arrow-down.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-up-light.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-up-light.png",
       "PackagePath": "staticwebassets\\images\\ui\\arrow-up-light.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-up.png",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images\\ui\\arrow-up.png",
       "PackagePath": "staticwebassets\\images\\ui\\arrow-up.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\close-2.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\close-2.html",
       "PackagePath": "staticwebassets\\images_02\\close-2.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\close.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\close.html",
       "PackagePath": "staticwebassets\\images_02\\close.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\dotted.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\dotted.html",
       "PackagePath": "staticwebassets\\images_02\\dotted.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\icon-slide-min.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\icon-slide-min.html",
       "PackagePath": "staticwebassets\\images_02\\icon-slide-min.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\icon-slide-plus.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\icon-slide-plus.html",
       "PackagePath": "staticwebassets\\images_02\\icon-slide-plus.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\icon-url.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\icon-url.html",
       "PackagePath": "staticwebassets\\images_02\\icon-url.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\icon-zoom.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\icon-zoom.html",
       "PackagePath": "staticwebassets\\images_02\\icon-zoom.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\images_02\\list-arrow.html",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\images_02\\list-arrow.html",
       "PackagePath": "staticwebassets\\images_02\\list-arrow.html"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\js\\designesia.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\js\\designesia.js",
       "PackagePath": "staticwebassets\\js\\designesia.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\js\\plugins.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\js\\plugins.js",
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\js\\validation-booking.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\js\\validation-booking.js",
       "PackagePath": "staticwebassets\\js\\validation-booking.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\js\\validation-contact.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\js\\validation-contact.js",
       "PackagePath": "staticwebassets\\js\\validation-contact.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Рабочий стол\\RentACar\\RentACar\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using RentACar.DataContext;
 using RentACar.DataContext.Entities;
 using RentACar.Models;
 
@@ -14,12 +16,14 @@ public class AccountController : Controller
     private readonly SignInManager<AppUser> _signInManager;
     private readonly IMailService _mailService;
     private readonly IWebHostEnvironment _webHostEnvironment;
+    private readonly AppDbContext _context;
 
-    public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IMailService mailService)
+    public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IMailService mailService, AppDbContext context = null)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _mailService = mailService;
+        _context = context;
     }
 
     public IActionResult Register()
@@ -186,7 +190,7 @@ public class AccountController : Controller
             return Redirect(loginViewModel.ReturnUrl);
         }
 
-        return RedirectToAction("Index", "Profile");
+        return RedirectToAction("AccountDashboard", "Account");
     }
 
     [HttpPost]
@@ -387,5 +391,30 @@ public class AccountController : Controller
 
         return RedirectToAction(nameof(Login));
     }
-    
+    [Authorize]
+
+    public async Task<IActionResult> AccountDashboard()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null) return NotFound();
+
+        var bookings = await _context.Bookings
+            .Where(b => b.CustomerName == user.FullName)
+            .Include(b => b.Car)
+            .Select(b => new UserBookingViewModel
+            {
+                CarName = b.Car != null ? b.Car.Name : "Yoxdur",
+                PickupDate = b.PickupDate,
+                ReturnDate = b.ReturnDate,
+                PickupLocation = b.PickupLocation,
+                DropoffLocation = b.DropoffLocation,
+                TotalPrice = (b.Car != null ? b.Car.PricePerDay : 0) * (b.ReturnDate - b.PickupDate).Days,
+                Status = "Pending" // Əgər Booking modelində Status yoxdursa
+            })
+            .ToListAsync();
+
+        return View(bookings);
+    }
+
+
 }

@@ -1,0 +1,24 @@
+﻿@model RentACar.DataContext.Entities.Booking
+@{
+    ViewData["Title"] = "Status Dəyiş";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Rezervasiya Statusunu Dəyiş</h4>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" name="id" value="@Model.Id" />
+            <div class="form-group">
+                <label>Status</label>
+                <select name="status" class="form-control">
+                    <option value="Pending" selected="@(Model.Status == "Pending")">Gözləmədə</option>
+                    <option value="Approved" selected="@(Model.Status == "Approved")">Təsdiqləndi</option>
+                    <option value="Rejected" selected="@(Model.Status == "Rejected")">İmtina edildi</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Yadda saxla</button>
+            <a asp-action="Index" class="btn btn-secondary">Geri</a>
+        </form>
+    </div>
+</div>
