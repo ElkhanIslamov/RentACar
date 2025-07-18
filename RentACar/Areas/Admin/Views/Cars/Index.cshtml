@@ -4,7 +4,10 @@
     Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="card col-8 grid-margin stretch-card">
+<!-- SweetAlert2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+
+<div class="card col-12 grid-margin stretch-card">
     <div class="card-body">
         <h4 class="card-title">Avtomobil Siyahısı</h4>
         <a asp-action="Create" class="btn btn-success mb-3">Yeni Avtomobil</a>
@@ -38,7 +41,7 @@
                             <td>
                                 <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm mr-1">Redaktə</a>
                                 <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm mr-1">Detallar</a>
-                                <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm">Sil</a>
+                                <button class="btn btn-danger btn-sm delete-button" data-id="@car.Id" data-name="@car.Name">Sil</button>
                             </td>
                         </tr>
                     }
@@ -47,3 +50,55 @@
         </div>
     </div>
 </div>
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const deleteButtons = document.querySelectorAll('.delete-button');
+
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const carId = this.getAttribute('data-id');
+                const carName = this.getAttribute('data-name');
+
+                Swal.fire({
+                    title: 'Əminsinizmi?',
+                    text: `"${carName}" adlı avtomobili silmək istəyirsiniz?`,
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#28a745',
+                    cancelButtonColor: '#dc3545',
+                    confirmButtonText: 'Bəli, sil',
+                    cancelButtonText: 'Xeyr',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        fetch(`/Admin/Cars/DeleteConfirmed/${carId}`, {
+                            method: 'POST'
+                        })
+                        .then(response => {
+                            if (response.ok) {
+                                Swal.fire({
+                                    position: 'center',
+                                    icon: 'success',
+                                    title: 'Silindi',
+                                    text: `"${carName}" uğurla silindi.`,
+                                    showConfirmButton: false,
+                                    timer: 2000,
+                                    customClass: {
+                                        popup: 'rounded shadow'
+                                    }
+                                }).then(() => {
+                                    location.reload();
+                                });
+                            } else {
+                                Swal.fire('Xəta!', 'Silinmə zamanı problem baş verdi.', 'error');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    });
+</script>

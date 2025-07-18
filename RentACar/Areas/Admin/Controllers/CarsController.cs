@@ -66,16 +66,7 @@ namespace RentACar.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete(int id)
-        {
-            var car = await _context.Cars.FindAsync(id);
-            if (car == null) return NotFound();
-
-            _context.Cars.Remove(car);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
+       
         public async Task<IActionResult> Edit(int id)
         {
             var car = await _context.Cars.FindAsync(id);
@@ -150,12 +141,41 @@ namespace RentACar.Areas.Admin.Controllers
             return View(model);
         }
 
-        // 🛠 Helper Method
-        private List<SelectListItem> GetCategorySelectList()
+         private List<SelectListItem> GetCategorySelectList()
         {
             return _context.Categories
                 .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
                 .ToList();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var car = await _context.Cars.FindAsync(id);
+            if (car == null) return NotFound();
+
+            _context.Cars.Remove(car);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Avtomobil uğurla silindi.";
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var car = await _context.Cars.FindAsync(id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            _context.Cars.Remove(car);
+            await _context.SaveChangesAsync();
+            return Ok(); 
+        }
+
+
+
     }
 }
