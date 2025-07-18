@@ -1,91 +1,161 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using RentACar.DataContext;
+using RentACar.DataContext.Entities;
+using RentACar.Areas.Admin.Models;
+using RentACar.Areas.Admin.Data;
+using RentACar.Areas.Admin.Extensions;
 
 namespace RentACar.Areas.Admin.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Hosting;   
-       using Microsoft.EntityFrameworkCore;
-    using global::RentACar.DataContext.Entities;
-    using global::RentACar.DataContext;
-    using global::RentACar.Areas.Admin.Models;
-    using Microsoft.AspNetCore.Mvc.Rendering;
-
-    namespace RentACar.Areas.Admin.Controllers
+    [Area("Admin")]
+    public class CarsController : Controller
     {
-        [Area("Admin")]
-        public class CarsController : Controller
+        private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
+
+        public CarsController(AppDbContext context, IWebHostEnvironment env)
         {
-            private readonly AppDbContext _context;
-            private readonly IWebHostEnvironment _env;
+            _context = context;
+            _env = env;
+        }
 
-            public CarsController(AppDbContext context, IWebHostEnvironment env)
-            {
-                _context = context;
-                _env = env;
-            }
+        public IActionResult Index()
+        {
+            var cars = _context.Cars.Include(c => c.Category).ToList();
+            return View(cars);
+        }
 
-            public IActionResult Index()
+        public IActionResult Create()
+        {
+            var model = new CarCreateViewModel
             {
-                var cars = _context.Cars.Include(c => c.Category).ToList();
-                return View(cars);
-            }
+                Name = string.Empty,
+                Seats = null,
+                Categories = GetCategorySelectList()
+            };
+            return View(model);
+        }
 
-            public IActionResult Create()
+        [HttpPost]
+        public async Task<IActionResult> Create(CarCreateViewModel model)
+        {
+            if (!ModelState.IsValid)
             {
-                var model = new CarViewModel
-                {
-                    Categories = _context.Categories
-                        .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
-                        .ToList()
-                };
+                model.Categories = GetCategorySelectList();
                 return View(model);
             }
 
+            var uniqueImageFileName = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
 
-            [HttpPost]
-            public async Task<IActionResult> Create(CarViewModel model)
+            var car = new Car
             {
-                if (!ModelState.IsValid)
-                {
-                    model.Categories = _context.Categories
-                    .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
-                    .ToList();
+                Name = model.Name,
+                Seats = model.Seats,
+                Doors = model.Doors,
+                Luggage = model.Luggage,
+                PricePerDay = model.PricePerDay,
+                ImageUrl = uniqueImageFileName,
+                CategoryId = model.CategoryId
+            };
 
-                     return View(model);
+            _context.Cars.Add(car);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-                }
+        public async Task<IActionResult> Delete(int id)
+        {
+            var car = await _context.Cars.FindAsync(id);
+            if (car == null) return NotFound();
 
-                string imagePath = "";
-                if (model.ImageFile != null)
-                {
-                    string fileName = Guid.NewGuid() + Path.GetExtension(model.ImageFile.FileName);
-                    string path = Path.Combine(_env.WebRootPath, "uploads", "cars", fileName);
-                    using (var stream = new FileStream(path, FileMode.Create))
-                    {
-                        await model.ImageFile.CopyToAsync(stream);
-                    }
-                    imagePath = $"/uploads/cars/{fileName}";
-                }
+            _context.Cars.Remove(car);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-                var car = new Car
-                {
-                    Name = model.Name,
-                    Seats = model.Seats,
-                    Doors = model.Doors,
-                    Luggage = model.Luggage,
-                    PricePerDay = model.PricePerDay,
-                    ImageUrl = imagePath,
-                    CategoryId = model.CategoryId
-                };
+        public async Task<IActionResult> Edit(int id)
+        {
+            var car = await _context.Cars.FindAsync(id);
+            if (car == null) return NotFound();
 
-                _context.Cars.Add(car);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+            var model = new CarCreateViewModel
+            {
+                Id = car.Id,
+                Name = car.Name,
+                Seats = car.Seats,
+                Doors = car.Doors,
+                Luggage = car.Luggage,
+                PricePerDay = car.PricePerDay,
+                ImageUrl = car.ImageUrl,
+                CategoryId = car.CategoryId,
+                Categories = GetCategorySelectList()
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(CarCreateViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                model.Categories = GetCategorySelectList();
+                return View(model);
             }
 
-            // Edit, Details, Delete metodlarını da əlavə edə bilərik
+            var car = await _context.Cars.FindAsync(model.Id);
+            if (car == null) return NotFound();
+
+            if (model.ImageFile != null)
+            {
+                car.ImageUrl = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
+            }
+
+            car.Name = model.Name;
+            car.Seats = model.Seats;
+            car.Doors = model.Doors;
+            car.Luggage = model.Luggage;
+            car.PricePerDay = model.PricePerDay;
+            car.CategoryId = model.CategoryId;
+
+            _context.Cars.Update(car);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var car = await _context.Cars
+                .Include(c => c.Category)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (car == null) return NotFound();
+
+            var model = new CarCreateViewModel
+            {
+                Id = car.Id,
+                Name = car.Name,
+                Seats = car.Seats,
+                Doors = car.Doors,
+                Luggage = car.Luggage,
+                PricePerDay = car.PricePerDay,
+                ImageUrl = car.ImageUrl,
+                CategoryId = car.CategoryId,
+                Categories = GetCategorySelectList()
+            };
+
+            return View(model);
+        }
+
+        // 🛠 Helper Method
+        private List<SelectListItem> GetCategorySelectList()
+        {
+            return _context.Categories
+                .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })
+                .ToList();
         }
     }
-
-
 }

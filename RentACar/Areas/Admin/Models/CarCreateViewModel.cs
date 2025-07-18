@@ -1,30 +1,37 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using RentACar.DataContext.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace RentACar.Areas.Admin.Models
 {
-    public class CarViewModel
+    public class CarCreateViewModel
     {
         public int Id { get; set; }
 
-        [Required]
-        public string Name { get; set; } = null!;
+        [Required(ErrorMessage = "Name is required")]
+        public string Name { get; set; } = string.Empty;
 
+        [Display(Name = "Car Image")]
         public IFormFile? ImageFile { get; set; }
+
         public string? ImageUrl { get; set; }
 
+        [Range(1, 10, ErrorMessage = "Seats must be between 1 and 10")]
         public int? Seats { get; set; }
+
+        [Range(1, 10, ErrorMessage = "Doors must be between 1 and 10")]
         public int? Doors { get; set; }
+
+        [Range(0, 20, ErrorMessage = "Luggage capacity must be between 0 and 20")]
         public int? Luggage { get; set; }
 
-        [Required]
+        [Range(0.01, 10000, ErrorMessage = "Price must be greater than zero")]
+        [Display(Name = "Price Per Day ($)")]
         public decimal PricePerDay { get; set; }
 
-        [Required]
         [Display(Name = "Category")]
+        [Required(ErrorMessage = "Please select a category")]
         public int CategoryId { get; set; }
+
         public List<SelectListItem> Categories { get; set; } = new();
-       
     }
 }

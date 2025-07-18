@@ -4,6 +4,7 @@ using RentACar.DataContext.Entities;
 using RentACar.DataContext;
 using Microsoft.AspNetCore.Identity;
 using RentACar.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace RentACar.Controllers;
 
@@ -11,47 +12,56 @@ namespace RentACar.Controllers;
 public class BookingController : Controller
 {
     private readonly AppDbContext _context;
-    private readonly UserManager<AppUser> _userManager;
 
-    public BookingController(AppDbContext context, UserManager<AppUser> userManager)
+    public BookingController(AppDbContext context)
     {
         _context = context;
-        _userManager = userManager;
     }
 
     [HttpGet]
-    public IActionResult Create()
+    public async Task<IActionResult> QuickBooking(int? carId)
     {
-        return View();
+        var car = await _context.Cars.FirstOrDefaultAsync(c => c.Id == carId);
+        var viewModel = new BookingViewModel
+        {
+            CarId = car?.Id,
+            CarType = car?.Name
+        };
+
+        return View(viewModel);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(BookingViewModel model)
+    public async Task<IActionResult> QuickBooking(BookingViewModel model)
     {
-        if (!ModelState.IsValid) return View(model);
-
-        var user = await _userManager.GetUserAsync(User);
-        if (user == null) return Unauthorized();
+        if (!ModelState.IsValid)
+            return View(model);
 
         var booking = new Booking
         {
+            CarId = model.CarId,
             CarType = model.CarType,
+            CustomerName = model.CustomerName,
+            Email = model.Email,
+            Phone = model.Phone,
             PickupLocation = model.PickupLocation,
             DropoffLocation = model.DropoffLocation,
             PickupDate = model.PickupDate,
             PickupTime = model.PickupTime,
             ReturnDate = model.ReturnDate,
             ReturnTime = model.ReturnTime,
-            CustomerName = user.FullName,
-            Phone = user.PhoneNumber ?? "N/A",
-            CarId = 1, // Test üçün, sonradan avtomobil seçimi əlavə edilə bilər
             CreatedAt = DateTime.Now
         };
 
         _context.Bookings.Add(booking);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction("AccountDashboard", "Account");
+        return RedirectToAction("Success");
+    }
+
+    public IActionResult Success()
+    {
+        return View();
     }
 }
 

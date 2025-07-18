@@ -1,0 +1,101 @@
+﻿@model RentACar.Models.BookingViewModel
+
+@{
+    ViewData["Title"] = "Quick Booking";
+}
+
+<!-- Hero Section -->
+<section id="section-hero" class="jarallax text-light">
+    <img src="~/images/background/4.jpg" class="jarallax-img" alt="">
+    <div class="center-y text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1>Quick Booking for @Model.CarType</h1>
+                    <p>Fill in the form below to reserve your car.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Form Section -->
+<section class="pt40 pb40 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <form asp-action="QuickBooking" method="post" class="row g-4">
+                    <input type="hidden" asp-for="CarId" />
+                    <input type="hidden" asp-for="CarType" />
+
+                    <div class="col-md-6">
+                        <label asp-for="PickupLocation" class="form-label">Pickup Location</label>
+                        <input asp-for="PickupLocation" class="form-control" />
+                        <span asp-validation-for="PickupLocation" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="DropoffLocation" class="form-label">Dropoff Location</label>
+                        <input asp-for="DropoffLocation" class="form-control" />
+                        <span asp-validation-for="DropoffLocation" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="PickupDate" class="form-label">Pickup Date</label>
+                        <input asp-for="PickupDate" type="date" class="form-control" />
+                        <span asp-validation-for="PickupDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="PickupTime" class="form-label">Pickup Time</label>
+                        <input asp-for="PickupTime" type="time" class="form-control" />
+                        <span asp-validation-for="PickupTime" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="ReturnDate" class="form-label">Return Date</label>
+                        <input asp-for="ReturnDate" type="date" class="form-control" />
+                        <span asp-validation-for="ReturnDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="ReturnTime" class="form-label">Return Time</label>
+                        <input asp-for="ReturnTime" type="time" class="form-control" />
+                        <span asp-validation-for="ReturnTime" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="CustomerName" class="form-label">Your Name</label>
+                        <input asp-for="CustomerName" class="form-control" />
+                        <span asp-validation-for="CustomerName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" type="email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Phone" class="form-label">Phone</label>
+                        <input asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="Message" class="form-label">Message (optional)</label>
+                        <textarea asp-for="Message" class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn-main btn-lg mt-3">Submit Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

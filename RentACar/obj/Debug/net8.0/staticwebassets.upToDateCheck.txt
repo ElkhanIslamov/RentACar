@@ -159,6 +159,10 @@ wwwroot\images\background\8.jpg
 wwwroot\images\background\9.jpg
 wwwroot\images\background\bg-header.html
 wwwroot\images\background\subheader.jpg
+wwwroot\images\car\bmw-m5-433d15ab-58b5-4a52-a2e0-5761714d3ae0.jpg
+wwwroot\images\car\bmw-m5-716919c0-f133-4202-a1ae-44ae0dc86302.jpg
+wwwroot\images\car\ferrari-enzo-0953ca39-1b2e-4387-9b32-dcfc3cf2d59f.jpg
+wwwroot\images\car\jeep-renegade-141a7d31-5907-4555-9fe9-f8a2b43157a7.jpg
 wwwroot\images\cars\bentley.jpg
 wwwroot\images\cars\bmw-m5.jpg
 wwwroot\images\cars\chevrolet-camaro.jpg

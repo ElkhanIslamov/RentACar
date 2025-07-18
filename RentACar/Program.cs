@@ -6,6 +6,7 @@ using Mailing;
 using Mailing.MailKitImplementations;
 using RentACar.Data;
 using RentACar.Seed;
+using RentACar.Areas.Admin.Data;
 
 namespace RentACar
 {
@@ -43,6 +44,9 @@ namespace RentACar
 
             builder.Services.AddTransient<IMailService, MailKitMailService>();
             builder.Services.Configure<SuperAdmin>(builder.Configuration.GetSection("SuperAdmin"));
+
+            FilePathConstants.CarPath = Path.Combine(builder.Environment.WebRootPath, "images", "car");
+
 
             var app = builder.Build();
 

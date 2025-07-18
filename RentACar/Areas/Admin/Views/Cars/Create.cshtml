@@ -1,4 +1,4 @@
-﻿@model RentACar.Areas.Admin.Models.CarViewModel
+﻿@model RentACar.Areas.Admin.Models.CarCreateViewModel
 @{
     ViewData["Title"] = "Yeni Avtomobil";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -6,32 +6,38 @@
 
 <div class="card">
     <div class="card-body">
-        <h4 class="card-title">Yeni Avtomobil Yarat</h4>
-        <form asp-action="Create">
+        <h4 class="card-title">Yeni Avtomobil Əlavə Et'"</h4>
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Ad</label>
                 <input asp-for="Name" class="form-control" />
             </div>
+            <span asp-validation-for="Name" class="text-danger"></span>
             <div class="form-group">
-                <label>Şəkil URL</label>
-                <input asp-for="ImageUrl" class="form-control" />
+                <label>Şəkil yüklə</label>
+                <input asp-for="ImageFile" class="form-control" />
             </div>
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
             <div class="form-group">
                 <label>Oturacaq sayı</label>
                 <input asp-for="Seats" class="form-control" />
             </div>
+            <span asp-validation-for="Seats" class="text-danger"></span>
             <div class="form-group">
                 <label>Qapı sayı</label>
                 <input asp-for="Doors" class="form-control" />
             </div>
+            <span asp-validation-for="Doors" class="text-danger"></span>
             <div class="form-group">
-                <label>Bağaj</label>
+                <label>Baqajın həcmi</label>
                 <input asp-for="Luggage" class="form-control" />
             </div>
+			<span asp-validation-for="Luggage" class="text-danger"></span>
             <div class="form-group">
                 <label>Günlük qiymət</label>
                 <input asp-for="PricePerDay" class="form-control" />
             </div>
+			<span asp-validation-for="PricePerDay" class="text-danger"></span>
             <div class="form-group">
                 <label>Kateqoriya</label>
                 <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control">
@@ -39,6 +45,7 @@
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
+            <div asp-validation-summary="ModelOnly"></div>
             <button type="submit" class="btn btn-primary">Yarat</button>
             <a asp-action="Index" class="btn btn-secondary">Geri</a>
         </form>

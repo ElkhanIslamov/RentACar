@@ -1,0 +1,62 @@
+﻿@model RentACar.Areas.Admin.Models.CarCreateViewModel
+
+@{
+    ViewData["Title"] = "Edit Car";
+}
+
+<h2>Edit Car</h2>
+
+<form asp-action="Edit" enctype="multipart/form-data" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageFile" class="control-label"></label>
+        <input asp-for="ImageFile" type="file" class="form-control" />
+        @if (Model.ImageUrl != null)
+        {
+            <div class="mt-2">
+                <img src="~/uploads/cars/@Model.ImageUrl" alt="Car Image" style="width: 200px;" />
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Seats" class="control-label"></label>
+        <input asp-for="Seats" class="form-control" />
+        <span asp-validation-for="Seats" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Doors" class="control-label"></label>
+        <input asp-for="Doors" class="form-control" />
+        <span asp-validation-for="Doors" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Luggage" class="control-label"></label>
+        <input asp-for="Luggage" class="form-control" />
+        <span asp-validation-for="Luggage" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PricePerDay" class="control-label"></label>
+        <input asp-for="PricePerDay" class="form-control" />
+        <span asp-validation-for="PricePerDay" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CategoryId" class="control-label"></label>
+        <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control"></select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>

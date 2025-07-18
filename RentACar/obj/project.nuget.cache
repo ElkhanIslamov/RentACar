@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gkbs/fWEVMg=",
+  "dgSpecHash": "eriCAc96rWw=",
   "success": true,
-  "projectFilePath": "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj",
+  "projectFilePath": "E:\\Рабочий стол\\Test\\RentACar\\RentACar\\RentACar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elkhan.islamov\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\elkhan.islamov\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

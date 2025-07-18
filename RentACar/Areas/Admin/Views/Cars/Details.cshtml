@@ -1,0 +1,51 @@
+﻿@model RentACar.Areas.Admin.Models.CarCreateViewModel
+
+@{
+    ViewData["Title"] = "Car Details";
+}
+
+<h2>Car Details</h2>
+
+<div class="form-group">
+    <label>Name:</label>
+    <input class="form-control" value="@Model.Name" disabled />
+</div>
+
+<div class="form-group">
+    <label>Image:</label><br />
+    @if (Model.ImageUrl != null)
+    {
+        <img src="~/uploads/cars/@Model.ImageUrl" alt="Car Image" style="width: 250px;" />
+    }
+    else
+    {
+        <p>No image available</p>
+    }
+</div>
+
+<div class="form-group">
+    <label>Seats:</label>
+    <input class="form-control" value="@Model.Seats" disabled />
+</div>
+
+<div class="form-group">
+    <label>Doors:</label>
+    <input class="form-control" value="@Model.Doors" disabled />
+</div>
+
+<div class="form-group">
+    <label>Luggage:</label>
+    <input class="form-control" value="@Model.Luggage" disabled />
+</div>
+
+<div class="form-group">
+    <label>Price Per Day:</label>
+    <input class="form-control" value="@Model.PricePerDay" disabled />
+</div>
+
+<div class="form-group">
+    <label>Category:</label>
+    <input class="form-control" value="@Model.Categories.FirstOrDefault(c => c.Value == Model.CategoryId.ToString())?.Text" disabled />
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

@@ -24,3 +24,16 @@ C:\Users\User\Desktop\RentACar\Mailing\obj\Debug\net8.0\refint\Mailing.dll
 C:\Users\User\Desktop\RentACar\Mailing\obj\Debug\net8.0\Mailing.pdb
 C:\Users\User\Desktop\RentACar\Mailing\obj\Debug\net8.0\ref\Mailing.dll
 E:\Рабочий стол\RentACar\Mailing\obj\Debug\net8.0\Mailing.sourcelink.json
+E:\Рабочий стол\Test\RentACar\Mailing\bin\Debug\net8.0\Mailing.deps.json
+E:\Рабочий стол\Test\RentACar\Mailing\bin\Debug\net8.0\Mailing.dll
+E:\Рабочий стол\Test\RentACar\Mailing\bin\Debug\net8.0\Mailing.pdb
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.csproj.AssemblyReference.cache
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.GeneratedMSBuildEditorConfig.editorconfig
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.AssemblyInfoInputs.cache
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.AssemblyInfo.cs
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.csproj.CoreCompileInputs.cache
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.sourcelink.json
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.dll
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\refint\Mailing.dll
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\Mailing.pdb
+E:\Рабочий стол\Test\RentACar\Mailing\obj\Debug\net8.0\ref\Mailing.dll
