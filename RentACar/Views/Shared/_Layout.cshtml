@@ -71,17 +71,10 @@
                             <div class="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
                                     <li>
-                                        <a class="menu-item" href="~/index.html">Home</a>
-                                        <ul>
-                                            <li><a class="menu-item new" href="~/02_dark-index-1.html">Homepage 1 Dark</a></li>
-                                            <li><a class="menu-item new" href="~/02_dark-index-2.html">Homepage 2 Dark</a></li>
-                                            <li><a class="menu-item" href="~/index.html">Homepage Main</a></li>
-                                            <li><a class="menu-item" href="~/index-2.html">Homepage 2</a></li>
-                                            <li><a class="menu-item" href="~/index-3.html">Homepage 3</a></li>
-                                            <li><a class="menu-item" href="~/index-4.html">Homepage 4</a></li>
-                                            <li><a class="menu-item" href="~/index-5.html">Homepage 5</a></li>
-                                            <li><a class="menu-item" href="~/index-6.html">Homepage 6</a></li>
-                                        </ul>
+                                        <a class="menu-item" asp-controller="home" asp-action="index">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item" asp-controller="Account" asp-action="Dashboard">My Account</a>
                                     </li>
                                     <li>
                                         <a class="menu-item" asp-controller="car" asp-action="index">Cars</a>
@@ -89,15 +82,6 @@
                                     </li>
                                     <li>
                                         <a class="menu-item" asp-controller="booking" asp-action="QuickBooking">Booking</a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-item" href="~/account-dashboard.html">My Account</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="~/account-dashboard.html">Dashboard</a></li>
-                                            <li><a class="menu-item" href="~/account-profile.html">My Profile</a></li>
-                                            <li><a class="menu-item" href="~/account-booking.html">My Orders</a></li>
-                                            <li><a class="menu-item" href="~/account-favorite.html">My Favorite Cars</a></li>
-                                        </ul>
                                     </li>
                                     <li>
                                         <a class="menu-item" href="~/#">Pages</a>

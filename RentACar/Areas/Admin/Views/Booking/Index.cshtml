@@ -1,0 +1,59 @@
+﻿@model List<RentACar.DataContext.Entities.Booking>
+@{
+    ViewData["Title"] = "Bookings";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml"; // varsa admin layout
+}
+
+<h2 class="mb-4">All Bookings</h2>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Car</th>
+            <th>Pickup</th>
+            <th>Return</th>
+            <th>Status</th>
+            <th style="width: 220px;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.Id</td>
+                <td>@booking.CustomerName</td>
+                <td>@booking.CarType</td>
+                <td>@booking.PickupDate.ToShortDateString()</td>
+                <td>@booking.ReturnDate.ToShortDateString()</td>
+                <td>
+                    <span class="badge 
+                        @(booking.Status == "Pending" ? "bg-warning" : 
+                          booking.Status == "Approved" ? "bg-success" : "bg-danger")">
+                        @booking.Status
+                    </span>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@booking.Id" class="btn btn-info btn-sm">Details</a>
+
+                    <form asp-action="UpdateStatus" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@booking.Id" />
+                        <select name="status" class="form-select d-inline w-auto">
+                        @*     <option @(booking.Status == "Pending" ? "selected" : "")>Pending</option>
+                            <option @(booking.Status == "Approved" ? "selected" : "")>Approved</option>
+                            <option @(booking.Status == "Rejected" ? "selected" : "")>Rejected</option> *@
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                    </form>
+
+                    <form asp-action="Delete" method="post" class="d-inline" 
+                          onsubmit="return confirm('Are you sure to delete this booking?');">
+                        <input type="hidden" name="id" value="@booking.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

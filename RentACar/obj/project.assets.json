@@ -7991,23 +7991,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\elkhanmi\\.nuget\\packages\\": {},
+    "C:\\Users\\elkhan.islamov\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elkhanmi\\Desktop\\RentACar\\RentACar\\RentACar.csproj",
+      "projectUniqueName": "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj",
       "projectName": "RentACar",
-      "projectPath": "C:\\Users\\elkhanmi\\Desktop\\RentACar\\RentACar\\RentACar.csproj",
-      "packagesPath": "C:\\Users\\elkhanmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elkhanmi\\Desktop\\RentACar\\RentACar\\obj\\",
+      "projectPath": "E:\\Рабочий стол\\RentACar\\RentACar\\RentACar.csproj",
+      "packagesPath": "C:\\Users\\elkhan.islamov\\.nuget\\packages\\",
+      "outputPath": "E:\\Рабочий стол\\RentACar\\RentACar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\elkhanmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\elkhan.islamov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8016,15 +8016,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\elkhanmi\\Desktop\\RentACar\\Mailing\\Mailing.csproj": {
-              "projectPath": "C:\\Users\\elkhanmi\\Desktop\\RentACar\\Mailing\\Mailing.csproj"
+            "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj": {
+              "projectPath": "E:\\Рабочий стол\\RentACar\\Mailing\\Mailing.csproj"
             }
           }
         }
@@ -8039,7 +8038,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -8087,7 +8086,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

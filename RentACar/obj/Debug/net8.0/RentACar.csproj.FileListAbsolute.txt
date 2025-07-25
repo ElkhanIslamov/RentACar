@@ -20,12 +20,6 @@ E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\scopedcss\projectb
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.json
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.development.json
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.RentACar.Microsoft.AspNetCore.StaticWebAssets.props
-E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.RentACar.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.build.RentACar.props
-E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RentACar.props
-E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RentACar.props
-E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.pack.json
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\RentACar.dll
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\refint\RentACar.dll
@@ -1108,3 +1102,8 @@ C:\Users\elkhanmi\Desktop\RentACar\RentACar\obj\Debug\net8.0\refint\RentACar.dll
 C:\Users\elkhanmi\Desktop\RentACar\RentACar\obj\Debug\net8.0\RentACar.pdb
 C:\Users\elkhanmi\Desktop\RentACar\RentACar\obj\Debug\net8.0\RentACar.genruntimeconfig.cache
 C:\Users\elkhanmi\Desktop\RentACar\RentACar\obj\Debug\net8.0\ref\RentACar.dll
+E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.json.cache

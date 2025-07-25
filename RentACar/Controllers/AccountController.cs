@@ -1,4 +1,5 @@
-﻿using Mailing;
+﻿using System.Security.Claims;
+using Mailing;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -190,7 +191,7 @@ public class AccountController : Controller
             return Redirect(loginViewModel.ReturnUrl);
         }
 
-        return RedirectToAction("AccountDashboard", "Account");
+        return RedirectToAction("Dashboard", "Account");
     }
 
     [HttpPost]
@@ -393,28 +394,33 @@ public class AccountController : Controller
     }
     [Authorize]
 
-    public async Task<IActionResult> AccountDashboard()
+    [Authorize]
+    public async Task<IActionResult> Dashboard()
     {
-        var user = await _userManager.GetUserAsync(User);
-        if (user == null) return NotFound();
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
         var bookings = await _context.Bookings
-            .Where(b => b.CustomerName == user.FullName)
+            .Where(b => b.UserId == userId)
             .Include(b => b.Car)
-            .Select(b => new UserBookingViewModel
-            {
-                CarName = b.Car != null ? b.Car.Name : "Yoxdur",
-                PickupDate = b.PickupDate,
-                ReturnDate = b.ReturnDate,
-                PickupLocation = b.PickupLocation,
-                DropoffLocation = b.DropoffLocation,
-                TotalPrice = (b.Car != null ? b.Car.PricePerDay : 0) * (b.ReturnDate - b.PickupDate).Days,
-                Status = "Pending" // Əgər Booking modelində Status yoxdursa
-            })
             .ToListAsync();
 
-        return View(bookings);
+        var viewModelList = bookings.Select(b => new UserBookingViewModel
+        {
+            CarName = b.Car?.Name ?? b.CarType,
+            PickupLocation = b.PickupLocation,
+            DropoffLocation = b.DropoffLocation,
+            PickupDate = b.PickupDate,
+            ReturnDate = b.ReturnDate,
+            TotalPrice = b.Car != null
+                ? ((b.ReturnDate - b.PickupDate).Days) * b.Car.PricePerDay
+                : 0,
+            Status = b.Status
+        }).ToList();
+
+        return View(viewModelList);
     }
+
+
 
 
 }
