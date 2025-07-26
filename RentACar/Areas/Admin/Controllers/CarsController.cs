@@ -87,7 +87,7 @@ namespace RentACar.Areas.Admin.Controllers
 
             return View(model);
         }
-
+       
         [HttpPost]
         public async Task<IActionResult> Edit(CarCreateViewModel model)
         {
@@ -174,8 +174,5 @@ namespace RentACar.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return Ok(); 
         }
-
-
-
     }
 }

@@ -5,7 +5,6 @@
         public string Name { get; set; } = null!;
         public string ImageUrl { get; set; } = null!;
         public decimal PricePerDay { get; set; }
-
         public int Seats { get; set; }
         public int Luggage { get; set; }
         public int Doors { get; set; }
@@ -15,6 +14,4 @@
         public string Drive { get; set; } = null!;
         public string Type { get; set; } = null!;
     }
-
-
 }

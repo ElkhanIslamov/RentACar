@@ -1,40 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\controllers\\adminbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\controllers\\adminbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\views\\booking\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\booking\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\views\\booking\\quickbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\booking\\quickbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\RentACar\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,120 +9,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1494,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
-              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
-              "RelativeToolTip": "RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T08:12:38.459Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Booking\\Index.cshtml",
-              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Views\\Booking\\Index.cshtml",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Booking\\Index.cshtml",
-              "RelativeToolTip": "RentACar\\Areas\\Admin\\Views\\Booking\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T08:01:14.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "RentACar\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T08:09:52.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\_ViewImports.cshtml",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\_ViewImports.cshtml",
-              "RelativeToolTip": "RentACar\\Areas\\Admin\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T08:04:28.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminBookingController.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
-              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
-              "RelativeToolTip": "RentACar\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T07:59:10.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QuickBooking.cshtml",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Views\\Booking\\QuickBooking.cshtml",
-              "RelativeDocumentMoniker": "RentACar\\Views\\Booking\\QuickBooking.cshtml",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Views\\Booking\\QuickBooking.cshtml",
-              "RelativeToolTip": "RentACar\\Views\\Booking\\QuickBooking.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T06:40:41.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Success.cshtml",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Views\\Booking\\Success.cshtml",
-              "RelativeDocumentMoniker": "RentACar\\Views\\Booking\\Success.cshtml",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Views\\Booking\\Success.cshtml",
-              "RelativeToolTip": "RentACar\\Views\\Booking\\Success.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T06:19:25.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "RentACar\\Controllers\\BookingController.cs",
-              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "RentACar\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAxwB4AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:18:19.478Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },
         {
           "DockedWidth": 1250,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 923,
           "SelectedChildIndex": -1,
           "Children": [
             {

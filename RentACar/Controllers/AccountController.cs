@@ -159,7 +159,7 @@ public class AccountController : Controller
             ModelState.AddModelError("", "Username or password is incorrect");
             return View();
         }
-               
+
         var isEmailConfirmed = await _userManager.IsEmailConfirmedAsync(existUser);
         if (!isEmailConfirmed)
         {
@@ -332,7 +332,7 @@ public class AccountController : Controller
             ToEmail = email,
             Subject = "Şifrə sıfırlama linki",
             HtmlBody = htmlBody
-        });  
+        });
 
         return View(nameof(EmailSimulyasiya), resetLink);
     }
@@ -393,34 +393,28 @@ public class AccountController : Controller
         return RedirectToAction(nameof(Login));
     }
     [Authorize]
-
-    [Authorize]
     public async Task<IActionResult> Dashboard()
-    {
-        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+     {
+         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
         var bookings = await _context.Bookings
-            .Where(b => b.UserId == userId)
-            .Include(b => b.Car)
-            .ToListAsync();
+             .Where(b => b.UserId == userId)
+             .Include(b => b.Car)
+             .ToListAsync();
 
-        var viewModelList = bookings.Select(b => new UserBookingViewModel
-        {
-            CarName = b.Car?.Name ?? b.CarType,
-            PickupLocation = b.PickupLocation,
-            DropoffLocation = b.DropoffLocation,
-            PickupDate = b.PickupDate,
-            ReturnDate = b.ReturnDate,
-            TotalPrice = b.Car != null
-                ? ((b.ReturnDate - b.PickupDate).Days) * b.Car.PricePerDay
-                : 0,
-            Status = b.Status
-        }).ToList();
+         var viewModelList = bookings.Select(b => new UserBookingViewModel
+         {
+             CarName = b.Car?.Name ?? b.CarType,
+             PickupLocation = b.PickupLocation,
+             DropoffLocation = b.DropoffLocation,
+             PickupDate = b.PickupDate,
+             ReturnDate = b.ReturnDate,
+             TotalPrice = b.Car != null
+                 ? ((b.ReturnDate - b.PickupDate).Days) * b.Car.PricePerDay
+                 : 0,
+             Status = b.Status
+         }).ToList();
 
-        return View(viewModelList);
-    }
-
-
-
-
+         return View(viewModelList);
+     }
 }

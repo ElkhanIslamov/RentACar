@@ -357,7 +357,6 @@ C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Composition.Runt
 C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\User\Desktop\RentACar\RentACar\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
@@ -534,12 +533,6 @@ C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\scopedcss\projectbundle
 C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.RentACar.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.RentACar.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.build.RentACar.props
-C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RentACar.props
-C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RentACar.props
-C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\RentACar.csproj.Up2Date
 C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\RentACar.dll
@@ -1107,3 +1100,8 @@ E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rjimswa.dswa.cache
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 E:\Рабочий стол\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\User\Desktop\RentACar\RentACar\obj\Debug\net8.0\staticwebassets.build.json.cache

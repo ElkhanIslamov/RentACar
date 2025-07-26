@@ -19,7 +19,7 @@ public class BookingController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> QuickBooking(int? carId)
+   public async Task<IActionResult> QuickBooking(int? carId)
     {
         var car = await _context.Cars.FirstOrDefaultAsync(c => c.Id == carId);
         var viewModel = new BookingViewModel
@@ -32,12 +32,12 @@ public class BookingController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> QuickBooking(BookingViewModel model)
+   public async Task<IActionResult> QuickBooking(BookingViewModel model)
     {
         if (!ModelState.IsValid)
             return View(model);
 
-        var booking = new Booking
+      var booking = new Booking
         {
             CarId = model.CarId,
             CarType = model.CarType,
