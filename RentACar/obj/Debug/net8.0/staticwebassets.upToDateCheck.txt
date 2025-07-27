@@ -159,6 +159,7 @@ wwwroot\images\background\8.jpg
 wwwroot\images\background\9.jpg
 wwwroot\images\background\bg-header.html
 wwwroot\images\background\subheader.jpg
+wwwroot\images\car\bmw-m5-14ae2cf9-f9c2-4cd2-88b4-f680d7fbef47.jpg
 wwwroot\images\car\bmw-m5-433d15ab-58b5-4a52-a2e0-5761714d3ae0.jpg
 wwwroot\images\car\bmw-m5-716919c0-f133-4202-a1ae-44ae0dc86302.jpg
 wwwroot\images\car\bmw-m5-e8cbda5a-3e90-45e5-a3d0-e7e3dafc9462.jpg
@@ -166,12 +167,15 @@ wwwroot\images\car\bmw-m5-f6a9e66b-e23b-44e2-9bc7-de8d03837e96.jpg
 wwwroot\images\car\chevrolet-camaro-fadfd93c-3215-4a64-9003-7ba63867a977.jpg
 wwwroot\images\car\ferrari-enzo-0953ca39-1b2e-4387-9b32-dcfc3cf2d59f.jpg
 wwwroot\images\car\ferrari-enzo-2be255de-23e3-4767-892b-fb6f845d737f.jpg
+wwwroot\images\car\ferrari-enzo-686a3af4-9f14-4087-9e01-c2bc373670cc.jpg
 wwwroot\images\car\ford-raptor-40e702c0-7137-44a1-92e6-8e05cb90fe72.jpg
 wwwroot\images\car\ford-raptor-538205b3-739d-474a-9e5c-344d1a5af64a.jpg
 wwwroot\images\car\ford-raptor-fbd2b174-a6e2-45bb-a134-beb430488267.jpg
+wwwroot\images\car\hyundai-staria-6604c6ea-89d5-41d1-9701-80a996b84f43.jpg
 wwwroot\images\car\hyundai-staria-d6a6dc36-3a72-476d-8e1c-01a3963265c1.jpg
 wwwroot\images\car\jeep-renegade-10bf8a99-8d57-4ced-b6c5-316840797a30.jpg
 wwwroot\images\car\jeep-renegade-141a7d31-5907-4555-9fe9-f8a2b43157a7.jpg
+wwwroot\images\car\jeep-renegade-f4020394-351a-41d2-bc2b-0a886c448bb9.jpg
 wwwroot\images\car\lexus-509a70e4-e80e-4de6-bd92-8123ea96e490.jpg
 wwwroot\images\car\range-rover-1a8bdf0d-1284-44b6-b8d3-d26b1059766b.jpg
 wwwroot\images\cars\bentley.jpg

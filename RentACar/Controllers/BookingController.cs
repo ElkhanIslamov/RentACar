@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using RentACar.DataContext.Entities;
 using RentACar.DataContext;
-using Microsoft.AspNetCore.Identity;
 using RentACar.Models;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace RentACar.Controllers;
 
@@ -26,6 +26,14 @@ public class BookingController : Controller
         {
             CarId = car?.Id,
             CarType = car?.Name
+                ?? "Unknown Car",
+            CustomerName = User.Identity?.Name ?? "Guest",
+            Email = User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value,
+            Phone = User.FindFirst(System.Security.Claims.ClaimTypes.MobilePhone)?.Value ?? "N/A",
+            PickupLocation = "Default Pickup Location",
+            DropoffLocation = "Default Dropoff Location",
+            PickupDate = DateTime.UtcNow,
+
         };
 
         return View(viewModel);

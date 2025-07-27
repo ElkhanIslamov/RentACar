@@ -2,16 +2,16 @@
 {
     public class BookingInputModel
     {
-        public string VehicleType { get; set; }
-        public string PickupLocation { get; set; }
-        public string Destination { get; set; }
-        public DateTime PickupDate { get; set; }
-        public string PickupTime { get; set; }
-        public DateTime ReturnDate { get; set; }
-        public string ReturnTime { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
+        public required string VehicleType { get; set; }
+        public required string PickupLocation { get; set; }
+        public required string Destination { get; set; }
+        public DateTime PickupDate { get; set; } = DateTime.UtcNow;
+        public string PickupTime { get; set; } = "09:00";
+        public DateTime ReturnDate { get; set; } = DateTime.UtcNow.AddDays(1);
+        public string ReturnTime { get; set; }  = "09:00";
+        public required string Name { get; set; }
+        public string? Email { get; set; }
+        public required string Phone { get; set; }
         public string? Message { get; set; }
     }
 }

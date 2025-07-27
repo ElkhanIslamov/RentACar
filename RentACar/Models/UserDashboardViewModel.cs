@@ -1,4 +1,5 @@
-﻿namespace RentACar.Models
+﻿
+namespace RentACar.Models
 {
     public class UserDashboardViewModel
     {
