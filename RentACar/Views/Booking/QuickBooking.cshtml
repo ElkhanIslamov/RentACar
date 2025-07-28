@@ -1,5 +1,4 @@
-﻿
-@model RentACar.Models.BookingViewModel
+﻿@model RentACar.Models.BookingViewModel
 @{
     ViewData["Title"] = "Quick Booking";
     Layout = "~/Views/Shared/_Layout.cshtml"; // varsa öz layout faylınızın path-i
@@ -7,9 +6,11 @@
 
 <section class="section">
     <div class="container">
+        <br>
         <h2 class="mb-4">Quick Booking</h2>
 
         <form asp-controller="Booking" asp-action="QuickBooking" method="post" class="form-s2 row g-4 on-submit-hide">
+            <div asp-validation-summary="All" class="text-danger"></div>
             <input type="hidden" asp-for="CarId" />
 
             <div class="col-md-6">
@@ -31,8 +32,9 @@
             </div>
 
             <div class="col-md-6">
-                <label asp-for="CarType" class="form-label">Car Type</label>
-                <input asp-for="CarType" class="form-control" readonly />
+                <label class="form-label">Car Type</label>
+                <input asp-for="CarType" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
 
             <div class="col-md-6">
@@ -74,7 +76,7 @@
                 <button type="submit" class="btn btn-primary px-5">Submit Booking</button>
             </div>
 
-              
+
         </form>
 
     </div>

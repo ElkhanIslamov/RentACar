@@ -160,6 +160,7 @@ wwwroot\images\background\9.jpg
 wwwroot\images\background\bg-header.html
 wwwroot\images\background\subheader.jpg
 wwwroot\images\car\bmw-m5-14ae2cf9-f9c2-4cd2-88b4-f680d7fbef47.jpg
+wwwroot\images\car\bmw-m5-1ee00423-0f8c-478d-99af-4860a21b7157.jpg
 wwwroot\images\car\bmw-m5-433d15ab-58b5-4a52-a2e0-5761714d3ae0.jpg
 wwwroot\images\car\bmw-m5-716919c0-f133-4202-a1ae-44ae0dc86302.jpg
 wwwroot\images\car\bmw-m5-e8cbda5a-3e90-45e5-a3d0-e7e3dafc9462.jpg
@@ -175,9 +176,11 @@ wwwroot\images\car\hyundai-staria-6604c6ea-89d5-41d1-9701-80a996b84f43.jpg
 wwwroot\images\car\hyundai-staria-d6a6dc36-3a72-476d-8e1c-01a3963265c1.jpg
 wwwroot\images\car\jeep-renegade-10bf8a99-8d57-4ced-b6c5-316840797a30.jpg
 wwwroot\images\car\jeep-renegade-141a7d31-5907-4555-9fe9-f8a2b43157a7.jpg
+wwwroot\images\car\jeep-renegade-ca47fdfd-e123-4caa-b257-74cedcf5e0fc.jpg
 wwwroot\images\car\jeep-renegade-f4020394-351a-41d2-bc2b-0a886c448bb9.jpg
 wwwroot\images\car\lexus-509a70e4-e80e-4de6-bd92-8123ea96e490.jpg
 wwwroot\images\car\range-rover-1a8bdf0d-1284-44b6-b8d3-d26b1059766b.jpg
+wwwroot\images\car\toyota-rav-d604db2f-906d-4730-8301-6db506c4c23e.jpg
 wwwroot\images\cars\bentley.jpg
 wwwroot\images\cars\bmw-m5.jpg
 wwwroot\images\cars\chevrolet-camaro.jpg

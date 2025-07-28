@@ -6,21 +6,36 @@ namespace RentACar.Models
 {
     public class BookingViewModel : IValidatableObject
     {
+        [Required]
         public int? CarId { get; set; }
         public required string CarType { get; set; }
-        public required string CustomerName { get; set; }
 
-        [EmailAddress]
-        public string? Email { get; set; }
+        [Required(ErrorMessage = "Your name is required.")]
+        public string CustomerName { get; set; } = null!;
 
-        public required string Phone { get; set; }
-        public required string PickupLocation { get; set; }
-        public required string DropoffLocation { get; set; }
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Invalid email address.")]
+        public string Email { get; set; } = null!;
 
+        [Required(ErrorMessage = "Phone number is required.")]
+        public string Phone { get; set; } = null!;
+
+        [Required(ErrorMessage = "Pickup location is required.")]
+        public string PickupLocation { get; set; } = null!;
+
+        [Required(ErrorMessage = "Dropoff location is required.")]
+        public string DropoffLocation { get; set; } = null!;
+
+        [Required(ErrorMessage = "Pickup date is required.")]
         public DateTime PickupDate { get; set; } = DateTime.UtcNow;
+
+        [Required(ErrorMessage = "Pickup time is required.")]
         public string PickupTime { get; set; } = "09:00";
 
+        [Required(ErrorMessage = "Return date is required.")]
         public DateTime ReturnDate { get; set; } = DateTime.UtcNow.AddDays(1);
+
+        [Required(ErrorMessage = "Return time is required.")]
         public string ReturnTime { get; set; } = "09:00";
 
         public string? Message { get; set; }
