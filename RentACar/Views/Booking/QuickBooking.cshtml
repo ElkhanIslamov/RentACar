@@ -1,11 +1,23 @@
 ﻿@model RentACar.Models.BookingViewModel
-@{
-    ViewData["Title"] = "Quick Booking";
-    Layout = "~/Views/Shared/_Layout.cshtml"; // varsa öz layout faylınızın path-i
-}
 
-<section class="section">
-    <div class="container">
+<div class="no-bottom no-top" id="content">
+    <div id="top"></div>
+    <!-- section begin -->
+    <section id="subheader" class="jarallax text-light" aria-label="section" class="no-top" data-bgcolor="#121212">
+        <img src="images/background/2.jpg" class="jarallax-img" alt="">
+         <div class="center-y relative text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Quick Booking</h1>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-hero">
+       <div class="container">
         <br>
         <h2 class="mb-4">Quick Booking</h2>
 
@@ -81,7 +93,5 @@
 
     </div>
 </section>
+</div>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
