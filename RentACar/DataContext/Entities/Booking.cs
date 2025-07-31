@@ -6,6 +6,7 @@
         public string? UserId { get; set; }
         public AppUser? User { get; set; }
         public string CarType { get; set; }
+        public string Description { get; set; }
         public string CustomerName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }

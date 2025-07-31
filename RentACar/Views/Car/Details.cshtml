@@ -1,0 +1,42 @@
+﻿@model RentACar.DataContext.Entities.Car
+@{
+    ViewData["Title"] = "Car Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>@Model.Name</h2>
+    <p class="text-muted">@Model.Category?.Name</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/images/car/@Model.ImageUrl" class="img-fluid mb-3" alt="@Model.Name" />
+
+            @if (Model.Images != null && Model.Images.Any())
+            {
+                <div class="row">
+                    @foreach (var img in Model.Images)
+                    {
+                        <div class="col-4 mb-2">
+                            <img src="~/images/car/@img.ImageUrl" class="img-thumbnail" alt="Car image" />
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+
+        <div class="col-md-6">
+            <h4 class="mb-3">Car Description</h4>
+            <p>@Model.Description</p>
+
+            <table class="table table-bordered mt-3">
+                <tr><th>Seats:</th><td>@Model.Seats</td></tr>
+                <tr><th>Luggage:</th><td>@Model.Luggage</td></tr>
+                <tr><th>Doors:</th><td>@Model.Doors</td></tr>
+                <tr><th>Price per Day:</th><td>$@Model.PricePerDay</td></tr>
+            </table>
+
+            <a href="#" class="btn btn-success">RENT NOW</a>
+        </div>
+    </div>
+</div>

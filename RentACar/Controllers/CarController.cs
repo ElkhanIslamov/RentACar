@@ -63,5 +63,21 @@ namespace RentACar.Controllers
 
             return PartialView("_CarCardsPartial", filteredCars);
         }
+        public async Task<IActionResult> Details(int id)
+        {
+            var car = await _dbContext.Cars
+                .Include(c => c.Category)
+                .Include(c => c.Images)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            return View(car);
+        }
+
+
     }
 }

@@ -33,5 +33,12 @@ namespace RentACar.Areas.Admin.Models
         public int CategoryId { get; set; }
 
         public List<SelectListItem> Categories { get; set; } = new();
+
+        // ✅ Yeni Əlavə edilənlər:
+        [Display(Name = "Description")]
+        public string? Description { get; set; }
+
+        [Display(Name = "Additional Images")]
+        public List<IFormFile>? CarImageFiles { get; set; }
     }
 }

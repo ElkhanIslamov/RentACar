@@ -179,6 +179,7 @@ wwwroot\images\car\hyundai-staria-6604c6ea-89d5-41d1-9701-80a996b84f43.jpg
 wwwroot\images\car\hyundai-staria-d6a6dc36-3a72-476d-8e1c-01a3963265c1.jpg
 wwwroot\images\car\jeep-renegade-10bf8a99-8d57-4ced-b6c5-316840797a30.jpg
 wwwroot\images\car\jeep-renegade-141a7d31-5907-4555-9fe9-f8a2b43157a7.jpg
+wwwroot\images\car\jeep-renegade-170d3fc8-ffed-488a-8f38-2bdc1dd304f7.jpg
 wwwroot\images\car\jeep-renegade-ca47fdfd-e123-4caa-b257-74cedcf5e0fc.jpg
 wwwroot\images\car\jeep-renegade-f4020394-351a-41d2-bc2b-0a886c448bb9.jpg
 wwwroot\images\car\lexus-509a70e4-e80e-4de6-bd92-8123ea96e490.jpg
