@@ -167,6 +167,7 @@ wwwroot\images\car\bmw-m5-716919c0-f133-4202-a1ae-44ae0dc86302.jpg
 wwwroot\images\car\bmw-m5-e8cbda5a-3e90-45e5-a3d0-e7e3dafc9462.jpg
 wwwroot\images\car\bmw-m5-f6a9e66b-e23b-44e2-9bc7-de8d03837e96.jpg
 wwwroot\images\car\chevrolet-camaro-fadfd93c-3215-4a64-9003-7ba63867a977.jpg
+wwwroot\images\car\F150-4f5e763c-0bc4-4205-af8f-4fc1a6dbc485.jpg
 wwwroot\images\car\ferrari-enzo-0953ca39-1b2e-4387-9b32-dcfc3cf2d59f.jpg
 wwwroot\images\car\ferrari-enzo-2be255de-23e3-4767-892b-fb6f845d737f.jpg
 wwwroot\images\car\ferrari-enzo-57f8653d-1b36-41ec-9733-0f150959ae96.jpg

@@ -16,11 +16,17 @@ namespace RentACar.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var categories = await _dbContext.Categories.ToListAsync();
-            var cars = await _dbContext.Cars.Include(c => c.Category).ToListAsync();
+            var categories = await _dbContext.Categories.ToListAsync(); // 1-ci sorğu
+            var cars = await _dbContext.Cars.Include(c => c.Category).ToListAsync(); // 2-ci sorğu
 
-            var minPrice = await _dbContext.Cars.MinAsync(c => c.PricePerDay);
-            var maxPrice = await _dbContext.Cars.MaxAsync(c => c.PricePerDay);
+            decimal minPrice = 0;
+            decimal maxPrice = 0;
+
+            if (cars.Count > 0)
+            {
+                minPrice = cars.Min(c => c.PricePerDay);
+                maxPrice = cars.Max(c => c.PricePerDay);
+            }
 
             var model = new CarsViewModel
             {
@@ -32,6 +38,8 @@ namespace RentACar.Controllers
 
             return View(model);
         }
+
+
 
         [HttpPost]
         public async Task<IActionResult> Filter([FromBody] CarFilterRequest filter)

@@ -1,4 +1,4 @@
-﻿ @model IEnumerable<RentACar.DataContext.Entities.Car>
+﻿@model IEnumerable<RentACar.DataContext.Entities.Car>
 @{
     ViewData["Title"] = "Avtomobillər";
     Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -17,7 +17,7 @@
                     <tr>
                         <th>#</th>
                         <th>Ad</th>
-                        <th>Şəkil</th>
+                        <th>Şəkillər</th>
                         <th>Oturacaq</th>
                         <th>Qapı</th>
                         <th>Baqaj</th>
@@ -32,7 +32,27 @@
                         <tr>
                             <td>@car.Id</td>
                             <td>@car.Name</td>
-                            <td><img src="~/images/car/@car.ImageUrl" width="60" /></td>
+                            <td>
+                                <div>
+                                    <strong>Əsas şəkil:</strong><br />
+                                    <img src="~/images/car/@car.ImageUrl" width="60" class="mb-2 border rounded" />
+                                </div>
+
+                                @if (car.Images != null && car.Images.Any())
+                                {
+                                    <div>
+                                        <strong>Əlavə şəkillər:</strong><br />
+                                        @foreach (var file in car.Images)
+                                        {
+                                            <img src="~/images/car/@file.ImageUrl" width="60" class="mr-1 mb-1 border rounded" />
+                                        }
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="text-muted small">Əlavə şəkil yoxdur</div>
+                                }
+                            </td>
                             <td>@car.Seats</td>
                             <td>@car.Doors</td>
                             <td>@car.Luggage</td>

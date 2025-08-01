@@ -39,7 +39,57 @@ namespace RentACar.Areas.Admin.Controllers
             return View(model);
         }
 
+        //[HttpPost]
+        /*   public async Task<IActionResult> Create(CarCreateViewModel model)
+           {
+               if (!ModelState.IsValid)
+               {
+                   model.Categories = GetCategorySelectList();
+                   return View(model);
+               }
+
+               var uniqueImageFileName = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
+
+               var car = new Car
+               {
+                   Name = model.Name,
+                   Seats = model.Seats,
+                   Doors = model.Doors,
+                   Luggage = model.Luggage,
+                   PricePerDay = model.PricePerDay,
+                   ImageUrl = uniqueImageFileName,
+                   CategoryId = model.CategoryId,
+                   Images = new List<CarImage>(),
+               };
+
+               _context.Cars.Add(car);
+               await _context.SaveChangesAsync();
+               return RedirectToAction(nameof(Index));
+           }
+
+
+           public async Task<IActionResult> Edit(int id)
+           {
+               var car = await _context.Cars.FindAsync(id);
+               if (car == null) return NotFound();
+
+               var model = new CarCreateViewModel
+               {
+                   Id = car.Id,
+                   Name = car.Name,
+                   Seats = car.Seats,
+                   Doors = car.Doors,
+                   Luggage = car.Luggage,
+                   PricePerDay = car.PricePerDay,
+                   ImageUrl = car.ImageUrl,
+                   CategoryId = car.CategoryId,
+                   Categories = GetCategorySelectList()
+               };
+
+               return View(model);
+           }*/
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CarCreateViewModel model)
         {
             if (!ModelState.IsValid)
@@ -48,46 +98,56 @@ namespace RentACar.Areas.Admin.Controllers
                 return View(model);
             }
 
-            var uniqueImageFileName = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
+            if (model.ImageFile == null || !model.ImageFile.IsImage() || !model.ImageFile.IsAllowedSize(1))
+            {
+                ModelState.AddModelError("ImageFile", "Əsas şəkil düzgün seçilməlidir.");
+                model.Categories = GetCategorySelectList();
+                return View(model);
+            }
+
+            var carImages = new List<CarImage>();
+
+            if (model.CarImageFiles != null && model.CarImageFiles.Any())
+            {
+                foreach (var file in model.CarImageFiles)
+                {
+                    if (!file.IsImage() || !file.IsAllowedSize(1))
+                    {
+                        ModelState.AddModelError("CarImageFiles", $"{file.FileName} şəkil olmalıdır və 1 MB-dan böyük olmamalıdır.");
+                        model.Categories = GetCategorySelectList();
+                        return View(model);
+                    }
+                }
+
+                foreach (var file in model.CarImageFiles)
+                {
+                    var uniqueFileName = await file.GenerateFile(FilePathConstants.CarPath);
+                    carImages.Add(new CarImage { ImageUrl = uniqueFileName });
+                }
+            }
+
+            var coverImageName = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
 
             var car = new Car
             {
                 Name = model.Name,
-                Seats = model.Seats,
-                Doors = model.Doors,
-                Luggage = model.Luggage,
                 PricePerDay = model.PricePerDay,
-                ImageUrl = uniqueImageFileName,
-                CategoryId = model.CategoryId
+                Seats = model.Seats ?? 0,
+                Doors = model.Doors ?? 0,
+                Luggage = model.Luggage ?? 0,
+                CategoryId = model.CategoryId,
+                ImageUrl = coverImageName,
+                Description = model.Description,
+                Images = carImages
             };
 
             _context.Cars.Add(car);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
-       
-        public async Task<IActionResult> Edit(int id)
-        {
-            var car = await _context.Cars.FindAsync(id);
-            if (car == null) return NotFound();
 
-            var model = new CarCreateViewModel
-            {
-                Id = car.Id,
-                Name = car.Name,
-                Seats = car.Seats,
-                Doors = car.Doors,
-                Luggage = car.Luggage,
-                PricePerDay = car.PricePerDay,
-                ImageUrl = car.ImageUrl,
-                CategoryId = car.CategoryId,
-                Categories = GetCategorySelectList()
-            };
-
-            return View(model);
-        }
-       
         [HttpPost]
         public async Task<IActionResult> Edit(CarCreateViewModel model)
         {
@@ -135,7 +195,7 @@ namespace RentACar.Areas.Admin.Controllers
                 PricePerDay = car.PricePerDay,
                 ImageUrl = car.ImageUrl,
                 CategoryId = car.CategoryId,
-                Categories = GetCategorySelectList()
+                Categories = GetCategorySelectList()                
             };
 
             return View(model);

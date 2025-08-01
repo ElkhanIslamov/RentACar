@@ -14,6 +14,6 @@ public class Car
     public decimal PricePerDay { get; set; }
     public int CategoryId { get; set; }
     public Category? Category { get; set; }
-    public List<CarImage>? Images { get; set; }
+    public ICollection<CarImage>? Images { get; set; }
     public string? Description { get; set; }
 }

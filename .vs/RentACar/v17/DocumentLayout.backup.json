@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\RentACar\\",
+  "WorkspaceRootPath": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|c:\\users\\user\\desktop\\rentacar\\rentacar\\datacontext\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\models\\carcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\models\\carcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\datacontext\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\datacontext\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|c:\\users\\user\\desktop\\rentacar\\rentacar\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\datacontext\\entities\\carimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\datacontext\\entities\\carimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\areas\\admin\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\areas\\admin\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|c:\\users\\user\\desktop\\rentacar\\rentacar\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|e:\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\rentacar\\rentacar\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23E01628-E772-42F9-A768-19C1AD86B404}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -25,48 +41,92 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarImage.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\DataContext\\Entities\\CarImage.cs",
+              "RelativeDocumentMoniker": "RentACar\\DataContext\\Entities\\CarImage.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\DataContext\\Entities\\CarImage.cs",
+              "RelativeToolTip": "RentACar\\DataContext\\Entities\\CarImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:51:27.375Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "RelativeToolTip": "RentACar\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowCwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T08:30:21.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CarCreateViewModel.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Models\\CarCreateViewModel.cs",
+              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Models\\CarCreateViewModel.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Models\\CarCreateViewModel.cs",
+              "RelativeToolTip": "RentACar\\Areas\\Admin\\Models\\CarCreateViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:21:39.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "RentACar\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "RentACar\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:20:18.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\Views\\Car\\Details.cshtml",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Views\\Car\\Details.cshtml",
               "RelativeDocumentMoniker": "RentACar\\Views\\Car\\Details.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\Views\\Car\\Details.cshtml",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Views\\Car\\Details.cshtml",
               "RelativeToolTip": "RentACar\\Views\\Car\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-31T20:19:56.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\DataContext\\Entities\\Car.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\DataContext\\Entities\\Car.cs",
               "RelativeDocumentMoniker": "RentACar\\DataContext\\Entities\\Car.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\DataContext\\Entities\\Car.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\DataContext\\Entities\\Car.cs",
               "RelativeToolTip": "RentACar\\DataContext\\Entities\\Car.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T20:18:59.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CarController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\Controllers\\CarController.cs",
+              "DocumentMoniker": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "RentACar\\Controllers\\CarController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RentACar\\RentACar\\Controllers\\CarController.cs",
+              "ToolTip": "E:\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RentACar\\RentACar\\Controllers\\CarController.cs",
               "RelativeToolTip": "RentACar\\Controllers\\CarController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwE0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAswFUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T20:15:45.222Z",
               "EditorCaption": ""
@@ -75,6 +135,16 @@
         },
         {
           "DockedWidth": 1250,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 923,
           "SelectedChildIndex": -1,
           "Children": [
             {

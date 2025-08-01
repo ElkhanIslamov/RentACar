@@ -1,42 +1,62 @@
 ﻿@model RentACar.DataContext.Entities.Car
+
 @{
-    ViewData["Title"] = "Car Details";
+    ViewData["Title"] = Model.Name;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container mt-4">
-    <h2>@Model.Name</h2>
-    <p class="text-muted">@Model.Category?.Name</p>
-
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-6">
-            <img src="~/images/car/@Model.ImageUrl" class="img-fluid mb-3" alt="@Model.Name" />
+        <!-- Şəkillər -->
+        <div class="col-md-8">
+            <div class="mb-4">
+                <img src="~/images/car/@Model.ImageUrl" class="img-fluid w-100 rounded shadow" alt="@Model.Name" />
+            </div>
 
+            @* Əgər əlavə şəkillər varsa *@
             @if (Model.Images != null && Model.Images.Any())
             {
-                <div class="row">
-                    @foreach (var img in Model.Images)
+                <div class="row g-2">
+                    @foreach (var image in Model.Images)
                     {
-                        <div class="col-4 mb-2">
-                            <img src="~/images/car/@img.ImageUrl" class="img-thumbnail" alt="Car image" />
+                        <div class="col-3">
+                            <img src="~/images/car/@image.ImageUrl" class="img-thumbnail" alt="Gallery image" />
                         </div>
                     }
                 </div>
             }
         </div>
 
-        <div class="col-md-6">
-            <h4 class="mb-3">Car Description</h4>
+        <!-- Booking formu -->
+        <div class="col-md-4">
+            <div class="card shadow p-4">
+                <h4 class="mb-3">Sürətli Sifariş</h4>
+                <form asp-controller="Booking" asp-action="Create" method="post">
+                    <input type="hidden" name="CarId" value="@Model.Id" />
+
+                    <div class="mb-3">
+                        <label for="StartDate" class="form-label">Başlama Tarixi</label>
+                        <input type="date" class="form-control" id="StartDate" name="StartDate" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="EndDate" class="form-label">Bitmə Tarixi</label>
+                        <input type="date" class="form-control" id="EndDate" name="EndDate" required />
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">İndi bron et</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Description -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h4>Maşın haqqında</h4>
             <p>@Model.Description</p>
-
-            <table class="table table-bordered mt-3">
-                <tr><th>Seats:</th><td>@Model.Seats</td></tr>
-                <tr><th>Luggage:</th><td>@Model.Luggage</td></tr>
-                <tr><th>Doors:</th><td>@Model.Doors</td></tr>
-                <tr><th>Price per Day:</th><td>$@Model.PricePerDay</td></tr>
-            </table>
-
-            <a href="#" class="btn btn-success">RENT NOW</a>
         </div>
     </div>
 </div>
