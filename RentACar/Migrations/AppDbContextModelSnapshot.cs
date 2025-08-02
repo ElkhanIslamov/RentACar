@@ -337,28 +337,6 @@ namespace RentACar.Migrations
                     b.ToTable("Cars");
                 });
 
-            modelBuilder.Entity("RentACar.DataContext.Entities.CarImage", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CarId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CarId");
-
-                    b.ToTable("CarImages");
-                });
-
             modelBuilder.Entity("RentACar.DataContext.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -402,6 +380,28 @@ namespace RentACar.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Contacts");
+                });
+
+            modelBuilder.Entity("RentACar.DataContext.Entities.RentACar.DataContext.Entities.CarImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarId");
+
+                    b.ToTable("CarImages");
                 });
 
             modelBuilder.Entity("RentACar.DataContext.Entities.Slider", b =>
@@ -506,7 +506,7 @@ namespace RentACar.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("RentACar.DataContext.Entities.CarImage", b =>
+            modelBuilder.Entity("RentACar.DataContext.Entities.RentACar.DataContext.Entities.CarImage", b =>
                 {
                     b.HasOne("RentACar.DataContext.Entities.Car", "Car")
                         .WithMany("Images")

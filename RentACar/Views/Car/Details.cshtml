@@ -1,62 +1,110 @@
-﻿@model RentACar.DataContext.Entities.Car
+﻿@model RentACar.Models.CarDetailsViewModel
+@inject IHttpContextAccessor HttpContextAccessor
 
 @{
-    ViewData["Title"] = Model.Name;
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Car Details";
+    var isAuthenticated = HttpContextAccessor.HttpContext?.User.Identity?.IsAuthenticated ?? false;
+    var bookUrl = isAuthenticated
+        ? Url.Action("QuickBooking", "Booking")
+        : Url.Action("Login", "Account");
 }
 
 <div class="container mt-5">
     <div class="row">
-        <!-- Şəkillər -->
-        <div class="col-md-8">
-            <div class="mb-4">
-                <img src="~/images/car/@Model.ImageUrl" class="img-fluid w-100 rounded shadow" alt="@Model.Name" />
-            </div>
+        <!-- Left side: Images -->
+        <div class="col-md-6">
+            <img src="~/images/car/@Model.ImageUrl" class="cover-img mb-3" data-bs-toggle="modal" data-bs-target="#imageModal" />
 
-            @* Əgər əlavə şəkillər varsa *@
-            @if (Model.Images != null && Model.Images.Any())
-            {
-                <div class="row g-2">
-                    @foreach (var image in Model.Images)
-                    {
-                        <div class="col-3">
-                            <img src="~/images/car/@image.ImageUrl" class="img-thumbnail" alt="Gallery image" />
-                        </div>
-                    }
-                </div>
-            }
+            <div class="d-flex flex-wrap gap-2">
+                @foreach (var img in Model.AdditionalImageUrls)
+                {
+                    <img src="~/images/car/@img" class="thumb-img" data-bs-toggle="modal" data-bs-target="#imageModal" />
+                }
+            </div>
         </div>
 
-        <!-- Booking formu -->
-        <div class="col-md-4">
-            <div class="card shadow p-4">
-                <h4 class="mb-3">Sürətli Sifariş</h4>
-                <form asp-controller="Booking" asp-action="Create" method="post">
-                    <input type="hidden" name="CarId" value="@Model.Id" />
+        <!-- Right side: Price, Book, WhatsApp -->
+        <div class="col-md-6 d-flex flex-column justify-content-start">
+            <div class="mb-4">
+                <h4 class="text-success fw-bold">Price Per Day: $@Model.PricePerDay</h4>
+            </div>
 
-                    <div class="mb-3">
-                        <label for="StartDate" class="form-label">Başlama Tarixi</label>
-                        <input type="date" class="form-control" id="StartDate" name="StartDate" required />
-                    </div>
+            <div class="mb-3">
+                <a href="@bookUrl" class="btn btn-primary custom-btn" style="width: 145px;">
+                    Book Now
+                </a>
+            </div>
 
-                    <div class="mb-3">
-                        <label for="EndDate" class="form-label">Bitmə Tarixi</label>
-                        <input type="date" class="form-control" id="EndDate" name="EndDate" required />
-                    </div>
-
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">İndi bron et</button>
-                    </div>
-                </form>
+            <div class="mb-4">
+                <a href="https://wa.me/994553331775"
+                   class="btn btn-success custom-btn d-flex align-items-center justify-content-center"
+                   style="width: 145px;"
+                   target="_blank">
+                    <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Description -->
+    <!-- Bottom: Description -->
     <div class="row mt-5">
         <div class="col-12">
-            <h4>Maşın haqqında</h4>
+            <h5>Description</h5>
             <p>@Model.Description</p>
         </div>
     </div>
 </div>
+
+<!-- Modal for gallery -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body text-center">
+                <img id="modalImage" src="#" class="img-fluid rounded shadow" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const modalImage = document.getElementById('modalImage');
+        document.querySelectorAll('.cover-img, .thumb-img').forEach(img => {
+            img.addEventListener('click', () => {
+                modalImage.src = img.src;
+            });
+        });
+    </script>
+}
+
+<style>
+    .cover-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .thumb-img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 6px;
+    }
+
+        .thumb-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+    .custom-btn {
+        height: 45px;
+        font-size: 15px;
+        padding: 0;
+        border-radius: 6px;
+    }
+</style>

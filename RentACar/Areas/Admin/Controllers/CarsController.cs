@@ -7,6 +7,7 @@ using RentACar.DataContext.Entities;
 using RentACar.Areas.Admin.Models;
 using RentACar.Areas.Admin.Data;
 using RentACar.Areas.Admin.Extensions;
+using RentACar.DataContext.Entities.RentACar.DataContext.Entities;
 
 namespace RentACar.Areas.Admin.Controllers
 {
@@ -98,7 +99,7 @@ namespace RentACar.Areas.Admin.Controllers
                 return View(model);
             }
 
-            if (model.ImageFile == null || !model.ImageFile.IsImage() || !model.ImageFile.IsAllowedSize(1))
+            if (model.CoverImageFile == null || !model.CoverImageFile.IsImage() || !model.CoverImageFile.IsAllowedSize(1))
             {
                 ModelState.AddModelError("ImageFile", "Əsas şəkil düzgün seçilməlidir.");
                 model.Categories = GetCategorySelectList();
@@ -107,9 +108,9 @@ namespace RentACar.Areas.Admin.Controllers
 
             var carImages = new List<CarImage>();
 
-            if (model.CarImageFiles != null && model.CarImageFiles.Any())
+            if (model.ImageFiles != null && model.ImageFiles.Any())
             {
-                foreach (var file in model.CarImageFiles)
+                foreach (var file in model.ImageFiles)
                 {
                     if (!file.IsImage() || !file.IsAllowedSize(1))
                     {
@@ -119,14 +120,14 @@ namespace RentACar.Areas.Admin.Controllers
                     }
                 }
 
-                foreach (var file in model.CarImageFiles)
+                foreach (var file in model.ImageFiles)
                 {
                     var uniqueFileName = await file.GenerateFile(FilePathConstants.CarPath);
-                    carImages.Add(new CarImage { ImageUrl = uniqueFileName });
+                    carImages.Add(new CarImage { ImageUrl= uniqueFileName});
                 }
             }
 
-            var coverImageName = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
+            var coverImageName = await model.CoverImageFile.GenerateFile(FilePathConstants.CarPath);
 
             var car = new Car
             {
@@ -148,6 +149,8 @@ namespace RentACar.Areas.Admin.Controllers
         }
 
 
+
+
         [HttpPost]
         public async Task<IActionResult> Edit(CarCreateViewModel model)
         {
@@ -160,9 +163,9 @@ namespace RentACar.Areas.Admin.Controllers
             var car = await _context.Cars.FindAsync(model.Id);
             if (car == null) return NotFound();
 
-            if (model.ImageFile != null)
+            if (model.CoverImageFile != null)
             {
-                car.ImageUrl = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
+                car.ImageUrl = await model.CoverImageFile.GenerateFile(FilePathConstants.CarPath);
             }
 
             car.Name = model.Name;
@@ -193,7 +196,7 @@ namespace RentACar.Areas.Admin.Controllers
                 Doors = car.Doors,
                 Luggage = car.Luggage,
                 PricePerDay = car.PricePerDay,
-                ImageUrl = car.ImageUrl,
+                CoverImageUrl = car.ImageUrl,
                 CategoryId = car.CategoryId,
                 Categories = GetCategorySelectList()                
             };
@@ -222,17 +225,17 @@ namespace RentACar.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
         [HttpPost]
+        [Route("Admin/Cars/DeleteConfirmed/{id}")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var car = await _context.Cars.FindAsync(id);
-            if (car == null)
-            {
-                return NotFound();
-            }
+            if (car == null) return NotFound();
 
             _context.Cars.Remove(car);
             await _context.SaveChangesAsync();
-            return Ok(); 
+
+            return Ok();
         }
+
     }
 }

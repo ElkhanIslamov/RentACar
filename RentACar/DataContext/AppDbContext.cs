@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RentACar.DataContext.Entities;
+using RentACar.DataContext.Entities.RentACar.DataContext.Entities;
 
 namespace RentACar.DataContext;
 

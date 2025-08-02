@@ -11,9 +11,9 @@ namespace RentACar.Areas.Admin.Models
         public string Name { get; set; } = string.Empty;
 
         [Display(Name = "Car Image")]
-        public IFormFile? ImageFile { get; set; }
+        public IFormFile? CoverImageFile { get; set; }
 
-        public string? ImageUrl { get; set; }
+        public string? CoverImageUrl { get; set; }
 
         [Range(1, 10, ErrorMessage = "Seats must be between 1 and 10")]
         public int? Seats { get; set; }
@@ -39,6 +39,6 @@ namespace RentACar.Areas.Admin.Models
         public string? Description { get; set; }
 
         [Display(Name = "Additional Images")]
-        public List<IFormFile>? CarImageFiles { get; set; }
+        public List<IFormFile>? ImageFiles { get; set; }
     }
 }

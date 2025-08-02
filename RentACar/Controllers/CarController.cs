@@ -74,17 +74,23 @@ namespace RentACar.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var car = await _dbContext.Cars
-                .Include(c => c.Category)
-                .Include(c => c.Images)
+                .Include(c => c.Images)  // əlavə şəkillər də yüklənir
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (car == null)
-            {
-                return NotFound();
-            }
+            if (car == null) return NotFound();
 
-            return View(car);
+            var viewModel = new CarDetailsViewModel
+            {
+                Name = car.Name,
+                ImageUrl = car.ImageUrl,
+                PricePerDay = car.PricePerDay,
+                Description = car.Description,
+                AdditionalImageUrls = car.Images?.Select(img => img.ImageUrl).ToList() ?? new List<string>()
+            };
+
+            return View(viewModel);
         }
+
 
 
     }
