@@ -1,110 +1,139 @@
 ﻿@model RentACar.Models.CarDetailsViewModel
-@inject IHttpContextAccessor HttpContextAccessor
 
-@{
-    ViewData["Title"] = "Car Details";
-    var isAuthenticated = HttpContextAccessor.HttpContext?.User.Identity?.IsAuthenticated ?? false;
-    var bookUrl = isAuthenticated
-        ? Url.Action("QuickBooking", "Booking")
-        : Url.Action("Login", "Account");
-}
+<div class="no-bottom no-top zebra" id="content">
+    <div id="top"></div>
 
-<div class="container mt-5">
-    <div class="row">
-        <!-- Left side: Images -->
-        <div class="col-md-6">
-            <img src="~/images/car/@Model.ImageUrl" class="cover-img mb-3" data-bs-toggle="modal" data-bs-target="#imageModal" />
-
-            <div class="d-flex flex-wrap gap-2">
-                @foreach (var img in Model.AdditionalImageUrls)
-                {
-                    <img src="~/images/car/@img" class="thumb-img" data-bs-toggle="modal" data-bs-target="#imageModal" />
-                }
+    <!-- subheader -->
+    <section id="subheader" class="jarallax text-light">
+        <img src="images/background/2.jpg" class="jarallax-img" alt="">
+        <div class="center-y relative text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>@Model.Name</h1>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Right side: Price, Book, WhatsApp -->
-        <div class="col-md-6 d-flex flex-column justify-content-start">
-            <div class="mb-4">
-                <h4 class="text-success fw-bold">Price Per Day: $@Model.PricePerDay</h4>
-            </div>
+    <!-- car details section -->
+    <section id="section-car-details">
+        <div class="container">
+            <div class="row g-5">
 
-            <div class="mb-3">
-                <a href="@bookUrl" class="btn btn-primary custom-btn" style="width: 145px;">
-                    Book Now
-                </a>
-            </div>
+                <!-- Left side: Carousel -->
+                <div class="col-lg-6">
+                    <div id="slider-carousel" class="owl-carousel">
+                        <!-- Main image -->
+                        <!-- Əsas şəkil -->
+                        <a href="~/images/car/@Model.ImageUrl" data-lightbox="car-gallery">
+                            <img src="~/images/car/@Model.ImageUrl" class="img-fluid mb-3" alt="@Model.Name" />
+                        </a>
 
-            <div class="mb-4">
-                <a href="https://wa.me/994553331775"
-                   class="btn btn-success custom-btn d-flex align-items-center justify-content-center"
-                   style="width: 145px;"
-                   target="_blank">
-                    <i class="bi bi-whatsapp me-2"></i> WhatsApp
-                </a>
+                        <!-- Əlavə şəkillər -->
+                        <div class="d-flex flex-wrap gap-2">
+                            @foreach (var img in Model.AdditionalImageUrls)
+                            {
+                                <a href="~/images/car/@img" data-lightbox="car-gallery">
+                                    <img src="~/images/car/@img" class="img-thumbnail" style="width:100px;" alt="Car image" />
+                                </a>
+                            }
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Middle: Description and specs -->
+                <div class="col-lg-3">
+                    <h3>@Model.Name</h3>
+                    <p>@Model.Description</p>
+
+                    <div class="spacer-10"></div>
+                    <h4>Specifications</h4>
+                    <div class="de-spec">
+                        <!-- Bura öz spec-lərin varsa, əlavə edə bilərsən -->
+                        <div class="d-row">
+                            <span class="d-title">Price Per Day</span>
+                            <span class="d-value">$@Model.PricePerDay</span>
+                        </div>
+                        <!-- Misal üçün əlavə rows -->
+                    </div>
+                </div>
+
+                <!-- Right side: Booking panel -->
+                <div class="col-lg-3">
+                    <div class="de-price text-center">
+                        Daily rate
+                        <h3>$@Model.PricePerDay</h3>
+                    </div>
+
+                    <div class="spacer-30"></div>
+
+                    <div class="de-box text-light mb25">
+                        <form name="contactForm" id="contact_form" method="post">
+                            <h4>Booking this car</h4>
+                            <div class="spacer-20"></div>
+
+                            <!-- Example inputs -->
+                            <div class="col-lg-12 mb20">
+                                <h5>Pick Up Location</h5>
+                                <input type="text" name="PickupLocation" class="form-control" placeholder="Enter your pickup location" />
+                            </div>
+
+                            <div class="col-lg-12 mb20">
+                                <h5>Drop Off Location</h5>
+                                <input type="text" name="DropoffLocation" class="form-control" placeholder="Enter your dropoff location" />
+                            </div>
+
+                            <!-- Date pickers, time dropdowns -->
+                            <div class="col-lg-12 mb20">
+                                <h5>Pick Up Date & Time</h5>
+                                <div class="date-time-field">
+                                    <input type="text" id="date-picker" name="PickUpDate" value="" />
+                                    <select name="PickUpTime" id="pickup-time">
+                                        <option value="">Select Time</option>
+                                        @for (int hour = 0; hour < 24; hour++)
+                                        {
+                                            <option value="@($"{hour:D2}:00")">@($"{hour:D2}:00")</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mb20">
+                                <h5>Return Date & Time</h5>
+                                <div class="date-time-field">
+                                    <input type="text" id="date-picker-2" name="ReturnDate" value="" />
+                                    <select name="ReturnTime" id="return-time">
+                                        <option value="">Select Time</option>
+                                        @for (int hour = 0; hour < 24; hour++)
+                                        {
+                                            <option value="@($"{hour:D2}:00")">@($"{hour:D2}:00")</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <input type='submit' id='send_message' value='Book Now' class="btn-main btn-fullwidth" />
+                        </form>
+                    </div>
+
+                    <div class="de-box">
+                        <h4>Share</h4>
+                        <div class="de-color-icons">
+                            <span><i class="fa fa-twitter fa-lg"></i></span>
+                            <span><i class="fa fa-facebook fa-lg"></i></span>
+                            <span><i class="fa fa-whatsapp fa-lg"></i></span>
+                            <span><i class="fa fa-envelope fa-lg"></i></span>
+                        </div>
+                    </div>
+                </div> <!-- End right panel -->
+
             </div>
         </div>
-    </div>
-
-    <!-- Bottom: Description -->
-    <div class="row mt-5">
-        <div class="col-12">
-            <h5>Description</h5>
-            <p>@Model.Description</p>
-        </div>
-    </div>
+    </section>
 </div>
 
-<!-- Modal for gallery -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center">
-                <img id="modalImage" src="#" class="img-fluid rounded shadow" />
-            </div>
-        </div>
-    </div>
-</div>
-
-@section Scripts {
-    <script>
-        const modalImage = document.getElementById('modalImage');
-        document.querySelectorAll('.cover-img, .thumb-img').forEach(img => {
-            img.addEventListener('click', () => {
-                modalImage.src = img.src;
-            });
-        });
-    </script>
-}
-
-<style>
-    .cover-img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        cursor: pointer;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .thumb-img {
-        width: 90px;
-        height: 90px;
-        object-fit: cover;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 6px;
-    }
-
-        .thumb-img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-    .custom-btn {
-        height: 45px;
-        font-size: 15px;
-        padding: 0;
-        border-radius: 6px;
-    }
-</style>
+<a href="#" id="back-to-top"></a>
