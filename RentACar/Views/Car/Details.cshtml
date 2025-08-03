@@ -1,4 +1,19 @@
 ﻿@model RentACar.Models.CarDetailsViewModel
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Car Details";
+    var isAuthenticated = HttpContextAccessor.HttpContext?.User.Identity?.IsAuthenticated ?? false;
+    var bookUrl = isAuthenticated
+        ? Url.Action("QuickBooking", "Booking")
+        : Url.Action("Login", "Account");
+    var whatsappMessage = $"Salam, {Model.Name} maşını ilə bağlı məlumat almaq istəyirəm.";
+    var whatsappUrl = "https://wa.me/994559999076?text=" + Uri.EscapeDataString(whatsappMessage);
+}
+
+<!-- Owl Carousel və Lightbox üçün style-lar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
 
 <div class="no-bottom no-top zebra" id="content">
     <div id="top"></div>
@@ -22,26 +37,25 @@
         <div class="container">
             <div class="row g-5">
 
-                <!-- Left side: Carousel -->
+                <!-- Left side: Image Carousel -->
                 <div class="col-lg-6">
-                    <div id="slider-carousel" class="owl-carousel">
+                    <div id="slider-carousel" class="owl-carousel owl-theme mb-3">
                         <!-- Main image -->
-                        <!-- Əsas şəkil -->
-                        <a href="~/images/car/@Model.ImageUrl" data-lightbox="car-gallery">
-                            <img src="~/images/car/@Model.ImageUrl" class="img-fluid mb-3" alt="@Model.Name" />
-                        </a>
-
-                        <!-- Əlavə şəkillər -->
-                        <div class="d-flex flex-wrap gap-2">
-                            @foreach (var img in Model.AdditionalImageUrls)
-                            {
-                                <a href="~/images/car/@img" data-lightbox="car-gallery">
-                                    <img src="~/images/car/@img" class="img-thumbnail" style="width:100px;" alt="Car image" />
-                                </a>
-                            }
+                        <div class="item">
+                            <a href="~/images/car/@Model.ImageUrl" data-lightbox="car-gallery">
+                                <img src="~/images/car/@Model.ImageUrl" class="img-fluid rounded" alt="@Model.Name" />
+                            </a>
                         </div>
 
-
+                        <!-- Additional images -->
+                        @foreach (var img in Model.AdditionalImageUrls)
+                        {
+                            <div class="item">
+                                <a href="~/images/car/@img" data-lightbox="car-gallery">
+                                    <img src="~/images/car/@img" class="img-fluid rounded" alt="Car image" />
+                                </a>
+                            </div>
+                        }
                     </div>
                 </div>
 
@@ -53,12 +67,11 @@
                     <div class="spacer-10"></div>
                     <h4>Specifications</h4>
                     <div class="de-spec">
-                        <!-- Bura öz spec-lərin varsa, əlavə edə bilərsən -->
                         <div class="d-row">
                             <span class="d-title">Price Per Day</span>
                             <span class="d-value">$@Model.PricePerDay</span>
                         </div>
-                        <!-- Misal üçün əlavə rows -->
+                        <!-- Əlavə texniki göstəricilər bura əlavə oluna bilər -->
                     </div>
                 </div>
 
@@ -72,52 +85,16 @@
                     <div class="spacer-30"></div>
 
                     <div class="de-box text-light mb25">
-                        <form name="contactForm" id="contact_form" method="post">
-                            <h4>Booking this car</h4>
-                            <div class="spacer-20"></div>
+                        <h4>Booking this car</h4>
+                        <div class="spacer-20"></div>
 
-                            <!-- Example inputs -->
-                            <div class="col-lg-12 mb20">
-                                <h5>Pick Up Location</h5>
-                                <input type="text" name="PickupLocation" class="form-control" placeholder="Enter your pickup location" />
-                            </div>
+                        <div class="col-lg-12 mb20">
+                            <a href="@bookUrl" class="btn-main btn-fullwidth text-center d-block">Book Now</a>
+                        </div>
 
-                            <div class="col-lg-12 mb20">
-                                <h5>Drop Off Location</h5>
-                                <input type="text" name="DropoffLocation" class="form-control" placeholder="Enter your dropoff location" />
-                            </div>
-
-                            <!-- Date pickers, time dropdowns -->
-                            <div class="col-lg-12 mb20">
-                                <h5>Pick Up Date & Time</h5>
-                                <div class="date-time-field">
-                                    <input type="text" id="date-picker" name="PickUpDate" value="" />
-                                    <select name="PickUpTime" id="pickup-time">
-                                        <option value="">Select Time</option>
-                                        @for (int hour = 0; hour < 24; hour++)
-                                        {
-                                            <option value="@($"{hour:D2}:00")">@($"{hour:D2}:00")</option>
-                                        }
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 mb20">
-                                <h5>Return Date & Time</h5>
-                                <div class="date-time-field">
-                                    <input type="text" id="date-picker-2" name="ReturnDate" value="" />
-                                    <select name="ReturnTime" id="return-time">
-                                        <option value="">Select Time</option>
-                                        @for (int hour = 0; hour < 24; hour++)
-                                        {
-                                            <option value="@($"{hour:D2}:00")">@($"{hour:D2}:00")</option>
-                                        }
-                                    </select>
-                                </div>
-                            </div>
-
-                            <input type='submit' id='send_message' value='Book Now' class="btn-main btn-fullwidth" />
-                        </form>
+                        <div class="col-lg-12 mb20">
+                            <a href="@whatsappUrl" target="_blank" class="btn-main btn-fullwidth text-center d-block">WhatsApp</a>
+                        </div>
                     </div>
 
                     <div class="de-box">
@@ -129,7 +106,7 @@
                             <span><i class="fa fa-envelope fa-lg"></i></span>
                         </div>
                     </div>
-                </div> <!-- End right panel -->
+                </div>
 
             </div>
         </div>
@@ -137,3 +114,20 @@
 </div>
 
 <a href="#" id="back-to-top"></a>
+
+<!-- Owl Carousel and Lightbox scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#slider-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true
+        });
+    });
+</script>
