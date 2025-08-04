@@ -1,124 +1,92 @@
-﻿@model IEnumerable<RentACar.DataContext.Entities.Car>
+﻿@model List<RentACar.DataContext.Entities.Car>
+
 @{
-    ViewData["Title"] = "Avtomobillər";
-    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Cars";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<!-- SweetAlert2 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+<h2>Maşın Siyahısı</h2>
 
-<div class="card col-12 grid-margin stretch-card">
-    <div class="card-body">
-        <h4 class="card-title">Avtomobil Siyahısı</h4>
-        <a asp-action="Create" class="btn btn-success mb-3">Yeni Avtomobil</a>
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>#</th>
-                        <th>Ad</th>
-                        <th>Şəkillər</th>
-                        <th>Oturacaq</th>
-                        <th>Qapı</th>
-                        <th>Baqaj</th>
-                        <th>Qiymət</th>
-                        <th>Kateqoriya</th>
-                        <th>Əməliyyatlar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var car in Model)
-                    {
-                        <tr>
-                            <td>@car.Id</td>
-                            <td>@car.Name</td>
-                            <td>
-                                <div>
-                                    <strong>Əsas şəkil:</strong><br />
-                                    <img src="~/images/car/@car.ImageUrl" width="60" class="mb-2 border rounded" />
-                                </div>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Maşın Əlavə Et</a>
+</p>
 
-                                @if (car.Images != null && car.Images.Any())
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Ad və Şəkillər</th>
+            <th>Oturacaq</th>
+            <th>Qapı</th>
+            <th>Yük</th>
+            <th>Günlük Qiymət</th>
+            <th>Kateqoriya</th>
+            <th>Təsvir</th>
+            <th>Əməliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Id</td>
+
+                <td>
+                    <div>
+                        <strong>@car.Name</strong><br />
+
+                        <strong>Əsas şəkil:</strong><br />
+                        <img src="~/images/car/@car.ImageUrl" width="60" class="mb-2 border rounded" />
+
+                        @if (car.Images != null && car.Images.Any())
+                        {
+                            <div>
+                                <strong>Əlavə şəkillər:</strong><br />
+                                @foreach (var image in car.Images)
                                 {
-                                    <div>
-                                        <strong>Əlavə şəkillər:</strong><br />
-                                        @foreach (var file in car.Images)
-                                        {
-                                            <img src="~/images/car/@file.ImageUrl" width="60" class="mr-1 mb-1 border rounded" />
-                                        }
-                                    </div>
+                                    <img src="~/images/car/@image.ImageUrl" width="60" class="mr-1 mb-1 border rounded" />
                                 }
-                                else
-                                {
-                                    <div class="text-muted small">Əlavə şəkil yoxdur</div>
-                                }
-                            </td>
-                            <td>@car.Seats</td>
-                            <td>@car.Doors</td>
-                            <td>@car.Luggage</td>
-                            <td>@car.PricePerDay ₼</td>
-                            <td>@car.Category?.Name</td>
-                            <td>
-                                <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm mr-1">Redaktə</a>
-                                <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm mr-1">Detallar</a>
-                                <button class="btn btn-danger btn-sm delete-button" data-id="@car.Id" data-name="@car.Name">Sil</button>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="text-muted small">Əlavə şəkil yoxdur</div>
+                        }
+                    </div>
+                </td>
 
-<!-- SweetAlert2 JS -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <td>@car.Seats</td>
+                <td>@car.Doors</td>
+                <td>@car.Luggage</td>
+                <td>@car.PricePerDay ₼</td>
+                <td>@car.Category?.Name</td>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const deleteButtons = document.querySelectorAll('.delete-button');
+                <td>
+                    <span class="text-truncate d-inline-block" style="max-width: 200px;" title="@car.Description">
+                        @car.Description
+                    </span>
+                </td>
 
-        deleteButtons.forEach(button => {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm mb-1">Redaktə</a>
+                    <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm mb-1">Detallar</a>
+                    <button class="btn btn-danger btn-sm delete-button" data-id="@car.Id" data-name="@car.Name">Sil</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('.delete-button').forEach(button => {
             button.addEventListener('click', function () {
                 const carId = this.getAttribute('data-id');
                 const carName = this.getAttribute('data-name');
-
-                Swal.fire({
-                    title: 'Əminsinizmi?',
-                    text: `"${carName}" adlı avtomobili silmək istəyirsiniz?`,
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#28a745',
-                    cancelButtonColor: '#dc3545',
-                    confirmButtonText: 'Bəli, sil',
-                    cancelButtonText: 'Xeyr',
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        fetch(`/Admin/Cars/DeleteConfirmed/${carId}`, {
-                            method: 'POST'
-                        })
-                        .then(response => {
-                            if (response.ok) {
-                                Swal.fire({
-                                    position: 'center',
-                                    icon: 'success',
-                                    title: 'Silindi',
-                                    text: `"${carName}" uğurla silindi.`,
-                                    showConfirmButton: false,
-                                    timer: 2000,
-                                    customClass: {
-                                        popup: 'rounded shadow'
-                                    }
-                                }).then(() => {
-                                    location.reload();
-                                });
-                            } else {
-                                Swal.fire('Xəta!', 'Silinmə zamanı problem baş verdi.', 'error');
-                            }
-                        });
-                    }
-                });
+                if (confirm(`“${carName}” adlı maşını silmək istədiyinizə əminsiniz?`)) {
+                    window.location.href = `/Admin/Car/Delete/${carId}`;
+                }
             });
         });
-    });
-</script>
+    </script>
+}

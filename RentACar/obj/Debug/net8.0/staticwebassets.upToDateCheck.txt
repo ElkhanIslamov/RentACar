@@ -169,8 +169,8 @@ wwwroot\images\car\bmw-m5-f6a9e66b-e23b-44e2-9bc7-de8d03837e96.jpg
 wwwroot\images\car\chevrolet-camaro-fadfd93c-3215-4a64-9003-7ba63867a977.jpg
 wwwroot\images\car\F150-1-0602953e-1bed-4b44-afe5-46d0cb920849.jpeg
 wwwroot\images\car\F150-1-1754bf58-663c-48c6-8906-fcd4153fe869.jpeg
+wwwroot\images\car\F150-1-8b843b73-7f2d-4617-9d8d-555665f657c2.jpeg
 wwwroot\images\car\F150-1-92c1e65a-a810-456e-a33c-804d61728518.jpeg
-wwwroot\images\car\F150-1-f058fea0-0e6b-4ca6-b1fa-a951bc12fd74.jpeg
 wwwroot\images\car\F150-1-f95fc39f-7f40-414a-b08c-fa58909a13d2.jpg
 wwwroot\images\car\F150-2-0329dd3b-a296-4488-bd0d-b2a0b8203cad.jpg
 wwwroot\images\car\F150-2-9399def3-b06f-4a0c-95b5-d184afd4953a.jpeg
@@ -187,7 +187,6 @@ wwwroot\images\car\F150-4-0214e338-b75d-4ddf-b9c6-fcbab9e594eb.jpeg
 wwwroot\images\car\F150-4-08ee841e-2319-4c0c-b22d-f51e52917018.jpeg
 wwwroot\images\car\F150-4-e902ef92-84c2-4fdc-92b3-39b2ffcee343.jpeg
 wwwroot\images\car\F150-4f5e763c-0bc4-4205-af8f-4fc1a6dbc485.jpg
-wwwroot\images\car\F150-5-3bfe05a2-ee5e-4183-94ec-b8d5e23c339c.jpeg
 wwwroot\images\car\F150-5-40143d4b-6063-4f95-af16-44da8d91d45e.jpeg
 wwwroot\images\car\F150-5-7a12b87c-ab26-4340-8431-d154dc2647ab.jpeg
 wwwroot\images\car\F150-5-eb180003-fa8c-4d6f-98ef-8c858bb98996.jpeg

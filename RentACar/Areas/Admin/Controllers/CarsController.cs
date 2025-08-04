@@ -25,7 +25,11 @@ namespace RentACar.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var cars = _context.Cars.Include(c => c.Category).ToList();
+            var cars = _context.Cars
+                .Include(c => c.Category)
+                .Include(c => c.Images) // Əlavə şəkillər üçün
+                .ToList();
+
             return View(cars);
         }
 
@@ -148,11 +152,36 @@ namespace RentACar.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Edit(int id)
+        {
+            var car = await _context.Cars
+                .Include(c => c.Images)  // Əlavə şəkilləri də yükləyir
+                .FirstOrDefaultAsync(c => c.Id == id);
 
+            if (car == null) return NotFound();
+
+            var model = new CarEditViewModel
+            {
+                Id = car.Id,
+                Name = car.Name,
+                Seats = car.Seats,
+                Doors = car.Doors,
+                Luggage = car.Luggage,
+                PricePerDay = car.PricePerDay,
+                CategoryId = car.CategoryId,
+                ImageUrl = car.ImageUrl,
+                Description = car.Description,
+                Categories = GetCategorySelectList(),
+                ExistingImages = car.Images.ToList()  // Burada əlavə şəkilləri modelə doldururuq
+            };
+
+            return View(model);
+        }
 
 
         [HttpPost]
-        public async Task<IActionResult> Edit(CarCreateViewModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(CarEditViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -160,7 +189,10 @@ namespace RentACar.Areas.Admin.Controllers
                 return View(model);
             }
 
-            var car = await _context.Cars.FindAsync(model.Id);
+            var car = await _context.Cars
+                .Include(c => c.Images)
+                .FirstOrDefaultAsync(c => c.Id == model.Id);
+
             if (car == null) return NotFound();
 
             if (model.CoverImageFile != null)
@@ -169,16 +201,57 @@ namespace RentACar.Areas.Admin.Controllers
             }
 
             car.Name = model.Name;
-            car.Seats = model.Seats;
-            car.Doors = model.Doors;
-            car.Luggage = model.Luggage;
+            car.Seats = model.Seats ?? 0;
+            car.Doors = model.Doors ?? 0;
+            car.Luggage = model.Luggage ?? 0;
             car.PricePerDay = model.PricePerDay;
             car.CategoryId = model.CategoryId;
+            car.Description = model.Description;
+
+            // Əlavə şəkilləri əlavə et
+            if (model.ImageFiles != null && model.ImageFiles.Any())
+            {
+                foreach (var file in model.ImageFiles)
+                {
+                    if (!file.IsImage() || !file.IsAllowedSize(1))
+                    {
+                        ModelState.AddModelError("ImageFiles", $"{file.FileName} şəkil olmalıdır və 1 MB-dan böyük olmamalıdır.");
+                        model.Categories = GetCategorySelectList();
+                        model.ExistingImages = car.Images?.ToList();
+                        return View(model);
+                    }
+
+                    var uniqueFileName = await file.GenerateFile(FilePathConstants.CarPath);
+                    car.Images.Add(new CarImage { ImageUrl = uniqueFileName });
+                }
+            }
 
             _context.Cars.Update(car);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
+        [HttpPost]
+        [Area("Admin")]
+        public async Task<IActionResult> DeleteImage(int id)
+        {
+            var image = await _context.CarImages.FindAsync(id);
+            if (image == null)
+                return NotFound();
+
+            // Serverdən şəkil faylını da silmək istəyirsinizsə, burada edə bilərsiniz:
+            var imagePath = Path.Combine(_env.WebRootPath, "images/car", image.ImageUrl);
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+            }
+
+            _context.CarImages.Remove(image);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
 
         public async Task<IActionResult> Details(int id)
         {
