@@ -7,7 +7,7 @@ using RentACar.DataContext.Entities;
 using RentACar.Areas.Admin.Models;
 using RentACar.Areas.Admin.Data;
 using RentACar.Areas.Admin.Extensions;
-using RentACar.DataContext.Entities.RentACar.DataContext.Entities;
+
 
 namespace RentACar.Areas.Admin.Controllers
 {
@@ -44,55 +44,6 @@ namespace RentACar.Areas.Admin.Controllers
             return View(model);
         }
 
-        //[HttpPost]
-        /*   public async Task<IActionResult> Create(CarCreateViewModel model)
-           {
-               if (!ModelState.IsValid)
-               {
-                   model.Categories = GetCategorySelectList();
-                   return View(model);
-               }
-
-               var uniqueImageFileName = await model.ImageFile.GenerateFile(FilePathConstants.CarPath);
-
-               var car = new Car
-               {
-                   Name = model.Name,
-                   Seats = model.Seats,
-                   Doors = model.Doors,
-                   Luggage = model.Luggage,
-                   PricePerDay = model.PricePerDay,
-                   ImageUrl = uniqueImageFileName,
-                   CategoryId = model.CategoryId,
-                   Images = new List<CarImage>(),
-               };
-
-               _context.Cars.Add(car);
-               await _context.SaveChangesAsync();
-               return RedirectToAction(nameof(Index));
-           }
-
-
-           public async Task<IActionResult> Edit(int id)
-           {
-               var car = await _context.Cars.FindAsync(id);
-               if (car == null) return NotFound();
-
-               var model = new CarCreateViewModel
-               {
-                   Id = car.Id,
-                   Name = car.Name,
-                   Seats = car.Seats,
-                   Doors = car.Doors,
-                   Luggage = car.Luggage,
-                   PricePerDay = car.PricePerDay,
-                   ImageUrl = car.ImageUrl,
-                   CategoryId = car.CategoryId,
-                   Categories = GetCategorySelectList()
-               };
-
-               return View(model);
-           }*/
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CarCreateViewModel model)
@@ -253,31 +204,34 @@ namespace RentACar.Areas.Admin.Controllers
         }
 
 
-        public async Task<IActionResult> Details(int id)
+        public IActionResult Details(int id)
         {
-            var car = await _context.Cars
-                .Include(c => c.Category)
-                .FirstOrDefaultAsync(c => c.Id == id);
+            var car = _context.Cars
+                .Include(c => c.Images)      // Əlavə şəkillər
+                .Include(c => c.Category)    // Kateqoriya
+                .FirstOrDefault(c => c.Id == id);
 
-            if (car == null) return NotFound();
+            if (car == null)
+                return NotFound();
 
-            var model = new CarCreateViewModel
+            var model = new CarDetailsViewModel
             {
                 Id = car.Id,
                 Name = car.Name,
-                Seats = car.Seats,
-                Doors = car.Doors,
-                Luggage = car.Luggage,
+                Description = car.Description,
                 PricePerDay = car.PricePerDay,
-                CoverImageUrl = car.ImageUrl,
-                CategoryId = car.CategoryId,
-                Categories = GetCategorySelectList()                
+                Seats = car.Seats ?? 0,
+                Doors = car.Doors ?? 0,
+                Luggage = car.Luggage ?? 0,
+                CategoryName = car.Category?.Name ?? "N/A",
+                ImageUrl = car.ImageUrl,
+                GalleryImages = car.Images?.Select(img => img.ImageUrl).ToList() ?? new List<string>()
             };
 
             return View(model);
         }
-
-         private List<SelectListItem> GetCategorySelectList()
+    
+        private List<SelectListItem> GetCategorySelectList()
         {
             return _context.Categories
                 .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name })

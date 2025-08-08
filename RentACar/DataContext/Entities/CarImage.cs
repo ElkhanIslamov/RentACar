@@ -1,5 +1,4 @@
-﻿namespace RentACar.DataContext.Entities
-{
+﻿
     namespace RentACar.DataContext.Entities
     {
         public class CarImage
@@ -11,4 +10,3 @@
         }
     }
 
-}

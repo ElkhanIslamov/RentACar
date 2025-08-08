@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using RentACar.DataContext.Entities.RentACar.DataContext.Entities;
+using RentACar.DataContext.Entities;
+
 
 namespace RentACar.Areas.Admin.Models
 {

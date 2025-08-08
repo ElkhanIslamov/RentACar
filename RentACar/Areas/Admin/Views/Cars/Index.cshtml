@@ -65,13 +65,17 @@
                     <span class="text-truncate d-inline-block" style="max-width: 200px;" title="@car.Description">
                         @car.Description
                     </span>
-                </td>
-
+                </td>               
                 <td>
                     <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm mb-1">Redaktə</a>
                     <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm mb-1">Detallar</a>
-                    <button class="btn btn-danger btn-sm delete-button" data-id="@car.Id" data-name="@car.Name">Sil</button>
-                </td>
+
+                    <form method="post" asp-area="Admin" asp-controller="Cars" asp-action="Delete" onsubmit="return confirm('“@car.Name” adlı maşını silmək istədiyinizə əminsiniz?');" style="display:inline">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@car.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                    </form>
+                </td>                
             </tr>
         }
     </tbody>
