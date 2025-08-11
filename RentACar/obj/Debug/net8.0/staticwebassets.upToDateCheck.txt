@@ -171,6 +171,10 @@ wwwroot\images\car\bmw-m5-f6a9e66b-e23b-44e2-9bc7-de8d03837e96.jpg
 wwwroot\images\car\bmw-m5-fe68b0cf-0ec1-4024-b23c-acb48fcd45ff.jpg
 wwwroot\images\car\chevrolet-camaro-21806b98-91d4-4d4e-8e5c-021e6801df1e.jpg
 wwwroot\images\car\chevrolet-camaro-fadfd93c-3215-4a64-9003-7ba63867a977.jpg
+wwwroot\images\car\Elantra-1-f63ef2bf-94cd-4ae7-827c-b486bcd3b716.jpeg
+wwwroot\images\car\Elantra-2-ee286026-1792-4f96-b736-7ca820e40414.jpeg
+wwwroot\images\car\Elantra-3-71622b67-6caa-4968-bcf6-c99a13fa8077.jpeg
+wwwroot\images\car\Elantra-4-6d0ab625-23c7-49d0-9832-2d5f31dc2303.jpeg
 wwwroot\images\car\F150-1-0602953e-1bed-4b44-afe5-46d0cb920849.jpeg
 wwwroot\images\car\F150-1-1754bf58-663c-48c6-8906-fcd4153fe869.jpeg
 wwwroot\images\car\F150-1-8b843b73-7f2d-4617-9d8d-555665f657c2.jpeg
@@ -207,28 +211,67 @@ wwwroot\images\car\ford-raptor-40e702c0-7137-44a1-92e6-8e05cb90fe72.jpg
 wwwroot\images\car\ford-raptor-538205b3-739d-474a-9e5c-344d1a5af64a.jpg
 wwwroot\images\car\ford-raptor-dca58be8-5cbe-4bcc-9384-0651409cc2ee.jpg
 wwwroot\images\car\ford-raptor-fbd2b174-a6e2-45bb-a134-beb430488267.jpg
+wwwroot\images\car\Hyundai Santa Fe - 1 -150-8a96a96d-923d-4993-b3dc-2970951af35e.jpeg
+wwwroot\images\car\Hyundai Santa Fe - 2 -150-c6955071-98d6-4739-b138-1a7e3e5cc37b.jpeg
+wwwroot\images\car\Hyundai Santa Fe - 3 -150-9fc28ffb-ca8f-4662-baa3-45b9321e1e91.jpeg
+wwwroot\images\car\Hyundai Santa Fe - 4 -150-0b831617-a0ae-45f0-9e73-9ef4796e7879.jpeg
 wwwroot\images\car\Hyundai-Accent-1-d4216e37-e867-43d5-9cb5-fb9976a281b8.jpeg
 wwwroot\images\car\Hyundai-Accent-2-6eb14d5b-9f2b-49e4-8b85-b7f8cff706e2.jpeg
 wwwroot\images\car\Hyundai-Accent-3-4297e35a-eba0-42fa-9bfd-0fa0394a32bb.jpeg
 wwwroot\images\car\Hyundai-Accent-4-ea0fe577-0840-444f-93d1-d9fdf8f994f8.jpeg
 wwwroot\images\car\Hyundai-Accent-5-ac847a5f-66b5-463a-8105-3ef927bf6365.jpeg
+wwwroot\images\car\Hyundai-Creta-1 - 90-614b9040-7984-4915-b07d-69112977ee70.jpeg
+wwwroot\images\car\Hyundai-Creta-2 - 90-8d6e7328-0f4e-4c40-ac61-4bd35840db57.jpeg
+wwwroot\images\car\Hyundai-Creta-3 - 90-b734f293-cb5f-4d25-8962-6d3134dd358e.jpeg
+wwwroot\images\car\Hyundai-Creta-4- 90-2536933b-db6d-4135-ad0e-4b6a61dfd59b.jpeg
+wwwroot\images\car\Hyundai-Creta-5- 90-fd837233-08ac-4204-ae08-86a25ed00219.jpeg
+wwwroot\images\car\Hyundai-I20-1-5d7dd0ed-1804-4643-a020-8173fa3780da.jpeg
+wwwroot\images\car\Hyundai-I20-2-f0a19bf2-3f17-4b90-b477-fbb5061b137f.jpeg
+wwwroot\images\car\Hyundai-I20-3-35fd388f-5dd9-4a00-b145-ea390f588d2e.jpeg
+wwwroot\images\car\Hyundai-I20-4-2e4f5a45-ae00-4632-b8c9-5ac9525d54d6.jpeg
 wwwroot\images\car\hyundai-staria-0dfbfcd9-e775-4585-a1bd-a9fe25213ece.jpg
 wwwroot\images\car\hyundai-staria-6604c6ea-89d5-41d1-9701-80a996b84f43.jpg
 wwwroot\images\car\hyundai-staria-84537d39-053a-4c6e-9187-08b449fc6975.jpg
 wwwroot\images\car\hyundai-staria-d6a6dc36-3a72-476d-8e1c-01a3963265c1.jpg
+wwwroot\images\car\Hyundai-Tucson-1 - 120-94df02a5-1263-4961-baab-71080ee999ab.jpeg
+wwwroot\images\car\Hyundai-Tucson-2 - 120-a2b813a1-3eb2-46ff-aaa1-4f1c6fa0453c.jpeg
+wwwroot\images\car\Hyundai-Tucson-2 - 120-d1a09bb1-825a-4357-b943-88fc0ede11a6.jpeg
+wwwroot\images\car\Hyundai-Tucson-3 - 120-50f1f428-5492-4dd5-a3a2-0a2b7d86d97e.jpeg
+wwwroot\images\car\Hyundai-Tucson-4 - 120-6fbada80-bb51-460a-abe1-2d73b68b3c3f.jpeg
+wwwroot\images\car\Hyundai-Tucson-4 - 120-7391e7cd-9709-48b4-a4b6-a11a8cb033b9.jpeg
+wwwroot\images\car\Hyundai-Tucson-4 - 120-d893d418-1aaa-47c9-8a17-e672ca3d875e.jpeg
+wwwroot\images\car\Hyundai-Tucson-4 - 120-dcced531-7723-4be1-8f1f-4e45bc87fbf4.jpeg
+wwwroot\images\car\Hyundai-Tucson-5- 120-331f79a7-840f-40ad-b5bb-07307cdaaf58.jpeg
+wwwroot\images\car\Hyundai-Veneu-1-90-577cb73e-175c-42ef-b0cc-b6fc5811633c.jpeg
+wwwroot\images\car\Hyundai-Veneu-2-90-229ae563-7c65-46f5-9eda-d65c210948d0.jpeg
+wwwroot\images\car\Hyundai-Veneu-3-90-7eea6179-ce4c-4f75-9c5f-3da750aba15c.jpeg
+wwwroot\images\car\Hyundai-Veneu-4-90-72b4d19f-260d-4dff-abec-5eb3e5a25929.jpeg
 wwwroot\images\car\jeep-renegade-10bf8a99-8d57-4ced-b6c5-316840797a30.jpg
 wwwroot\images\car\jeep-renegade-141a7d31-5907-4555-9fe9-f8a2b43157a7.jpg
 wwwroot\images\car\jeep-renegade-170d3fc8-ffed-488a-8f38-2bdc1dd304f7.jpg
 wwwroot\images\car\jeep-renegade-bea56060-89f6-4b4d-888a-dccdee837156.jpg
 wwwroot\images\car\jeep-renegade-ca47fdfd-e123-4caa-b257-74cedcf5e0fc.jpg
 wwwroot\images\car\jeep-renegade-f4020394-351a-41d2-bc2b-0a886c448bb9.jpg
+wwwroot\images\car\Kia Cerato-1-07ecc92b-7876-49af-b452-bca1f696cb1a.jpeg
+wwwroot\images\car\Kia Cerato-2-c4879ef2-209c-4c7a-ba0e-9b6a386a4e5e.jpeg
+wwwroot\images\car\Kia Cerato-3-d17272fe-09ce-4286-ba5b-135554d2818d.jpeg
+wwwroot\images\car\Kia Rio X-Line 1 -70-694e2cd8-77ff-4535-ae69-b9d2d8479f17.jpeg
+wwwroot\images\car\Kia Rio X-Line 1 -70-a933048b-a355-42e6-8394-7f62c8dbd8a7.jpeg
+wwwroot\images\car\Kia Rio X-Line 2 -70-99775ff6-9dcb-4779-85ec-aceb7d830474.jpeg
+wwwroot\images\car\Kia Rio X-Line 3 -70-d240d3ce-9001-43c0-aa0d-3d35990911e4.jpeg
 wwwroot\images\car\lexus-08aef1b1-386e-4f93-8e97-2e474699a2f7.jpg
 wwwroot\images\car\lexus-509a70e4-e80e-4de6-bd92-8123ea96e490.jpg
 wwwroot\images\car\lexus-cd3a84f3-c080-481a-af07-20442d68da48.jpg
+wwwroot\images\car\Mitsubishi Pajero - 1 -150-b23ccba1-186c-4714-9efd-41c378bb17ef.jpeg
+wwwroot\images\car\Mitsubishi Pajero - 2 -150-39103f78-8e49-45d2-ac3b-c4fc9df27631.jpeg
 wwwroot\images\car\range-rover-1a8bdf0d-1284-44b6-b8d3-d26b1059766b.jpg
 wwwroot\images\car\spark1-3e4fdd3d-9ca9-4c26-b09b-0a7e48547e27.jpeg
 wwwroot\images\car\spark2-fe514212-f37a-4a56-bd93-0c50d8ae1bf0.png
 wwwroot\images\car\spark3-d373f839-97c1-4481-91bf-887e72e7ced1.jpeg
+wwwroot\images\car\Toyota Corolla Hybryd - 1- 90-11112006-e911-4c5b-afd7-1e171a14cdaa.png
+wwwroot\images\car\Toyota Corolla Hybryd - 2- 90-7c4a6f11-d039-4cda-9141-46303aaa8f6f.png
+wwwroot\images\car\Toyota Corolla Hybryd - 3- 90-294bbc28-3687-49b2-817b-f21207d993cb.png
+wwwroot\images\car\Toyota Corolla Hybryd - 3- 90-c52590e6-6aa6-4726-8182-5e3ec99bf049.png
 wwwroot\images\car\toyota-rav-d604db2f-906d-4730-8301-6db506c4c23e.jpg
 wwwroot\images\car\Volkswagen Polo-1-a25413ad-a4ef-4a91-8ac7-7454ba8a3891.jpeg
 wwwroot\images\car\Volkswagen Polo-2-6beb43ab-49a5-4170-9083-fde9cab737fc.jpeg
