@@ -2,56 +2,39 @@
     <div id="topbar" class="topbar-dark text-light">
         <div class="container">
             <div class="topbar-left xs-hide">
-                <div class="topbar-widget">
-                    <div class="topbar-widget"><a href="~/#"><i class="fa fa-phone"></i>+994 55 333 1755</a></div>
-                    <div class="topbar-widget"><a href="~/#"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="4d2e2223392c2e390d3f2823392c2134632e2220">[email&#160;protected]</span></a></div>
-                    <div class="topbar-widget"><a href="~/#"><i class="fa fa-clock-o"></i>@DateTime.UtcNow.AddHours(4)</a></div>
-                </div>
+                <div class="topbar-widget"><a href="~/#"><i class="fa fa-phone"></i>+994 55 333 1755</a></div>
+                <div class="topbar-widget"><a href="~/#"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="4d2e2223392c2e390d3f2823392c2134632e2220">[email&#160;protected]</span></a></div>
+                <div class="topbar-widget"><a href="~/#"><i class="fa fa-clock-o"></i>@DateTime.UtcNow.AddHours(4)</a></div>
             </div>
 
-            <div class="topbar-right">
-                <div class="social-icons">
+            <div class="topbar-right d-flex align-items-center">
+                <div class="social-icons" style="margin-right: 15px;">
                     <a href="~/#"><i class="fa fa-facebook fa-lg"></i></a>
-                    <a href="~/#"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a href="~/#"><i class="fa fa-youtube fa-lg"></i></a>
-                    <a href="~/#"><i class="fa fa-pinterest fa-lg"></i></a>
-                    <a href="~/#"><i class="fa fa-instagram fa-lg"></i></a>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="de-flex sm-pt10">
                     <div class="de-flex-col">
-                        <div class="de-flex-col">
-                            <!-- logo begin -->
-                            <div id="logo">
-                                <a asp-controller="home" asp-action="index">
-                                    <img class="logo-1" src="~/images/logo-light.png" alt="">
-                                    <img class="logo-2" src="~/images/logo.png" alt="">
-                                </a>
-                            </div>
-                            <!-- logo close -->
+                        <div id="logo">
+                            <a asp-controller="home" asp-action="index">
+                                <img class="logo-1" src="~/images/logo-light.png" alt="">
+                                <img class="logo-2" src="~/images/logo.png" alt="">
+                            </a>
                         </div>
                     </div>
-                    <div class="de-flex-col header-col-mid">
-                        <ul id="mainmenu">
-                            <li>
-                                <a class="menu-item" asp-controller="home" asp-action="index">Ana səhifə</a>
-                            </li>
-                            <li>
-                                <a class="menu-item" asp-controller="Account" asp-action="Dashboard">Profil</a>
-                            </li>
-                            <li>
-                                <a class="menu-item" asp-controller="car" asp-action="index">Avtomobillər</a>
 
-                            </li>
-                            <li>
-                                <a class="menu-item" asp-controller="booking" asp-action="QuickBooking">Sifariş et</a>
-                            </li>
+                    <div class="de-flex-col header-col-mid">
+                        <ul id="mainmenu" style="position:relative;">
+                            <li><a class="menu-item" asp-controller="home" asp-action="index">Ana səhifə</a></li>
+                            <li><a class="menu-item" asp-controller="Account" asp-action="Dashboard">Profil</a></li>
+                            <li><a class="menu-item" asp-controller="car" asp-action="index">Avtomobillər</a></li>
+                            <li><a class="menu-item" asp-controller="booking" asp-action="QuickBooking">Sifariş et</a></li>
                             <li>
                                 <a class="menu-item" href="~/#">Pages</a>
                                 <ul>
@@ -83,26 +66,31 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a class="menu-item" href="~/#">Elements</a>
-                                <ul>
-                                    <li><a class="menu-item" href="~/preloader.html">Preloader</a></li>
-                                    <li><a class="menu-item" href="~/icon-boxes.html">Icon Boxes</a></li>
-                                    <li><a class="menu-item" href="~/badge.html">Badge</a></li>
-                                    <li><a class="menu-item" href="~/counters.html">Counters</a></li>
-                                    <li><a class="menu-item" href="~/gallery-popup.html">Gallery Popup</a></li>
-                                    <li><a class="menu-item" href="~/icons-elegant.html">Icons Elegant</a></li>
-                                    <li><a class="menu-item" href="~/icons-etline.html">Icons Etline</a></li>
-                                    <li><a class="menu-item" href="~/icons-font-awesome.html">Icons Font Awesome</a></li>
-                                    <li><a class="menu-item" href="~/map.html">Map</a></li>
-                                    <li><a class="menu-item" href="~/modal.html">Modal</a></li>
-                                    <li><a class="menu-item" href="~/popover.html">Popover</a></li>
-                                    <li><a class="menu-item" href="~/tabs.html">Tabs</a></li>
-                                    <li><a class="menu-item" href="~/tooltips.html">Tooltips</a></li>
+
+                            <!-- Seçilmişlər menyusu Elements yerinə -->
+                            <li style="position:relative;">
+                                <a href="@Url.Action("Index", "Favorites")" class="menu-item">
+                                    <i class="fa fa-heart" style="color: red;"></i> Seçilmişlər
+                                </a>
+                                <ul id="favorites-menu-list"
+                                    style="display:none;
+                                           min-width:250px;
+                                           background:#fff;
+                                           color:#000;
+                                           padding:10px;
+                                           list-style:none;
+                                           box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+                                           border-radius:4px;
+                                           position:absolute;
+                                           right:0;
+                                           top:100%;
+                                           z-index:999;">
+                                    <!-- JS ilə əlavə olunacaq -->
                                 </ul>
                             </li>
                         </ul>
                     </div>
+
                     <div class="de-flex-col">
                         <div class="menu_side_area">
                             @if (User.Identity.IsAuthenticated)
@@ -125,3 +113,50 @@
         </div>
     </div>
 </header>
+
+<style>
+    /* Seçilmişlər dropdown menyusu üçün */
+    #favorites-menu-list li {
+        padding: 6px 8px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+    }
+
+        #favorites-menu-list li img {
+            width: 40px;
+            height: 25px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        #favorites-menu-list li:last-child {
+            border-bottom: none;
+        }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".fa-heart").forEach(function (heart) {
+            heart.addEventListener("click", function () {
+                let carId = this.dataset.id;
+
+                fetch('/Favorites/Add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: JSON.stringify({ id: carId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // header-də favorit sayını yenilə
+                    document.getElementById("favoritesCount").textContent = data.count;
+                });
+            });
+        });
+    });
+</script>
+

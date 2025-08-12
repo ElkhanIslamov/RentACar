@@ -47,6 +47,8 @@ namespace RentACar
 
             FilePathConstants.CarPath = Path.Combine(builder.Environment.WebRootPath, "images", "car");
 
+            builder.Services.AddSession();
+
 
             var app = builder.Build();
 

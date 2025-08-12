@@ -264,6 +264,11 @@ wwwroot\images\car\lexus-509a70e4-e80e-4de6-bd92-8123ea96e490.jpg
 wwwroot\images\car\lexus-cd3a84f3-c080-481a-af07-20442d68da48.jpg
 wwwroot\images\car\Mitsubishi Pajero - 1 -150-b23ccba1-186c-4714-9efd-41c378bb17ef.jpeg
 wwwroot\images\car\Mitsubishi Pajero - 2 -150-39103f78-8e49-45d2-ac3b-c4fc9df27631.jpeg
+wwwroot\images\car\Nissan Kicks-1-90-298d5445-4489-4297-bea5-8f10a0b99271.jpeg
+wwwroot\images\car\Nissan Kicks-2-90-7bc45420-6635-4b3c-8e60-963c46bc5985.jpeg
+wwwroot\images\car\Nissan Kicks-3-90-70b57c3f-8702-4be7-bb54-b1e06435529f.jpeg
+wwwroot\images\car\Nissan Kicks-4-90-7e841798-168c-4483-903e-34a00475ba9e.jpeg
+wwwroot\images\car\Nissan Kicks-5-90-1d1eab14-48db-40ee-bacb-3b3425bc53b7.jpeg
 wwwroot\images\car\range-rover-1a8bdf0d-1284-44b6-b8d3-d26b1059766b.jpg
 wwwroot\images\car\spark1-3e4fdd3d-9ca9-4c26-b09b-0a7e48547e27.jpeg
 wwwroot\images\car\spark2-fe514212-f37a-4a56-bd93-0c50d8ae1bf0.png

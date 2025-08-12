@@ -76,7 +76,7 @@
                         @foreach (var item in Model.Cars)
                         {
                             <div class="col-xl-4 col-lg-6">
-                                <div class="de-item mb30">
+                                <div class="de-item mb30" data-car-id="@item.Id" data-car-name="@item.Name" data-car-image="@item.ImageUrl">
                                     <a href="@Url.Action("Details", "Car", new { id = item.Id })">
                                         <div class="d-img">
                                             <img src="images/car/@item.ImageUrl" class="img-fluid" alt="@item.Name">
@@ -86,7 +86,7 @@
                                         <div class="d-text">
                                             <h4>@item.Name</h4>
                                             <div class="d-item_like">
-                                                <i class="fa fa-heart"></i>
+                                                <i class="fa fa-heart favorite-icon" style="cursor:pointer; color:grey;" title="Add to favorites"></i>
                                             </div>
                                             <div class="d-attributes">
                                                 <div class="d-attr-row">
@@ -156,8 +156,6 @@
         flex-direction: column;
         justify-content: space-between;
     }
-
-    /* Digər mövcud CSS-ləri aşağıya əlavə et */
 
     .d-attributes {
         display: flex;
@@ -234,57 +232,107 @@
             color: #0d1a26;
             margin-bottom: 15px;
         }
+
+    .favorite-icon.active {
+        color: red !important;
+    }
 </style>
 
 @section Scripts {
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const checkboxes = document.querySelectorAll(".filter-checkbox");
-            const searchInput = document.getElementById("search-input");
-            const rangeMin = document.querySelector(".range-min");
-            const rangeMax = document.querySelector(".range-max");
+            const favoritesKey = "favoriteCars";
+            const carList = document.getElementById("car-list");
+            let favorites = JSON.parse(localStorage.getItem(favoritesKey)) || [];
 
-            checkboxes.forEach(cb => cb.addEventListener("change", filterCars));
-            searchInput.addEventListener("input", debounce(filterCars, 300));
-            rangeMin.addEventListener("input", filterCars);
-            rangeMax.addEventListener("input", filterCars);
+            // Funksiya: localStorage-də saxlanılan Seçilmişləri göstər
+            function renderFavoritesDropdown() {
+                const favoritesList = document.getElementById("favorites-list");
+                if (!favoritesList) return;
+                favoritesList.innerHTML = "";
 
-            function filterCars() {
-                const selectedBodyTypes = Array.from(checkboxes)
-                    .filter(cb => cb.checked)
-                    .map(cb => parseInt(cb.value));
+                if (favorites.length === 0) {
+                    favoritesList.innerHTML = "<li>Seçilmiş yoxdur</li>";
+                    return;
+                }
 
-                const keyword = searchInput.value.trim();
-                const minPrice = parseFloat(rangeMin.value);
-                const maxPrice = parseFloat(rangeMax.value);
+                favorites.forEach(car => {
+                    const li = document.createElement("li");
+                    li.style.display = "flex";
+                    li.style.alignItems = "center";
+                    li.style.marginBottom = "8px";
+                    li.innerHTML = `
+                        <img src="/images/car/${car.image}" alt="${car.name}" style="width:40px; height:25px; object-fit:cover; margin-right:8px; border-radius:3px;" />
+                        <span>${car.name}</span>
+                    `;
+                    favoritesList.appendChild(li);
+                });
+            }
 
-                const data = {
-                    bodyTypes: selectedBodyTypes,
-                    searchKeyword: keyword,
-                    minPrice: minPrice,
-                    maxPrice: maxPrice
-                };
+            // Urək ikonlarını rənglə və click event əlavə et
+            function initFavoriteIcons() {
+                const icons = carList.querySelectorAll(".favorite-icon");
+                icons.forEach(icon => {
+                    const card = icon.closest(".de-item");
+                    const carId = card.dataset.carId;
+                    const carName = card.dataset.carName;
+                    const carImage = card.dataset.carImage;
 
-                fetch("/Car/Filter", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(data)
-                })
-                    .then(res => res.text())
-                    .then(html => {
-                        document.getElementById("car-list").innerHTML = html;
+                    // Əgər avtomobil Seçilmişlərdədirsə, ürəyi qırmızı et
+                    if (favorites.some(f => f.id === carId)) {
+                        icon.classList.add("active");
+                        icon.style.color = "red";
+                    } else {
+                        icon.classList.remove("active");
+                        icon.style.color = "grey";
+                    }
+
+                    // Click event
+                    icon.addEventListener("click", function (e) {
+                        e.preventDefault();
+
+                        const car = { id: carId, name: carName, image: carImage };
+                        const index = favorites.findIndex(f => f.id === carId);
+
+                        if (index === -1) {
+                            // Əlavə et
+                            favorites.push(car);
+                            icon.classList.add("active");
+                            icon.style.color = "red";
+                        } else {
+                            // Sil
+                            favorites.splice(index, 1);
+                            icon.classList.remove("active");
+                            icon.style.color = "grey";
+                        }
+
+                        localStorage.setItem(favoritesKey, JSON.stringify(favorites));
+                        renderFavoritesDropdown();
                     });
+                });
             }
 
-            function debounce(fn, delay) {
-                let timeoutId;
-                return function (...args) {
-                    clearTimeout(timeoutId);
-                    timeoutId = setTimeout(() => fn.apply(this, args), delay);
-                };
-            }
+            // Başlanğıcda funksiyaları çağır
+            renderFavoritesDropdown();
+            initFavoriteIcons();
+
+            // "Seçilmişlər" dropdown toggle funksiyası
+            const favoritesToggle = document.getElementById("favorites-toggle");
+            const favoritesList = document.getElementById("favorites-list");
+            favoritesToggle.addEventListener("click", function () {
+                if (favoritesList.style.display === "block") {
+                    favoritesList.style.display = "none";
+                } else {
+                    favoritesList.style.display = "block";
+                }
+            });
+
+            // Xaricə kliklə dropdown-u bağlamaq
+            document.addEventListener("click", function (e) {
+                if (!favoritesToggle.contains(e.target) && !favoritesList.contains(e.target)) {
+                    favoritesList.style.display = "none";
+                }
+            });
         });
     </script>
 }
