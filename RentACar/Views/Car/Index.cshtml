@@ -24,6 +24,7 @@
 
                 <!-- Filter Sidebar -->
                 <div class="col-lg-3">
+                    <!-- Search -->
                     <div class="item_filter_group">
                         <h4>Search</h4>
                         <div class="de_form">
@@ -31,42 +32,27 @@
                         </div>
                     </div>
 
+                    <!-- Category Filter -->
                     <div class="item_filter_group">
                         <h4>Car Body Type</h4>
                         <div class="de_form">
                             @foreach (var bodyType in Model.Categories)
                             {
                                 <div class="de_checkbox">
-                                    <input id="car_body_type_@bodyType.Id"
-                                           name="car_body_type"
-                                           type="checkbox"
-                                           class="filter-checkbox"
-                                           value="@bodyType.Id" />
+                                    <input id="car_body_type_@bodyType.Id" type="checkbox" value="@bodyType.Id" class="category-filter" />
                                     <label for="car_body_type_@bodyType.Id">@bodyType.Name</label>
                                 </div>
                             }
                         </div>
                     </div>
 
+                    <!-- Price Filter -->
                     <div class="item_filter_group">
-                        <h4>Price (₼)</h4>
-                        <div class="price-input">
-                            <div class="field">
-                                <span>Min</span>
-                                <input type="number" class="input-min" value="0">
-                            </div>
-                            <div class="field">
-                                <span>Max</span>
-                                <input type="number" class="input-max" value="2000">
-                            </div>
-                        </div>
-                        <div class="slider">
-                            <div class="progress"></div>
-                        </div>
-                        <div class="range-input">
-                            <input type="range" class="range-min" min="0" max="2000" value="0" step="1">
-                            <input type="range" class="range-max" min="0" max="2000" value="2000" step="1">
-                        </div>
+                        <h4>Price Range</h4>
+                        <input type="number" id="minPrice" placeholder="Min Price" class="form-control mb-2" />
+                        <input type="number" id="maxPrice" placeholder="Max Price" class="form-control mb-2" />
+                        <button id="applyPriceFilter" class="btn btn-primary mt-2">Apply</button>
+                        <div id="price-slider" style="margin-top:60px;"></div>
                     </div>
                 </div>
 
@@ -75,8 +61,8 @@
                     <div class="row" id="car-list">
                         @foreach (var item in Model.Cars)
                         {
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="de-item mb30" data-car-id="@item.Id" data-car-name="@item.Name" data-car-image="@item.ImageUrl">
+                            <div class="col-xl-4 col-lg-6 car-parent">
+                                <div class="de-item mb-2 car-card p-2" data-car-id="@item.Id" data-car-name="@item.Name" data-car-image="@item.ImageUrl" data-price="@item.PricePerDay" data-category-id="@item.CategoryId">
                                     <a href="@Url.Action("Details", "Car", new { id = item.Id })">
                                         <div class="d-img">
                                             <img src="images/car/@item.ImageUrl" class="img-fluid" alt="@item.Name">
@@ -84,11 +70,11 @@
                                     </a>
                                     <div class="d-info">
                                         <div class="d-text">
-                                            <h4>@item.Name</h4>
-                                            <div class="d-item_like">
+                                            <h4 class="mb-1">@item.Name</h4>
+                                            <div class="d-item_like mb-1">
                                                 <i class="fa fa-heart favorite-icon" style="cursor:pointer; color:grey;" title="Add to favorites"></i>
                                             </div>
-                                            <div class="d-attributes">
+                                            <div class="d-attributes mb-1">
                                                 <div class="d-attr-row">
                                                     <span class="d-atr"><img src="images/icons/1-green.svg" alt="">@item.Seats</span>
                                                     <span class="d-atr"><img src="images/icons/2-green.svg" alt="">@item.Doors</span>
@@ -98,10 +84,9 @@
                                                     <span class="d-atr"><img src="images/icons/4-green.svg" alt="">@item.Category?.Name</span>
                                                 </div>
                                             </div>
-
                                             <div class="d-price">
                                                 Günlük qiymət <span>₼@item.PricePerDay.ToString("N0")</span>
-                                                <a href="/Booking/QuickBooking?carId=@item.Id" class="btn-main">Rent Now</a>
+                                                <a href="/Booking/QuickBooking?carId=@item.Id" class="btn-main btn-sm">Rent Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -109,6 +94,14 @@
                             </div>
                         }
                     </div>
+
+                    <!-- Pagination -->
+                    <div class="d-flex justify-content-center align-items-center mt-3 gap-2">
+                        <div id="pagination-prev" class="page-arrow" style="cursor:pointer;">&#8249;</div>
+                        <div id="pagination-scroll" class="d-flex overflow-auto" style="gap:5px;"></div>
+                        <div id="pagination-next" class="page-arrow" style="cursor:pointer;">&#8250;</div>
+                    </div>
+
                 </div>
 
             </div>
@@ -116,223 +109,234 @@
     </section>
 </div>
 
-<a href="#" id="back-to-top"></a>
-
 <style>
-    /* Kartın ümumi hündürlüyü sabit qalır */
-    .de-item {
-        width: 100%;
-        min-height: 450px; /* lazım olduqda artır */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        background: #fff;
-    }
+.car-card { min-height: 220px; display:flex; flex-direction: column; }
+.car-card .d-img { height: 130px; overflow:hidden; }
+.car-card .d-img img { width:100%; height:100%; object-fit:cover; }
+.car-card .d-info { flex:1; display:flex; flex-direction:column; justify-content:space-between; }
+.favorite-icon.active { color:red !important; }
+#price-slider { width:100%; }
 
-    /* Şəkil konteynerinin ölçüsü sabitdir */
-    .d-img {
-        width: 100%;
-        height: 220px;
-        overflow: hidden;
-        border-bottom: 1px solid #eee;
-    }
-
-        /* Şəkil konteynerə uyğun kəsilir, deformasiya olmur */
-        .d-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-    /* Kartın məlumat hissəsi */
-    .d-info {
-        padding: 15px;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .d-attributes {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        min-height: 50px; /* category üçün sabit minimum hündürlük */
-    }
-
-    .d-attr-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 8px;
-    }
-
-        .d-attr-row .d-atr {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-    .d-category {
-        display: flex;
-        justify-content: flex-start;
-        min-height: 20px; /* category adı üçün minimum hündürlük */
-    }
-
-        .d-category .d-atr {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-    #search-input {
-        border: 2px solid #1ec38b;
-        border-radius: 5px;
-        padding: 10px 12px;
-        width: 100%;
-        font-size: 15px;
-        outline: none;
-        box-shadow: none;
-        transition: border 0.3s, box-shadow 0.3s;
-    }
-
-        #search-input:focus {
-            border-color: #16a874;
-            box-shadow: 0 0 0 2px rgba(30, 195, 139, 0.2);
-        }
-
-    .de_checkbox input[type="checkbox"] {
-        accent-color: #1ec38b;
-        width: 16px;
-        height: 16px;
-        cursor: pointer;
-    }
-
-    .item_filter_group {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 25px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-        .item_filter_group h4 {
-            font-weight: bold;
-            color: #0d1a26;
-            margin-bottom: 15px;
-        }
-
-    .favorite-icon.active {
-        color: red !important;
-    }
+.page-scroll-btn {
+    min-width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.page-scroll-btn.active {
+    background: #007bff;
+    color: white;
+}
+.page-arrow {
+    font-size: 24px;
+    user-select: none;
+    padding: 0 10px;
+    color: #007bff;
+}
+#pagination-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+#pagination-scroll::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 3px;
+}
 </style>
 
 @section Scripts {
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const favoritesKey = "favoriteCars";
-            const carList = document.getElementById("car-list");
-            let favorites = JSON.parse(localStorage.getItem(favoritesKey)) || [];
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet" />
 
-            // Funksiya: localStorage-də saxlanılan Seçilmişləri göstər
-            function renderFavoritesDropdown() {
-                const favoritesList = document.getElementById("favorites-list");
-                if (!favoritesList) return;
-                favoritesList.innerHTML = "";
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const favoritesKey = "favoriteCars";
+    let favorites = JSON.parse(localStorage.getItem(favoritesKey)) || [];
 
-                if (favorites.length === 0) {
-                    favoritesList.innerHTML = "<li>Seçilmiş yoxdur</li>";
-                    return;
-                }
+    const carParents = Array.from(document.querySelectorAll(".car-parent"));
+    const searchInput = document.getElementById("search-input");
+    const categoryCheckboxes = document.querySelectorAll(".category-filter");
+    const minPriceInput = document.getElementById("minPrice");
+    const maxPriceInput = document.getElementById("maxPrice");
+    const applyPriceFilterBtn = document.getElementById("applyPriceFilter");
 
-                favorites.forEach(car => {
-                    const li = document.createElement("li");
-                    li.style.display = "flex";
-                    li.style.alignItems = "center";
-                    li.style.marginBottom = "8px";
-                    li.innerHTML = `
-                        <img src="/images/car/${car.image}" alt="${car.name}" style="width:40px; height:25px; object-fit:cover; margin-right:8px; border-radius:3px;" />
+    const paginationEl = document.getElementById("pagination-scroll");
+    const prevBtn = document.getElementById("pagination-prev");
+    const nextBtn = document.getElementById("pagination-next");
+
+    const itemsPerPage = 6;
+    let currentPage = 1;
+    let filteredParents = carParents;
+
+    const updateFavoritesCount = () => {
+        const countEl = document.getElementById("favoritesCount");
+        if(countEl) countEl.textContent = favorites.length;
+    }
+
+    const renderFavoritesDropdown = () => {
+        const menuList = document.getElementById("favorites-menu-list");
+        if(!menuList) return;
+        menuList.innerHTML = "";
+        if(favorites.length===0){ menuList.innerHTML="<li>Seçilmiş yoxdur</li>"; return; }
+        favorites.forEach(car=>{
+            menuList.insertAdjacentHTML("beforeend",`
+                <li style="display:flex;align-items:center;justify-content:space-between;gap:5px;">
+                    <a href="/Car/Details/${car.id}" style="display:flex;align-items:center;gap:5px;text-decoration:none;color:inherit;">
+                        <img src="/images/car/${car.image}" alt="${car.name}" style="width:50px;height:30px;object-fit:cover;" />
                         <span>${car.name}</span>
-                    `;
-                    favoritesList.appendChild(li);
-                });
-            }
+                    </a>
+                    <i class="fa fa-heart remove-favorite" data-id="${car.id}" style="cursor:pointer;color:red;font-size:16px;"></i>
+                </li>
+            `);
+        });
 
-            // Urək ikonlarını rənglə və click event əlavə et
-            function initFavoriteIcons() {
-                const icons = carList.querySelectorAll(".favorite-icon");
-                icons.forEach(icon => {
-                    const card = icon.closest(".de-item");
-                    const carId = card.dataset.carId;
-                    const carName = card.dataset.carName;
-                    const carImage = card.dataset.carImage;
-
-                    // Əgər avtomobil Seçilmişlərdədirsə, ürəyi qırmızı et
-                    if (favorites.some(f => f.id === carId)) {
-                        icon.classList.add("active");
-                        icon.style.color = "red";
-                    } else {
-                        icon.classList.remove("active");
-                        icon.style.color = "grey";
-                    }
-
-                    // Click event
-                    icon.addEventListener("click", function (e) {
-                        e.preventDefault();
-
-                        const car = { id: carId, name: carName, image: carImage };
-                        const index = favorites.findIndex(f => f.id === carId);
-
-                        if (index === -1) {
-                            // Əlavə et
-                            favorites.push(car);
-                            icon.classList.add("active");
-                            icon.style.color = "red";
-                        } else {
-                            // Sil
-                            favorites.splice(index, 1);
-                            icon.classList.remove("active");
-                            icon.style.color = "grey";
-                        }
-
-                        localStorage.setItem(favoritesKey, JSON.stringify(favorites));
-                        renderFavoritesDropdown();
-                    });
-                });
-            }
-
-            // Başlanğıcda funksiyaları çağır
-            renderFavoritesDropdown();
-            initFavoriteIcons();
-
-            // "Seçilmişlər" dropdown toggle funksiyası
-            const favoritesToggle = document.getElementById("favorites-toggle");
-            const favoritesList = document.getElementById("favorites-list");
-            favoritesToggle.addEventListener("click", function () {
-                if (favoritesList.style.display === "block") {
-                    favoritesList.style.display = "none";
-                } else {
-                    favoritesList.style.display = "block";
-                }
-            });
-
-            // Xaricə kliklə dropdown-u bağlamaq
-            document.addEventListener("click", function (e) {
-                if (!favoritesToggle.contains(e.target) && !favoritesList.contains(e.target)) {
-                    favoritesList.style.display = "none";
-                }
+        menuList.querySelectorAll(".remove-favorite").forEach(icon=>{
+            icon.addEventListener("click", function(e){
+                e.preventDefault();
+                const carId = String(this.dataset.id);
+                favorites = favorites.filter(f=>String(f.id)!==carId);
+                localStorage.setItem(favoritesKey, JSON.stringify(favorites));
+                updateFavoritesCount();
+                renderFavoritesDropdown();
+                updateFavoriteIconsUI();
             });
         });
-    </script>
+    }
+
+    const updateFavoriteIconsUI = () => {
+        document.querySelectorAll(".favorite-icon").forEach(icon=>{
+            const card = icon.closest(".car-card");
+            const carId = card.dataset.carId;
+            if(favorites.some(f=>String(f.id)===String(carId))){
+                icon.classList.add("active");
+                icon.style.color="red";
+            } else {
+                icon.classList.remove("active");
+                icon.style.color="grey";
+            }
+        });
+    }
+
+    const initFavoriteIcons = () => {
+        document.querySelectorAll(".favorite-icon").forEach(icon=>{
+            const card = icon.closest(".car-card");
+            const carId = card.dataset.carId;
+            const carName = card.dataset.carName;
+            const carImage = card.dataset.carImage;
+
+            if(favorites.some(f=>String(f.id)===String(carId))){
+                icon.classList.add("active");
+                icon.style.color="red";
+            }
+
+            icon.addEventListener("click", function(e){
+                e.preventDefault();
+                const existingIndex = favorites.findIndex(f=>String(f.id)===String(carId));
+                if(existingIndex===-1){
+                    favorites.push({id:carId,name:carName,image:carImage});
+                    icon.classList.add("active");
+                    icon.style.color="red";
+                } else {
+                    favorites.splice(existingIndex,1);
+                    icon.classList.remove("active");
+                    icon.style.color="grey";
+                }
+                localStorage.setItem(favoritesKey, JSON.stringify(favorites));
+                updateFavoritesCount();
+                renderFavoritesDropdown();
+            });
+        });
+    }
+
+    // Filter function
+    const filterCars = () => {
+        const searchText = searchInput.value.toLowerCase();
+        const selectedCategories = Array.from(categoryCheckboxes).filter(cb=>cb.checked).map(cb=>cb.value);
+        const minPrice = parseInt(minPriceInput.value) || priceSlider.noUiSlider.get()[0];
+        const maxPrice = parseInt(maxPriceInput.value) || priceSlider.noUiSlider.get()[1];
+
+        filteredParents = carParents.filter(parent=>{
+            const card = parent.querySelector(".car-card");
+            const name = card.dataset.carName.toLowerCase();
+            const category = card.dataset.categoryId;
+            const price = parseInt(card.dataset.price);
+
+            let visible = name.includes(searchText);
+            if(selectedCategories.length>0) visible = visible && selectedCategories.includes(category);
+            visible = visible && price >= minPrice && price <= maxPrice;
+            return visible;
+        });
+
+        currentPage = 1;
+        renderPage(false); // Scroll false
+    }
+
+    const renderPage = (scrollTop) => {
+        carParents.forEach(p => p.style.display="none");
+        const start = (currentPage-1)*itemsPerPage;
+        const end = start + itemsPerPage;
+        filteredParents.slice(start,end).forEach(p => p.style.display="block");
+        renderPagination();
+        if(scrollTop) document.getElementById("content").scrollIntoView({behavior:"smooth"});
+    }
+
+    const renderPagination = () => {
+        paginationEl.innerHTML = "";
+        const totalPages = Math.ceil(filteredParents.length / itemsPerPage);
+        for(let i=1;i<=totalPages;i++){
+            const btn = document.createElement("div");
+            btn.className = "page-scroll-btn" + (i===currentPage ? " active" : "");
+            btn.textContent = i;
+            btn.addEventListener("click", () => { currentPage=i; renderPage(true); scrollToCurrent(); });
+            paginationEl.appendChild(btn);
+        }
+    }
+
+    const scrollToCurrent = () => {
+        const activeBtn = paginationEl.querySelector(".active");
+        if(activeBtn) activeBtn.scrollIntoView({behavior:"smooth",inline:"center"});
+        document.getElementById("content").scrollIntoView({behavior:"smooth"});
+    }
+
+    prevBtn.addEventListener("click", () => {
+        if(currentPage>1){ currentPage--; renderPage(true); scrollToCurrent(); }
+    });
+
+    nextBtn.addEventListener("click", () => {
+        const totalPages = Math.ceil(filteredParents.length / itemsPerPage);
+        if(currentPage<totalPages){ currentPage++; renderPage(true); scrollToCurrent(); }
+    });
+
+    // Sidebar filters - no scroll
+    searchInput.addEventListener("input", filterCars);
+    categoryCheckboxes.forEach(cb=>cb.addEventListener("change", filterCars));
+    applyPriceFilterBtn.addEventListener("click", filterCars);
+
+    // Init price slider
+    const priceSlider = document.getElementById("price-slider");
+    noUiSlider.create(priceSlider,{
+        start:[50,2000],
+        connect:true,
+        step:50,
+        range:{ min:50, max:2000 },
+        tooltips:[true,true],
+        format:{ to: value=>parseInt(value), from: value=>parseInt(value) }
+    });
+
+    priceSlider.noUiSlider.on("update",(values)=>{
+        minPriceInput.value = values[0];
+        maxPriceInput.value = values[1];
+        filterCars(); // No scroll
+    });
+
+    // Initial
+    updateFavoritesCount();
+    renderFavoritesDropdown();
+    initFavoriteIcons();
+    filterCars();
+});
+</script>
 }

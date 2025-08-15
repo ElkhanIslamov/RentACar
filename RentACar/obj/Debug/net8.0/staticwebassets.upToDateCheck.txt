@@ -269,6 +269,10 @@ wwwroot\images\car\Nissan Kicks-2-90-7bc45420-6635-4b3c-8e60-963c46bc5985.jpeg
 wwwroot\images\car\Nissan Kicks-3-90-70b57c3f-8702-4be7-bb54-b1e06435529f.jpeg
 wwwroot\images\car\Nissan Kicks-4-90-7e841798-168c-4483-903e-34a00475ba9e.jpeg
 wwwroot\images\car\Nissan Kicks-5-90-1d1eab14-48db-40ee-bacb-3b3425bc53b7.jpeg
+wwwroot\images\car\Nissan X Terra -1 -150-b2b79b1f-5945-4faa-86b7-6c541a4872c4.jpeg
+wwwroot\images\car\Nissan X Terra -2 -150-6539a2d0-4032-47d8-9a8f-7d23c56f8efd.jpeg
+wwwroot\images\car\Nissan X Terra -3 -150-8697007b-bb05-463b-a680-5de9709d6ee4.jpeg
+wwwroot\images\car\Nissan X Terra -4 -150-1f928090-9411-4eb6-ab84-5b6dea0c5faa.jpeg
 wwwroot\images\car\range-rover-1a8bdf0d-1284-44b6-b8d3-d26b1059766b.jpg
 wwwroot\images\car\spark1-3e4fdd3d-9ca9-4c26-b09b-0a7e48547e27.jpeg
 wwwroot\images\car\spark2-fe514212-f37a-4a56-bd93-0c50d8ae1bf0.png

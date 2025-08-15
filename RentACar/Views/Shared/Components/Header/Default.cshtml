@@ -1,25 +1,30 @@
 ﻿<header class="transparent scroll-light has-topbar">
+    <!-- Topbar -->
     <div id="topbar" class="topbar-dark text-light">
-        <div class="container">
-            <div class="topbar-left xs-hide">
-                <div class="topbar-widget"><a href="~/#"><i class="fa fa-phone"></i>+994 55 333 1755</a></div>
-                <div class="topbar-widget"><a href="~/#"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="4d2e2223392c2e390d3f2823392c2134632e2220">[email&#160;protected]</span></a></div>
-                <div class="topbar-widget"><a href="~/#"><i class="fa fa-clock-o"></i>@DateTime.UtcNow.AddHours(4)</a></div>
-            </div>
-
-            <div class="topbar-right d-flex align-items-center">
-                <div class="social-icons" style="margin-right: 15px;">
-                    <a href="~/#"><i class="fa fa-facebook fa-lg"></i></a>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="topbar-left xs-hide d-flex">
+                <div class="topbar-widget me-3">
+                    <a href="tel:+994553331755"><i class="fa fa-phone"></i> +994 55 333 1755</a>
+                </div>
+                <div class="topbar-widget me-3">
+                    <a href="mailto:info@example.com"><i class="fa fa-envelope"></i> info@example.com</a>
+                </div>
+                <div class="topbar-widget">
+                    <i class="fa fa-clock-o"></i> @DateTime.UtcNow.AddHours(4)
                 </div>
             </div>
-            <div class="clearfix"></div>
+            <div class="topbar-right">
+                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+            </div>
         </div>
     </div>
 
+    <!-- Main Navbar -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="de-flex sm-pt10">
+                    <!-- Logo -->
                     <div class="de-flex-col">
                         <div id="logo">
                             <a asp-controller="home" asp-action="index">
@@ -29,75 +34,38 @@
                         </div>
                     </div>
 
+                    <!-- Menu -->
                     <div class="de-flex-col header-col-mid">
                         <ul id="mainmenu" style="position:relative;">
                             <li><a class="menu-item" asp-controller="home" asp-action="index">Ana səhifə</a></li>
                             <li><a class="menu-item" asp-controller="Account" asp-action="Dashboard">Profil</a></li>
                             <li><a class="menu-item" asp-controller="car" asp-action="index">Avtomobillər</a></li>
                             <li><a class="menu-item" asp-controller="booking" asp-action="QuickBooking">Sifariş et</a></li>
-                            <li>
-                                <a class="menu-item" href="~/#">Pages</a>
-                                <ul>
-                                    <li><a class="menu-item" href="~/about.html">About Us</a></li>
-                                    <li><a class="menu-item" href="~/contact.html">Contact</a></li>
-                                    <li><a class="menu-item" href="~/login.html">Login</a></li>
-                                    <li><a class="menu-item" href="~/register.html">Register</a></li>
-                                    <li><a class="menu-item" href="~/404.html">Page 404</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="menu-item" href="~/#">News</a>
-                                <ul>
-                                    <li>
-                                        <a class="menu-item" href="~/news-standart-right-sidebar.html">News Standard</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="~/news-standart-right-sidebar.html">Right Sidebar</a></li>
-                                            <li><a class="menu-item" href="~/news-standart-left-sidebar.html">Left Sidebar</a></li>
-                                            <li><a class="menu-item" href="~/news-standart-no-sidebar.html">No Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="menu-item" href="~/news-grid-right-sidebar.html">News Grid</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="~/news-grid-right-sidebar.html">Right Sidebar</a></li>
-                                            <li><a class="menu-item" href="~/news-grid-left-sidebar.html">Left Sidebar</a></li>
-                                            <li><a class="menu-item" href="~/news-grid-no-sidebar.html">No Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
 
-                            <!-- Seçilmişlər menyusu Elements yerinə -->
+                            <!-- Seçilmişlər -->
                             <li style="position:relative;">
-                                <a href="@Url.Action("Index", "Favorites")" class="menu-item">
-                                    <i class="fa fa-heart" style="color: red;"></i> Seçilmişlər
+                                <a href="javascript:void(0);" id="favorites-toggle" class="menu-item" style="display:inline-flex; align-items:center; gap:6px; height:100%;">
+                                    <i class="fa fa-heart" style="color: red;"></i>
+                                    Seçilmişlər
                                 </a>
                                 <ul id="favorites-menu-list"
-                                    style="display:none;
-                                           min-width:250px;
-                                           background:#fff;
-                                           color:#000;
-                                           padding:10px;
-                                           list-style:none;
-                                           box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-                                           border-radius:4px;
-                                           position:absolute;
-                                           right:0;
-                                           top:100%;
-                                           z-index:999;">
-                                    <!-- JS ilə əlavə olunacaq -->
+                                    style="display:none;min-width:250px;background:#fff;color:#000;padding:10px;list-style:none;
+                                           box-shadow:0 2px 6px rgba(0,0,0,0.15);border-radius:4px;position:absolute;
+                                           right:0;top:100%;z-index:999;">
+                                    <!-- JS ilə dolacaq -->
                                 </ul>
                             </li>
                         </ul>
                     </div>
 
+                    <!-- Right Side -->
                     <div class="de-flex-col">
                         <div class="menu_side_area">
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
                                     @Html.AntiForgeryToken()
-                                    <button type="submit" class="btn-main border-0 bg-transparent text-white" style="cursor:pointer; background:green">
+                                    <button type="submit" class="btn-main border-0 bg-transparent text-white" style="background:green">
                                         Log out
                                     </button>
                                 </form>
@@ -114,49 +82,140 @@
     </div>
 </header>
 
+<!-- CSS -->
 <style>
-    /* Seçilmişlər dropdown menyusu üçün */
     #favorites-menu-list li {
         padding: 6px 8px;
         border-bottom: 1px solid #ddd;
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
+
+        #favorites-menu-list li:hover {
+            background-color: #f5f5f5;
+        }
 
         #favorites-menu-list li img {
             width: 40px;
             height: 25px;
             object-fit: cover;
-            margin-right: 10px;
             border-radius: 3px;
+            margin-right: 8px;
         }
 
         #favorites-menu-list li:last-child {
             border-bottom: none;
         }
+
+    .remove-favorite {
+        cursor: pointer;
+        color: red;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+        .remove-favorite:hover {
+            color: darkred;
+        }
 </style>
 
+<!-- JS -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".fa-heart").forEach(function (heart) {
-            heart.addEventListener("click", function () {
-                let carId = this.dataset.id;
+        const favoritesKey = "favoriteCars";
+        let favorites = JSON.parse(localStorage.getItem(favoritesKey)) || [];
 
-                fetch('/Favorites/Add', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
-                    },
-                    body: JSON.stringify({ id: carId })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    // header-də favorit sayını yenilə
-                    document.getElementById("favoritesCount").textContent = data.count;
+        const favoritesMenu = document.getElementById("favorites-menu-list");
+        const favoritesToggle = document.getElementById("favorites-toggle");
+
+        function renderFavoritesDropdown() {
+            favoritesMenu.innerHTML = "";
+            if (favorites.length === 0) {
+                favoritesMenu.innerHTML = "<li>Seçilmiş yoxdur</li>";
+                return;
+            }
+
+                   favorites.forEach(car => {
+                menuList.insertAdjacentHTML("beforeend", `
+                    <li>
+                        <a href="/Car/Details/${car.id}" style="display:flex;align-items:center;gap:5px;text-decoration:none;color:inherit;">
+                            <img src="/images/car/${car.image}" alt="${car.name}" style="width:50px;height:30px;object-fit:cover;" />
+                            <span>${car.name}</span>
+                        </a>
+                    </li>
+                `);
+            });
+
+
+            document.querySelectorAll(".remove-favorite").forEach(btn => {
+                btn.addEventListener("click", function () {
+                    const id = btn.getAttribute("data-id");
+                    favorites = favorites.filter(f => f.id != id);
+                    localStorage.setItem(favoritesKey, JSON.stringify(favorites));
+                    renderFavoritesDropdown();
+
+                    // Kartdakı ürək ikonunu boz et
+                    document.querySelectorAll(".de-item").forEach(card => {
+                        if (card.dataset.carId === id) {
+                            const icon = card.querySelector(".favorite-icon");
+                            if (icon) {
+                                icon.classList.remove("active");
+                                icon.style.color = "grey";
+                            }
+                        }
+                    });
                 });
             });
+        }
+
+        function initFavoriteIcons() {
+            document.querySelectorAll(".favorite-icon").forEach(icon => {
+                const card = icon.closest(".de-item");
+                if (!card) return;
+                const carId = card.dataset.carId;
+                const carName = card.dataset.carName;
+                const carImage = card.dataset.carImage;
+
+                if (favorites.some(f => f.id.toString() === carId.toString())) {
+                    icon.classList.add("active");
+                    icon.style.color = "red";
+                }
+
+                icon.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const index = favorites.findIndex(f => f.id.toString() === carId.toString());
+
+                    if (index === -1) {
+                        favorites.push({ id: carId, name: carName, image: carImage });
+                        icon.classList.add("active");
+                        icon.style.color = "red";
+                    } else {
+                        favorites.splice(index, 1);
+                        icon.classList.remove("active");
+                        icon.style.color = "grey";
+                    }
+
+                    localStorage.setItem(favoritesKey, JSON.stringify(favorites));
+                    renderFavoritesDropdown();
+                });
+            });
+        }
+
+        if (favoritesToggle) {
+            favoritesToggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                favoritesMenu.style.display = (favoritesMenu.style.display === "block") ? "none" : "block";
+            });
+        }
+
+        document.addEventListener("click", function (e) {
+            if (!favoritesMenu.contains(e.target) && !favoritesToggle.contains(e.target)) {
+                favoritesMenu.style.display = "none";
+            }
         });
+
+        renderFavoritesDropdown();
+        initFavoriteIcons();
     });
 </script>
-
