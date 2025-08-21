@@ -1,20 +1,43 @@
-﻿<header class="transparent scroll-light has-topbar">
+﻿@model RentACar.Areas.Admin.Models.HeaderInfoViewModel
+
+<header class="transparent scroll-light has-topbar">
     <!-- Topbar -->
     <div id="topbar" class="topbar-dark text-light">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="topbar-left xs-hide d-flex">
                 <div class="topbar-widget me-3">
-                    <a href="tel:+994553331755"><i class="fa fa-phone"></i> +994 55 333 1755</a>
+                    <a href="tel:@Model.Phone"><i class="fa fa-phone"></i> @Model.Phone</a>
                 </div>
                 <div class="topbar-widget me-3">
-                    <a href="mailto:info@example.com"><i class="fa fa-envelope"></i> info@example.com</a>
+                    <a href="mailto:@Model.Email"><i class="fa fa-envelope"></i> @Model.Email</a>
                 </div>
                 <div class="topbar-widget">
-                    <i class="fa fa-clock-o"></i> @DateTime.UtcNow.AddHours(4)
+                    <i class="fa fa-clock-o"></i> @Model.WorkingTime.ToString("HH:mm")
                 </div>
             </div>
             <div class="topbar-right">
-                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                <div class="social-icons">
+                    @if (!string.IsNullOrWhiteSpace(Model.FacebookUrl))
+                    {
+                        <a href="@Model.FacebookUrl" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.TwitterUrl))
+                    {
+                        <a href="@Model.TwitterUrl" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.YoutubeUrl))
+                    {
+                        <a href="@Model.YoutubeUrl" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.PinterestUrl))
+                    {
+                        <a href="@Model.PinterestUrl" target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.InstagramUrl))
+                    {
+                        <a href="@Model.InstagramUrl" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                    }
+                </div>
             </div>
         </div>
     </div>
@@ -82,7 +105,7 @@
     </div>
 </header>
 
-<!-- CSS -->
+<!-- CSS & JS -->
 <style>
     #favorites-menu-list li {
         padding: 6px 8px;
@@ -120,7 +143,6 @@
         }
 </style>
 
-<!-- JS -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const favoritesKey = "favoriteCars";
@@ -136,8 +158,8 @@
                 return;
             }
 
-                   favorites.forEach(car => {
-                menuList.insertAdjacentHTML("beforeend", `
+            favorites.forEach(car => {
+                favoritesMenu.insertAdjacentHTML("beforeend", `
                     <li>
                         <a href="/Car/Details/${car.id}" style="display:flex;align-items:center;gap:5px;text-decoration:none;color:inherit;">
                             <img src="/images/car/${car.image}" alt="${car.name}" style="width:50px;height:30px;object-fit:cover;" />
@@ -147,55 +169,10 @@
                 `);
             });
 
-
             document.querySelectorAll(".remove-favorite").forEach(btn => {
                 btn.addEventListener("click", function () {
                     const id = btn.getAttribute("data-id");
                     favorites = favorites.filter(f => f.id != id);
-                    localStorage.setItem(favoritesKey, JSON.stringify(favorites));
-                    renderFavoritesDropdown();
-
-                    // Kartdakı ürək ikonunu boz et
-                    document.querySelectorAll(".de-item").forEach(card => {
-                        if (card.dataset.carId === id) {
-                            const icon = card.querySelector(".favorite-icon");
-                            if (icon) {
-                                icon.classList.remove("active");
-                                icon.style.color = "grey";
-                            }
-                        }
-                    });
-                });
-            });
-        }
-
-        function initFavoriteIcons() {
-            document.querySelectorAll(".favorite-icon").forEach(icon => {
-                const card = icon.closest(".de-item");
-                if (!card) return;
-                const carId = card.dataset.carId;
-                const carName = card.dataset.carName;
-                const carImage = card.dataset.carImage;
-
-                if (favorites.some(f => f.id.toString() === carId.toString())) {
-                    icon.classList.add("active");
-                    icon.style.color = "red";
-                }
-
-                icon.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    const index = favorites.findIndex(f => f.id.toString() === carId.toString());
-
-                    if (index === -1) {
-                        favorites.push({ id: carId, name: carName, image: carImage });
-                        icon.classList.add("active");
-                        icon.style.color = "red";
-                    } else {
-                        favorites.splice(index, 1);
-                        icon.classList.remove("active");
-                        icon.style.color = "grey";
-                    }
-
                     localStorage.setItem(favoritesKey, JSON.stringify(favorites));
                     renderFavoritesDropdown();
                 });
@@ -216,6 +193,5 @@
         });
 
         renderFavoritesDropdown();
-        initFavoriteIcons();
     });
 </script>

@@ -3,7 +3,7 @@ using RentACar.DataContext.Entities;
 
 namespace RentACar.Areas.Admin.Models
 {
-   /* public class CarFormViewModel
+    public class CarFormViewModel
     {
         public int Id { get; set; }
         public required string Name { get; set; }
@@ -16,5 +16,5 @@ namespace RentACar.Areas.Admin.Models
         public int CategoryId { get; set; }
         public List<SelectListItem>? CategoryList { get; set; }
         public List<Category>? Categories { get; set; }
-    }*/
+    }
 }
